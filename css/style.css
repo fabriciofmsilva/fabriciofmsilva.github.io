@@ -834,3 +834,28 @@ code.option, code.flag, code.filter, code.output {
     padding: 0 10px;
   }
 }
+
+.intro {
+  background-color: #333;
+  color: #FFF;
+  padding-top: 100px;
+  text-align: center;
+}
+.title {
+  color: #FFF;
+  font-weight: normal;
+  margin: auto;
+  padding-top: 180px;
+  text-align: center;
+  font-size: 90px;
+  line-height: 140px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+.description {
+  color: #FFF;
+  font-weight: 200;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
