@@ -2,7 +2,7 @@
   <li class="{% if page.overview %}current{% endif %}">
     <a href="{{ site.url }}/">About</a>
   </li>
-  <li class="{% else page.overview %}current{% endelse %}">
+  <li class="{% unless page.overview %}current{% endunless %}">
     <a href="{{ site.url }}/projects">Projects</a>
   </li>
   <li class="{% unless page.overview %}current{% endunless %}">
