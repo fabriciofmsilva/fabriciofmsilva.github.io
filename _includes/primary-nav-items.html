@@ -2,10 +2,10 @@
   <li class="{% if page.overview %}current{% endif %}">
     <a href="{{ site.url }}/">About</a>
   </li>
-  <li class="{% unless page.overview %}current{% endunless %}">
+  <li class="{% if page.overview %}current{% endif %}">
     <a href="{{ site.url }}/projects">Projects</a>
   </li>
-  <li class="{% unless page.overview %}current{% endunless %}">
+  <li class="{% if page.overview %}current{% endif %}">
     <a href="{{ site.url }}/blog">Blog</a>
   </li>
   <li class="">
