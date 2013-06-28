@@ -183,7 +183,7 @@ body > footer a:hover img {
   padding: 10px 0 40px;
 }
 
-.intro p, .intro h1 {
+.intro p {
   font-size: 1.75em;
   line-height: 1em;
   margin: 0;
@@ -845,7 +845,6 @@ code.option, code.flag, code.filter, code.output {
   color: #FFF;
   font-weight: normal;
   margin: auto;
-  padding-top: 180px;
   text-align: center;
   font-size: 90px;
   line-height: 140px;
