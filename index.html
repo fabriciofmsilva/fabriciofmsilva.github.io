@@ -1,0 +1,21 @@
+---
+layout: default
+title: Fabrício Silva
+description: My Web Site powered by Jekyll.
+---
+
+<section class="home">
+	<p>Front-End Developer, HTML, CSS and JavaScript</p>
+
+	<h2>About Me</h2>
+	<p>Hello!<br>
+	My name is <strong>Fabricio Silva</strong>, I'm from Ribeirão Preto, Brazil. Currently I am a <strong>front-end developer</strong> in <a href="http://www.sgec.com.br/">Sg Interativa</a>, a company in my town.</p>
+	<p>You can find me on <a href="http://twitter.com/fabriciofmsilva">Twitter</a> or <a href="http://github.com/fabriciofmsilva">GitHub</a>.</p>
+
+	<h2>Blog Posts</h2>
+	<ul class="posts">
+		{% for post in site.posts %}
+		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
+</section>
