@@ -8,7 +8,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>{{ page.title }}</title>
 <meta name="description" content="{{ page.description }}">
+{% if post %}
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{% else %}
+<link rel="canonical" href="{{ site.url }}{{ page.canonical }}">
+{% endif %}
 <link rel="author" href="https://plus.google.com/105011365395783776506/">
 <link rel="publisher" href="https://plus.google.com/105011365395783776506/">
 <meta name="viewport" content="width=device-width">
