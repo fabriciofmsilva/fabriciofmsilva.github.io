@@ -98,7 +98,7 @@ ul.posts li {
 	text-transform: uppercase;
 }
 .nav-link:hover {
-	border-bottom: 3px solid #FFF;
+	border-bottom: 3px solid #DDD;
 	color: #DDD;
 }
 .box {
