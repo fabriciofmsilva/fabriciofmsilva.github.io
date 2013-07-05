@@ -13,7 +13,7 @@
 html, body { height: 100%; }
 
 body {
-	background-color: #FFF;
+	background-color: #EEE;
 	color: #333;
 	font: 15px 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -60,17 +60,52 @@ ul.posts span {
 /*****************************************************************************/
 
 .header {
-	background-color: #DDD;
+	background-color: #333;
+	height: 280px;
+	padding-top: 30px;
+	margin-bottom: 40px;
+}
+.nav {
+	text-align: right;
+}
+.box {
+	position: relative;
+}
+.box-title {
+	bottom: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+.box-link {
+	color: #FFF;
+	font-size: 60px;
+	font-weight: lighter;
+	text-decoration: none;
+}
+.box-img {
+	height: 300px;
+	width: 100%;
 }
 .footer {
 	background-color: #333;
 	color: #FFF;
+}
+.footer p {
+	margin: auto;
 }
 .wrapper {
 	margin: auto;
 	position: relative;
 	width: 720px;
 }
+.home, .page, .post {
+	background: #FFF;
+	padding: 20px 40px;
+	width: 640px;
+}
+
+
 .site {
 	font-size: 115%;
 	text-align: justify;
