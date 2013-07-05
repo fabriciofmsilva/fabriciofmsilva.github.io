@@ -68,6 +68,14 @@ ul.posts span {
 .nav {
 	text-align: right;
 }
+.nav-link {
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.nav-link:hover {
+	color: #EEE;
+}
 .box {
 	position: relative;
 }
