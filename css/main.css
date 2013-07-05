@@ -22,19 +22,20 @@ strong {
 	font-weight: 400;
 }
 h1, h2, h3, h4, h5, h6 {
+	color: #333;
 	font-size: 100%;
+	font-weight: 400;
+	margin: 1.6em auto 0.6em;
 }
 h1 {
-	color: #333;
-	font-size: 26px;
-	font-weight: 400;
+	font-size: 28px;
 	margin: auto auto 0.6em;
 }
 h2 {
-	color: #333;
-	font-size: 20px;
-	font-weight: 400;
-	margin: 1.6em auto 0.6em;
+	font-size: 22px;
+}
+h3 {
+	font-size: 22px;
 }
 p {
 	margin: 1em 0 0.6em;
@@ -98,7 +99,7 @@ ul.posts li {
 	text-transform: uppercase;
 }
 .nav-link:hover {
-	border-bottom: 3px solid #FFF;
+	border-bottom: 3px solid #DDD;
 	color: #DDD;
 }
 .box {
@@ -107,13 +108,13 @@ ul.posts li {
 }
 .box-title {
 	bottom: 20px;
+	font-size: 60px;
 	position: absolute;
 	text-align: center;
 	width: 100%;
 }
 .box-link {
 	color: #FFF;
-	font-size: 60px;
 	text-decoration: none;
 }
 .box-link:hover {
