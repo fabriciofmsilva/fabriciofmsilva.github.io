@@ -5,11 +5,11 @@ description: My Web Site powered by Jekyll.
 canonical: http://www.fabriciofmsilva.com.br/blog/
 ---
 
-<div id="home">
+<article class="page wrapper">
 	<h1>Blog Posts</h1>
 	<ul class="posts">
 		{% for post in site.posts %}
 		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 		{% endfor %}
 	</ul>
-</div>
+</article>
