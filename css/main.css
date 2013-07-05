@@ -74,7 +74,7 @@ ul.posts span {
 	text-transform: uppercase;
 }
 .nav-link:hover {
-	color: #EEE;
+	color: #DDD;
 }
 .box {
 	position: relative;
@@ -90,6 +90,9 @@ ul.posts span {
 	font-size: 60px;
 	font-weight: lighter;
 	text-decoration: none;
+}
+.box-link:hover {
+	color: #FFF;
 }
 .box-img {
 	height: 300px;
