@@ -37,12 +37,12 @@ p {
 }
 a {
 	color: #008DDE;
-	text-transform: none;
-	transition: color 0.5s easy-in-out;
+	text-decoration: none;
+	transition: all 0.5s easy-in-out;
 }
 a:hover {
 	color: #19ABFF;
-	transition: color 0.2s easy-in-out;
+	transition: all 0.2s easy-in-out;
 }
 a:visited { }
 table {
@@ -64,10 +64,8 @@ ul.posts li {
 	line-height: 1.75em;
 }
 
-ul.posts span {
-	color: #aaa;
-	font-family: Monaco, "Courier New", monospace;
-	font-size: 80%;
+.posts-date {
+	color: #AAA;
 }
 
 /*****************************************************************************/
