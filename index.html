@@ -6,8 +6,6 @@ canonical: http://www.fabriciofmsilva.com.br/
 ---
 
 <section class="home wrapper">
-	<p>Front-End Developer, HTML, CSS and JavaScript</p>
-
 	<h2>Sobre</h2>
 	<p itemscope itemtype="http://schema.org/Person">Olá!<br>
 	Meu nome é <span itemprop="name">Fabrício Silva</span>, eu sou de <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Ribeirão Preto</span>, <span itemprop="addressCountry">Brasil</span></span>. Atualmente trabalho como <span itemprop="jobTitle">desenvolvedor front-end</span> na <a href="http://www.sgec.com.br/" itemprop="worksFor">Sg Interativa</a>, uma agência na minha cidade.</p>
@@ -16,7 +14,7 @@ canonical: http://www.fabriciofmsilva.com.br/
 	<h2>Blog</h2>
 	<ul class="posts">
 		{% for post in site.posts %}
-		<li><span class="posts-date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		<li><span class="posts-date">{{ post.date | date: "%d-%M-%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 		{% endfor %}
 	</ul>
 </section>

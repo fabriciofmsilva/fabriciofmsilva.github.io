@@ -86,13 +86,19 @@ ul.posts li {
 }
 .nav {
 	text-align: right;
+	margin-bottom: 3px;
+	z-index: 9;
+	position: relative;
 }
 .nav-link {
+	border-bottom: 0;
 	color: #FFF;
+	padding: 5px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 .nav-link:hover {
+	border-bottom: 3px solid #FFF;
 	color: #DDD;
 }
 .box {
