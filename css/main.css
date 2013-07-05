@@ -25,7 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
 }
 h1 {
-	font-weight: 300;
+	color: #333;
+	font-size: 26px;
+	font-weight: 400;
+	margin: auto auto 0.6em;
 }
 h2 {
 	color: #333;
@@ -34,7 +37,7 @@ h2 {
 	margin: 1.6em auto 0.6em;
 }
 p {
-	margin: 1em 0;
+	margin: 1em 0 0.6em;
 }
 a {
 	color: #008DDE;
