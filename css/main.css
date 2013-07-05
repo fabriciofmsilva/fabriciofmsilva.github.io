@@ -128,7 +128,7 @@ ul.posts li {
 .wrapper {
 	margin: auto;
 	position: relative;
-	width: 720px;
+	max-width: 720px;
 }
 .home, .page, .post {
 	background: #FFF;
