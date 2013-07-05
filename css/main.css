@@ -133,7 +133,7 @@ ul.posts li {
 .home, .page, .post {
 	background: #FFF;
 	padding: 20px 40px;
-	width: 640px;
+	max-width: 640px;
 }
 
 
