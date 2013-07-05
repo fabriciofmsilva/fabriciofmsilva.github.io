@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Fabrício Silva | Front-End Developer, HTML, CSS e JavaScript
-description: My name is Fabricio Silva, I'm from Ribeirão Preto, Brazil. Currently I am a front-end developer in Sg Interativa, a company in my town. This Site powered by Jekyll.
+title: Fabrício Silva | Desenvolvedor Front-End, HTML, CSS e JavaScript
+description: Olá! Meu nome é Fabrício Silva, eu sou de Ribeirão Preto, Brasil. Atualmente trabalho como desenvolvedor front-end na Sg Interativa, uma agência na minha cidade.
 ---
 
 <section class="home">
 	<p>Front-End Developer, HTML, CSS and JavaScript</p>
 
 	<h2>About Me</h2>
-	<p itemscope itemtype="http://schema.org/Person">Hello!<br>
-	My name is <strong itemprop="name">Fabricio Silva</strong>, I'm from <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Ribeirão Preto</span>, <span itemprop="addressCountry">Brazil</span></span>. Currently I am a <strong itemprop="jobTitle">front-end developer</strong> in <a href="http://www.sgec.com.br/" itemprop="worksFor">Sg Interativa</a>, a company in my town.</p>
-	<p>You can find me on <a href="http://twitter.com/fabriciofmsilva">Twitter</a> or <a href="http://github.com/fabriciofmsilva">GitHub</a>.</p>
+	<p itemscope itemtype="http://schema.org/Person">Olá!<br>
+	Meu nome é <strong itemprop="name">Fabrício Silva</strong>, eu sou de <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Ribeirão Preto</span>, <span itemprop="addressCountry">Brasil</span></span>. Atualmente trabalho como <strong itemprop="jobTitle">desenvolvedor front-end</strong> na <a href="http://www.sgec.com.br/" itemprop="worksFor">Sg Interativa</a>, uma agência na minha cidade.</p>
+	<p>Você pode me achar no <a href="http://twitter.com/fabriciofmsilva">Twitter</a> ou no <a href="http://github.com/fabriciofmsilva">GitHub</a>.</p>
 
-	<h2>Blog Posts</h2>
+	<h2>Blog</h2>
 	<ul class="posts">
 		{% for post in site.posts %}
 		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
