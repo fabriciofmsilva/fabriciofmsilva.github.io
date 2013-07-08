@@ -85,6 +85,7 @@ ul.posts li {
 	padding-top: 30px;
 	position: absolute;
 	width: 100%;
+	top: 0;
 }
 .title {
 	float: left;
@@ -156,7 +157,8 @@ ul.posts li {
 	max-width: 720px;
 }
 .home, .page, .post {
-	padding: 55px 0 0;
+	background: #FFF;
+	margin-top: 55px;
 }
 .entry {
 	background: #FFF;
