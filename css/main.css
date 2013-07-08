@@ -14,11 +14,12 @@ html, body {
 }
 body {
 	background-color: #EEE;
-	color: #777;
+	color: #666;
 	font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 }
 strong {
+	color: #333;
 	font-weight: 400;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -135,6 +136,14 @@ ul.posts li {
 .footer p {
 	margin: auto;
 }
+.contact {
+	float: left;
+}
+.social {
+	float: right;
+	text-align: right;
+}
+
 .wrapper {
 	margin: auto;
 	position: relative;
