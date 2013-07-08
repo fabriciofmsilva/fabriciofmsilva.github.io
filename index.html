@@ -5,7 +5,8 @@ description: Olá! Meu nome é Fabrício Silva, eu sou de Ribeirão Preto, Brasi
 canonical: http://www.fabriciofmsilva.com.br/
 ---
 
-<section class="home wrapper">
+<section class="home">
+<div class="wrapper">
 	{% if page.image %}
 	<img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img">
 	{% else %}
@@ -22,4 +23,5 @@ canonical: http://www.fabriciofmsilva.com.br/
 		<li><span class="posts-date">{{ post.date | date: "%d-%M-%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 		{% endfor %}
 	</ul>
+</div>
 </section>
