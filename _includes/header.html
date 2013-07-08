@@ -1,17 +1,10 @@
 <header class="header">
-<div class="wrapper">
+<div class="wrapper clearfix">
+	<h1 class="title"><a href="/" class="box-link">{{ site.name }}</a></h1>
 	<nav class="nav">
 		<a class="nav-link" href="/">Sobre</a>
 		<a class="nav-link" href="/projetos/">Projetos</a>
 		<a class="nav-link" href="/blog/">Blog</a>
 	</nav>
-	<div class="box">
-		<h1 class="box-title"><a href="/" class="box-link">{{ site.name }}</a></h1>
-		{% if page.image %}
-		<img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img">
-		{% else %}
-		<img src="{{ site.url }}/img/fabricio-silva.jpg" alt="Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript" class="box-img">
-		{% endif %}
-	</div>
 </div>
 </header>

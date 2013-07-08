@@ -85,11 +85,15 @@ ul.posts li {
 	padding-top: 30px;
 	margin-bottom: 40px;
 }
+.title {
+	float: left;
+}
 .nav {
-	text-align: right;
+	float: right;
 	margin-bottom: 3px;
-	z-index: 9;
 	position: relative;
+	text-align: right;
+	z-index: 9;
 }
 .nav-link {
 	border-bottom: 0;
@@ -121,7 +125,6 @@ ul.posts li {
 	color: #FFF;
 }
 .box-img {
-	height: 300px;
 	width: 100%;
 }
 .footer {
