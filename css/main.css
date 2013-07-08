@@ -103,7 +103,7 @@ ul.posts li {
 .nav-link {
 	border-bottom: 0;
 	color: #FFF;
-	padding: 3px 5px;
+	padding: 0 5px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
