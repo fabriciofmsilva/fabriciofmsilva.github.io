@@ -158,7 +158,7 @@ ul.posts li {
 .home, .page, .post {
 	padding: 55px 0 0;
 }
-.home .wrapper, .page .wrapper, .post .wrapper {
+.entry {
 	background: #FFF;
 	padding: 0 40px;
 }

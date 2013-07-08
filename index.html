@@ -5,13 +5,13 @@ description: Olá! Meu nome é Fabrício Silva, eu sou de Ribeirão Preto, Brasi
 canonical: http://www.fabriciofmsilva.com.br/
 ---
 
-<section class="home">
-<div class="wrapper">
+<section class="home wrapper">
 	{% if page.image %}
 	<img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img">
 	{% else %}
 	<img src="{{ site.url }}/img/fabricio-silva.jpg" alt="Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript" class="box-img">
 	{% endif %}
+<div class="entry">
 	<h2>Sobre</h2>
 	<p itemscope itemtype="http://schema.org/Person">Olá!<br>
 	Meu nome é <span itemprop="name">Fabrício Silva</span>, sou de <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Ribeirão Preto</span>, <span itemprop="addressCountry">Brasil</span></span>. Atualmente trabalho como <span itemprop="jobTitle">desenvolvedor front-end</span> em uma agência chamada <a href="http://www.sgec.com.br/" itemprop="worksFor">Sg Interativa</a>.
