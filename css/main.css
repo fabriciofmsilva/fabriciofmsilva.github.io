@@ -265,3 +265,21 @@ ul.posts li {
 	margin-top: 3em;
 	padding-top: 2em;
 }
+
+/*****************************************************************************/
+/*
+/* Helper
+/*
+/*****************************************************************************/
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
