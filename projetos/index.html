@@ -1,11 +1,18 @@
 ---
 layout: default
-title: Projetos - Fabrício Silva
-description: My Web Site powered by Jekyll.
+title: Projetos - Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript
+description: Últimos projetos desenvolvidos.
 canonical: http://www.fabriciofmsilva.com.br/projetos/
 ---
 
 <article class="page wrapper">
+{% if page.image %}
+<img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img">
+{% else %}
+<img src="{{ site.url }}/img/fabricio-silva.jpg" alt="Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript" class="box-img">
+{% endif %}
+<div class="entry clearfix">
 	<h1>Projetos</h1>
 	<p>Meus últimos projetos</p>
+</div>
 </article>
