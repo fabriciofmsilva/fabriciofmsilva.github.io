@@ -83,10 +83,13 @@ ul.posts li {
 	background-color: #333;
 	height: 280px;
 	padding-top: 30px;
-	margin-bottom: 40px;
+	position: absolute;
+	width: 100%;
 }
 .title {
 	float: left;
+	margin: auto;
+	font-size: 16px;
 }
 .nav {
 	float: right;
@@ -153,9 +156,7 @@ ul.posts li {
 	max-width: 720px;
 }
 .home, .page, .post {
-	background: #FFF;
-	padding: 5px 40px;
-	max-width: 640px;
+	padding: 55px 0 0;
 }
 
 
