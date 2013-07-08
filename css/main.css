@@ -37,7 +37,7 @@ h3 {
 	font-size: 22px;
 }
 p {
-	margin: 1em 0 0.6em;
+	margin: 0.6em 0 1em;
 }
 a {
 	color: #008DDE;
@@ -249,4 +249,8 @@ ul.posts li {
 
 .post pre.terminal code {
 	background-color: #333;
+}
+
+#disqus_thread {
+	margin-top: 20px;
 }
