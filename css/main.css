@@ -251,8 +251,7 @@ ul.posts li {
 	background-color: #333;
 }
 
-.line {
-	border: none;
-	border-bottom: 1px dashed #777;
-	margin: 2em 0 3em;
+.post-meta {
+	border-top: 1px dashed #CCC;
+	margin-top: 3em;
 }
