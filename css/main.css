@@ -251,6 +251,6 @@ ul.posts li {
 	background-color: #333;
 }
 
-#disqus_thread {
-	margin-top: 20px;
+.line {
+	border-bottom: 1px dashed #777;
 }
