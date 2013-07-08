@@ -89,11 +89,13 @@ ul.posts li {
 }
 .title {
 	float: left;
+	font-size: 22px;
+	font-weight: 300;
 	margin: auto;
-	font-size: 16px;
 }
 .nav {
 	float: right;
+	font-size: 20px;
 	margin-bottom: 3px;
 	position: relative;
 	text-align: right;
@@ -158,7 +160,7 @@ ul.posts li {
 }
 .home, .page, .post {
 	background: #FFF;
-	margin-top: 55px;
+	margin-top: 60px;
 }
 .entry {
 	background: #FFF;
