@@ -127,11 +127,11 @@ ul.posts li {
 .footer {
 	background-color: #333;
 	color: #FFF;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 }
 .footer .wrapper {
 	border-top: 40px solid #FFF;
-	padding-top: 50px;
+	padding-top: 35px;
 }
 .footer p {
 	margin: auto;
