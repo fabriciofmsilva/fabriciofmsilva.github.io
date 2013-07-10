@@ -272,7 +272,10 @@ ul.posts li {
 
 .post-meta {
 	font-size: .8em;
-	color: #aaa;
+	color: #999;
+}
+.post-meta-link {
+	color: #999;
 }
 .post-footer {
 	border-top: 1px dashed #DDD;
