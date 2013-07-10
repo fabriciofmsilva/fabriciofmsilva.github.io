@@ -10,9 +10,14 @@
 <div class="entry clearfix">
 <header class="post-header">
 <h1 itemprop="name">{{ page.title }}</h1>
-<p class="post-meta"><time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%d/%m/%Y" }}</time></p>
+<p class="post-meta">
+	<time datetime="{{ page.date }}" itemprop="datePublished" content="{{ page.date | date: "%d/%m/%Y" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+	por <a href="{{ site.plus }}" itemprop="author">{{ site.name }}</a>
+</p>
 </header>
+<div itemprop="articleBody">
 {{ content }}
+</div>
 <footer class="post-footer">
 {% include disqus.html %}
 </footer>
