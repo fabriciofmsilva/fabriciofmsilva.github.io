@@ -82,8 +82,9 @@ ul.posts li {
 
 .header {
 	background-color: #333;
+	border-top: 3px solid #19ABFF;
 	height: 280px;
-	padding-top: 30px;
+	padding-top: 15px;
 	position: absolute;
 	width: 100%;
 	top: 0;
