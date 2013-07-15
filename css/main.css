@@ -42,6 +42,7 @@ p {
 }
 a {
 	color: #008DDE;
+	font-weight: 800;
 	text-decoration: none;
 	transition: all 0.5s;
 }
