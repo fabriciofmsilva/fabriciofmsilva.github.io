@@ -13,7 +13,8 @@ html, body {
 	height: 100%;
 }
 body {
-	background-color: #EEE;
+	background-color: #F5F5F5;
+	border-top: 5px solid #19ABFF;
 	color: #333;
 	font: 15px 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 400;
@@ -82,7 +83,6 @@ ul.posts li {
 
 .header {
 	background-color: #333;
-	border-top: 3px solid #19ABFF;
 	height: 280px;
 	padding-top: 15px;
 	position: absolute;
