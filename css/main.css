@@ -720,7 +720,9 @@ textarea {
 	bottom: 0;
 	right: 0;
 }
-
+.credits {
+  padding-right: 20px;
+}
 
 
 
