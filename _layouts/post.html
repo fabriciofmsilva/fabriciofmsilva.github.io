@@ -3,11 +3,6 @@
 {% include header.html %}
 <section class="main clearfix">
 <article class="content article" itemscope itemtype="http://schema.org/Article">
-{% if page.image %}
-<img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
-{% else %}
-<img src="{{ site.url }}/img/fabricio-silva.jpg" alt="Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript" class="box-img" itemprop="image">
-{% endif %}
 <header class="article-header">
 <h1 itemprop="name" class="article-title">{{ page.title }}</h1>
 <p class="article-date">
@@ -16,6 +11,11 @@
 </p>
 </header>
 <div itemprop="article-body">
+{% if page.image %}
+<img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
+{% else %}
+<img src="{{ site.url }}/img/fabricio-silva.jpg" alt="Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript" class="box-img" itemprop="image">
+{% endif %}
 {{ content }}
 </div>
 <footer class="article-footer">
