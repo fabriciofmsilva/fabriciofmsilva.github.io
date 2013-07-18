@@ -1,0 +1,18 @@
+---
+layout: default
+title: Palestras
+description: Últimas palestras apresentadas.
+canonical: http://www.fabriciofmsilva.com.br/palestras/
+---
+
+<section class="main">
+<article class="content">
+{% if page.image %}
+<img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img">
+{% else %}
+<img src="{{ site.url }}/img/fabricio-silva.jpg" alt="Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript" class="box-img">
+{% endif %}
+	<h1>Palestras</h1>
+	<p>Minhas palestras</p>
+</article>
+</section>
