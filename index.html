@@ -20,18 +20,16 @@ metatitle: Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript
 
 	<h2>Blog</h2>
 	<ul class="article-list">
+		{% for post in site.posts %}
 		<li class="article-item">
 			<article class="article">
 				<header class="article-header">
-		{% for post in site.posts %}
-					<li>
-						<h3 class="article-title"><a href="{{ post.url }}" class="article-link">{{ post.title }}</a></h3>
-						<time datetime="{{ page.date }}" content="{{ page.date | date: "%d/%m/%Y" }}" class="article-date">{{ page.date | date: "%d/%m/%Y" }}</time>
-					</li>
-		{% endfor %}
+					<h3 class="article-title"><a href="{{ post.url }}" class="article-link">{{ post.title }}</a></h3>
+					<time datetime="{{ post.date }}" content="{{ post.date | date: "%d/%m/%Y" }}" class="article-date">{{ post.date | date: "%d/%m/%Y" }}</time>
 				</header>
 			</article>
 		</li>
+		{% endfor %}
 	</ul>
 </div>
 </div>
