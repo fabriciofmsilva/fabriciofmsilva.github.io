@@ -14,7 +14,7 @@ canonical: http://www.fabriciofmsilva.com.br/blog/
       <article class="article">
         <header class="article-header">
           <h2 class="article-title"><a href="{{ post.url }}" class="article-link">{{ post.title }}</a></h2>
-          <time datetime="{{ post.date }}" content="{{ post.date | date: "%d/%m/%Y" }}" class="article-date">{{ post.date | date_to_string }}</time>
+          <time datetime="{{ post.date }}" content="{{ post.date | date: date_to_string }}" class="article-date">{{ post.date | date_to_string }}</time>
         </header>
       </article>
     </li>
