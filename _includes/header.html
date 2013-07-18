@@ -1,10 +1,30 @@
 <header class="header">
-<div class="wrapper clearfix">
-	<h1 class="title"><a href="/" class="box-link">{{ site.name }}</a></h1>
-	<nav class="nav">
-		<a class="nav-link" href="/">Sobre</a>
-		<a class="nav-link" href="/projetos/">Projetos</a>
-		<a class="nav-link" href="/blog/">Blog</a>
-	</nav>
-</div>
+  <figure>
+    <a href="/" class="header-photo">
+      <img src="img/fabricio-silva.jpeg" alt="Fabrício Silva">
+    </a>
+  </figure>
+  <h1 class="header-title"><a href="/" class="header-title-link">{{ site.name }}</a></h1>
+  <h2 class="header-description">Desenvolvedor Front-End</h2>
+  <hr class="header-line">
+  <nav class="navi">
+    <ul class="navi-list">
+      <li class="navi-item">
+        <a href="/blog/" class="navi-link">Blog</a>
+      </li>
+      <li class="navi-item">
+        <a href="/palestras/" class="navi-link">Palestras</a>
+      </li>
+      <li class="navi-item">
+        <a href="/projetos/" class="navi-link">Projetos</a>
+      </li>
+    </ul>
+  </nav>
+  <hr class="header-line">
+  <ul class="social-list">
+    <li class="social-item"><a href="http://github.com/fabriciofmsilva" class="social-link">GitHub</a></li>
+    <li class="social-item"><a href="http://twitter.com/fabriciofmsilva" class="social-link">Twitter</a></li>
+    <li class="social-item"><a href="{{ site.plus }}" class="social-link">Plus</a></li>
+    <li class="social-item"><a href="#" class="social-link hidden">RSS</a></li>
+  </ul>
 </header>
