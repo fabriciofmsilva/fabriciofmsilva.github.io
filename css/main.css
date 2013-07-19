@@ -569,6 +569,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
 	color: #423f37;
 	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
 }
 hr {
 	display: block;
@@ -708,7 +709,7 @@ textarea {
 .article-date {
 	display: block;
 	font-size: 0.8rem;
-	color: #c7c2b8;
+	color: #999;
 }
 .article-footer {
   border-top: 1px dashed #ccc;
