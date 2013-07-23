@@ -743,7 +743,13 @@ textarea {
 
 .main {
 	position: relative;
-	margin-top: 40px;
+	margin: 40px 2em;
+	width: auto;
+}
+
+.content {
+	width: auto;
+	max-width: auto;
 }
 
 }
