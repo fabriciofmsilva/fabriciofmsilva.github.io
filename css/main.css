@@ -208,7 +208,8 @@ mark {
 
 p,
 pre {
-		margin: 1em 0 0.2em;
+	margin: 1em 0 0.2em;
+	font-family: Georgia, "Cambria", serif;
 }
 
 /**
@@ -219,9 +220,9 @@ code,
 kbd,
 pre,
 samp {
-		font-family: monospace, serif;
-		_font-family: 'courier new', monospace;
-		font-size: 1em;
+	font-family: monospace, serif;
+	_font-family: 'courier new', monospace;
+	font-size: 1em;
 }
 
 /**
@@ -688,9 +689,6 @@ textarea {
 	margin: 0 0 0 20%;
 	width: 75%;
 	max-width: 720px;
-}
-.article-body p {
-	font-family: Georgia, "Cambria", serif;
 }
 .article-list {
 	padding: 0;
