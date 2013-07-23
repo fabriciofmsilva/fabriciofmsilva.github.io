@@ -713,8 +713,12 @@ textarea {
 }
 .article-date {
 	display: block;
-	font-size: 0.8rem;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
 	color: #999;
+}
+.post-meta-link {
+	font-weight: 400;
 }
 .article-footer {
 	border-top: 1px dashed #ccc;
