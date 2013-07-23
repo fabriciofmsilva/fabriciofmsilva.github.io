@@ -560,7 +560,6 @@ body {
 }
 a {
 	color: #008DDE;
-	font-weight: 400;
 	text-decoration: none;
 	transition: all 0.5s;
 }
@@ -649,11 +648,14 @@ textarea {
 	width: 120px;
 }
 .header-title, .navi-link, .social-link {
-	text-transform: uppercase;
+	font-size: 1em;
 	font-weight: 700;
-	font-size: 0.8rem;
+	margin-bottom: 0.2em;
 	margin-top: 0;
-	margin-bottom: 0.2rem;
+	text-transform: uppercase;
+}
+.navi-link, .social-link {
+	font-size: 0.8em;
 }
 .header-title-link {
 	color: #FFF;
