@@ -13,9 +13,9 @@ image-alt:
 
 <pre class="lang-html prettyprint linenums">
 &lt;!DOCTYPE html&gt;
-&lt;html lang="pt-br"&gt;
+&lt;html lang=&quot;pt-br&quot;&gt;
 &lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;title&gt;&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -26,20 +26,20 @@ image-alt:
 
 ##CSS
 
-<pre class="lang-css prettyprint linenums">
-&lt;style&gt;
+<pre class="lang-html prettyprint linenums">
+&lt;style type=&quot;text/css&quot;&gt;
 body {
-  background-color:#d0e4fe;
+  background-color: #d0e4fe;
 }
 
 h1 {
-  color:orange;
-  text-align:center;
+  color: orange;
+  text-align: center;
 }
 
 p {
-  font-family:"Times New Roman";
-  font-size:20px;
+  font-family: "Times New Roman";
+  font-size: 20px;
 }
 &lt;/style&gt;
 </pre>
