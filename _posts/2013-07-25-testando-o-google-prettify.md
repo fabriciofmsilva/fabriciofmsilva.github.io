@@ -44,10 +44,8 @@ p {
 
 ##JavaScript
 
-<pre class="lang-html prettyprint linenums">
-&lt;script&gt;
-  function myFunction() {
-    alert(&quot;Hello World!&quot;);
-  }
-&lt;/script&gt;
+<pre class="lang-js prettyprint linenums">
+function myFunction() {
+  alert(&quot;Hello World!&quot;);
+}
 </pre>
