@@ -38,7 +38,7 @@ h1 {
 }
 
 p {
-  font-family: "Times New Roman";
+  font-family: &quot;Times New Roman&quot;;
   font-size: 20px;
 }
 &lt;/style&gt;
@@ -49,7 +49,7 @@ p {
 <pre class="lang-html prettyprint linenums">
 &lt;script&gt;
   function myFunction() {
-    alert("Hello World!");
+    alert(&quot;Hello World!&quot;);
   }
 &lt;/script&gt;
 </pre>
