@@ -10,14 +10,14 @@ image-alt:
 ---
 
 <pre class="prettyprint">
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
   
-</body>
-</html>
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
