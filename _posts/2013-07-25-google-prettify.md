@@ -84,7 +84,7 @@ jQuery(document).ready(function(){
 
 ###Inserindo um código
 
-Para inserir um código basta usar a tag <code>&lt;pre&gt; &lt;/pre&gt;</code>
+Para inserir um código basta usar a tag <code>&lt;pre&gt;</code>
 
 <pre class="lang-html prettyprint linenums">
 &lt;pre class=&quot;prettyprint linenums&quot;&gt;
