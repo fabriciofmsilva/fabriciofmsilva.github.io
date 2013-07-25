@@ -9,7 +9,7 @@ image:
 image-alt: 
 ---
 
-<pre class="prettyprint">
+<pre class="lang-html prettyprint linenums">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="pt-br"&gt;
 &lt;head&gt;
