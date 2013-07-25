@@ -1,4 +1,4 @@
-/*.com { color: #93a1a1; }
+.com { color: #93a1a1; }
 .lit { color: #195f91; }
 .pun, .opn, .clo { color: #93a1a1; }
 .fun { color: #dc322f; }
@@ -15,13 +15,14 @@
 }
 .prettyprint.linenums {
   -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-  -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+  text-indent: -9999px;moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
   box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
 }
 
+/* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   font-size: 0.8em;
-  margin: 0 0 0 33px;
+  margin: 0 0 0 33px; /* IE indents via margin-left */
   padding: 0;
 }
 ol.linenums li {
@@ -29,66 +30,4 @@ ol.linenums li {
   color: #bebec5;
   line-height: 20px;
   text-shadow: 0 1px 0 #fff;
-}
-
-.com { color: rgb(174, 129, 255); }
-.lit { color: rgb(174, 129, 255); }
-.pun, .opn, .clo { color: rgb(248, 248, 242); }
-.fun { color: #dc322f; }
-.str, .atv { color: rgb(230, 219, 116); }
-.kwd, .prettyprint .tag { color: rgb(249, 38, 114); }
-.typ, .atn, .dec, .var { color: rgb(166, 226, 46); }
-.pln { color: rgb(102, 217, 239); }
-
-.prettyprint {
-  background-color: rgb(39, 40, 34);
-  border: 1px solid #e1e1e8;
-  font-size: 0.9em;
-  padding: 8px;
-  border-radius: 5px;
-}
-.prettyprint.linenums {
-  -webkit-box-shadow:  inset 40px 0 0 rgb(39, 40, 34), inset 41px 0 0 rgb(39, 40, 34);
-  -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-  box-shadow: inset 40px 0 0 rgb(39, 40, 34), inset 41px 0 0 rgb(39, 40, 34);
-}
-
-ol.linenums {
-  font-size: 0.8em;
-  margin: 0 0 0 33px;
-  padding: 0;
-}
-ol.linenums li {
-  padding-left: 12px;
-  color: #bebec5;
-  line-height: 20px;
-}*/
-
-pre .str, code .str { color: #FFFF66; } /* string */
-pre .kwd, code .kwd { color: #A6E22E; } /* keyword */
-pre .com, code .com { color: #75715E; font-style: italic; } /* comment */
-pre .typ, code .typ { color: #89bdff; } /* type */
-pre .lit, code .lit { color: #AE81FF; } /* literal */
-pre .pun, code .pun { color: #FFFFFF; } /* punctuation */
-pre .pln, code .pln { color: #00FFFF; } /* plaintext */
-pre .tag, code .tag { color: #70FFE0; } /* html/xml tag */
-pre .atn, code .atn { color: #A6E22E; } /* html/xml attribute name */
-pre .atv, code .atv { color: #FFFF66; } /* html/xml attribute value */
-pre .dec, code .dec { color: #3387CC; } /* decimal */
-
-pre.prettyprint, code.prettyprint {
-  background-color: #232323;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-}
-
-pre.prettyprint {
-  width: 95%;
-  margin: 1em auto;
-  padding: 1em;
-  white-space: pre-wrap;
 }
