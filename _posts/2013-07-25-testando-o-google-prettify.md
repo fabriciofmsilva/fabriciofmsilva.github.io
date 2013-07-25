@@ -27,6 +27,7 @@ image-alt:
 ##CSS
 
 <pre class="lang-css prettyprint linenums">
+&lt;style&gt;
 body {
   background-color:#d0e4fe;
 }
@@ -40,12 +41,15 @@ p {
   font-family:"Times New Roman";
   font-size:20px;
 }
+&lt;/style&gt;
 </pre>
 
 ##JavaScript
 
 <pre class="lang-html prettyprint linenums">
-function myFunction() {
-  alert("Hello World!");
-}
+&lt;script&gt;
+  function myFunction() {
+    alert("Hello World!");
+  }
+&lt;/script&gt;
 </pre>
