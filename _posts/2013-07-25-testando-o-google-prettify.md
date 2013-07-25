@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Testando o Google Prettify"
-description: "Syntax Highlighter com o Google Code Prettify"
+title:  "Google Prettify"
+description: "Como instalar o Google Code Prettify como Syntax Highlighter"
 date:   2013-07-25 18:41:12
 categories: evento
 tags: evento
