@@ -124,7 +124,7 @@ a:hover {
  */
 
 h1 {
-		font-size: 3rem;
+		font-size: 3.2rem;
 		margin: 0.67em 0 0.2em;
 }
 
@@ -679,7 +679,7 @@ code {
 .header-description {
 	color: #c6c6c6;
 	font-weight: 400;
-	font-size: 0.72rem;
+	font-size: 1.3rem;
 	margin-top: 0;
 	margin-bottom: 0.8rem;
 }
@@ -730,7 +730,7 @@ code {
 .article-date {
 	display: block;
 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-	font-size: 0.9em;
+	font-size: 1.4rem;
 	color: #999;
 }
 .post-meta-link {
