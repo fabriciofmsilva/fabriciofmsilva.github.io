@@ -124,12 +124,12 @@ a:hover {
  */
 
 h1 {
-		font-size: 3.2rem;
+		font-size: 2em;
 		margin: 0.67em 0 0.2em;
 }
 
 h2 {
-		font-size: 2.8rem;
+		font-size: 1.5em;
 		margin: 1.5em 0 0.2em;
 }
 
@@ -547,7 +547,7 @@ body {
 	background-color: #FFF;
 	color: #444;
 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-	font-size: 16rem;
+	font-size: 1.6rem;
 	font-weight: 300;
 	line-height: 1.6;
 }
@@ -679,7 +679,7 @@ code {
 .header-description {
 	color: #c6c6c6;
 	font-weight: 400;
-	font-size: 1.3rem;
+	font-size: 0.72rem;
 	margin-top: 0;
 	margin-bottom: 0.8rem;
 }
