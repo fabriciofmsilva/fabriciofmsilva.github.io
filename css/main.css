@@ -66,7 +66,7 @@ audio:not([controls]) {
  */
 
 html {
-		font-size: 100%; /* 1 */
+		font-size: 62.5%; /* 1 */
 		-ms-text-size-adjust: 100%; /* 2 */
 		-webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -124,12 +124,12 @@ a:hover {
  */
 
 h1 {
-		font-size: 2em;
+		font-size: 3.2rem;
 		margin: 0.67em 0 0.2em;
 }
 
 h2 {
-		font-size: 1.5em;
+		font-size: 2.8rem;
 		margin: 1.5em 0 0.2em;
 }
 
@@ -547,7 +547,7 @@ body {
 	background-color: #FFF;
 	color: #444;
 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 16rem;
 	font-weight: 300;
 	line-height: 1.6;
 }
@@ -679,7 +679,7 @@ code {
 .header-description {
 	color: #c6c6c6;
 	font-weight: 400;
-	font-size: 0.72rem;
+	font-size: 1.3rem;
 	margin-top: 0;
 	margin-bottom: 0.8rem;
 }
@@ -750,7 +750,44 @@ code {
 	padding-right: 20px;
 }
 
+/* ==========================================================================
+	 Prettify
+	 ========================================================================== */
 
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .prettyprint .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+.prettyprint {
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  font-size: 0.9em;
+  padding: 8px;
+}
+
+.prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+  -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+  box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+ol.linenums {
+  font-size: 0.8em;
+  margin: 0 0 0 33px;
+  padding: 0;
+}
+
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 20px;
+  text-shadow: 0 1px 0 #fff;
+}
 
 /* ==========================================================================
 	 Media Queries
