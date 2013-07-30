@@ -9,7 +9,7 @@ image: http://www.fabriciofmsilva.com.br/img/2013/syntax-highlight.jpg
 image-alt: Google Prettify - Syntax Highlight
 ---
 
-Para fazer o <i lang="en" class="idiomatic" title="Destaque de sintaxe">syntax highlight</i> no blog irei usar o <a href="https://code.google.com/p/google-code-prettify/">Google Code Prettity</a>, um <strong>JavaScript</strong> que deixa o código mais legível e bonito.
+Para fazer o <i lang="en" class="idiomatic" title="Destaque de sintaxe">syntax highlight</i> no blog irei usar o [Google Code Prettity](https://code.google.com/p/google-code-prettify/), um **JavaScript** que deixa o código mais legível e bonito.
 
 Curta os exemplos com HTML, CSS e JavaScript.
 
@@ -74,7 +74,7 @@ Chame os arquivos no seu código <abbr title="HyperText Markup Language">HTML</a
 &lt;/html&gt;
 </pre>
 
-Depois de chamar os arquivos insira o código que chama o <strong>prettify.js</strong>
+Depois de chamar os arquivos insira o código que chama o **prettify.js**
 
 <pre class="lang-js prettyprint linenums">
 jQuery(document).ready(function(){
