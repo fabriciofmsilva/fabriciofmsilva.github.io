@@ -702,8 +702,9 @@ code {
 	color: #FFF;
 }
 .main {
+	margin-left: 25%;
 	margin-top: 120px;
-	position: absolute;
+	position: relative;
 	right: 0;
 	top: 0;
 	width: 75%;
@@ -745,8 +746,8 @@ code {
 	margin-top: 3em;
 }
 .footer {
-	position: fixed;
-	bottom: 0;
+	position: relative;
+	margin-left: 25%;
 	right: 0;
 }
 .credits {
