@@ -630,7 +630,6 @@ code {
 	position: fixed;
 	line-height: 1;
 	background-color: #303239;
-	border-right: 1px solid #CCC;
 	bottom: 0;
 	color: #a19c91;
 	left: 0;
@@ -640,19 +639,7 @@ code {
 	text-align: center;
 	width: 25%;
 }
-/*.header::before {
-	top: 15%;
-	bottom: 15%;
-	right: -1px;
-	width: 1px;
-	content: "";
-	position: absolute;
-	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(227,224,216,0)), color-stop(20%, #e3e0d8), color-stop(80%, #e3e0d8), color-stop(100%, rgba(227,224,216,0)));
-	background: -webkit-linear-gradient(top, rgba(227,224,216,0) 0%,#e3e0d8 20%,#e3e0d8 80%,rgba(227,224,216,0) 100%);
-	background: -moz-linear-gradient(top, rgba(227,224,216,0) 0%,#e3e0d8 20%,#e3e0d8 80%,rgba(227,224,216,0) 100%);
-	background: -o-linear-gradient(top, rgba(227,224,216,0) 0%,#e3e0d8 20%,#e3e0d8 80%,rgba(227,224,216,0) 100%);
-	background: linear-gradient(top, rgba(227,224,216,0) 0%,#e3e0d8 20%,#e3e0d8 80%,rgba(227,224,216,0) 100%);
-}*/
+
 .header-photo {
 	border-radius: 50%;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset, 0 0 2px 1px rgba(0, 0, 0, 0.05) inset;
@@ -808,6 +795,7 @@ ol.linenums li {
 	position: relative;
 	width: 100%;
 	height: auto;
+	padding-bottom: 20px;
 	padding-top: 20px;
 }
 
@@ -819,7 +807,12 @@ ol.linenums li {
 
 .content {
 	width: auto;
+	margin: auto;
 	max-width: auto;
+}
+
+.footer {
+	margin: auto 2em;
 }
 
 }
