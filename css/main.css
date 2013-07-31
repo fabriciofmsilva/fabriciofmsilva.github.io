@@ -792,11 +792,12 @@ ol.linenums li {
 @media (max-width:768px) {
 
 .header {
-	position: relative;
-	width: 100%;
+	box-shadow: 0px -10px 14px -4px rgba(0,0,0,0.9) inset;
 	height: auto;
 	padding-bottom: 20px;
 	padding-top: 20px;
+	position: relative;
+	width: 100%;
 }
 
 .main {
