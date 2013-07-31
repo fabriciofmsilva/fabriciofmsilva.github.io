@@ -2,17 +2,9 @@
 <html lang="pt-BR" class="no-js">
 <head>
 <meta charset="utf-8">
-{% if page.metatitle %}
-<title>{{ page.metatitle }}</title>
-{% else %}
-<title>{{ page.title }} - {{ site.name }}</title>
-{% endif %}
+{% if page.metatitle %}<title>{{ page.metatitle }}</title>{% else %}<title>{{ page.title }} - {{ site.name }}</title>{% endif %}
 <meta name="description" content="{{ page.description }}">
-{% if page.canonical %}
-<link rel="canonical" href="{{ page.canonical }}">
-{% else %}
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
-{% endif %}
+{% if page.canonical %}<link rel="canonical" href="{{ page.canonical }}">{% else %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
 <link rel="author" href="https://plus.google.com/105011365395783776506/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="alternate" type="application/rss+xml" href="{{ site.feedburner }}">
