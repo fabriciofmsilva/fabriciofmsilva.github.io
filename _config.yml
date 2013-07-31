@@ -1,11 +1,15 @@
-pygments: true
-
 permalink: /:title/
 
+title: Fabrício Silva
 name: Fabrício Silva
-description: My web site poered by Jekyll and GiHub Pages
-url: http://www.fabriciofmsilva.com.br
+description: My web site powered by Jekyll and GiHub Pages
 domain: fabriciofmsilva.com.br
+
+author: Fabrício Silva
+github: fabriciofmsilva
 twitter: fabriciofmsilva
 plus: https://plus.google.com/105011365395783776506/
+feedburner: fabriciofmsilva
 analytics: UA-22890269-1
+
+pygments: false
