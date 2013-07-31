@@ -564,6 +564,7 @@ body {
 }
 a {
 	color: #008DDE;
+	font-weight: 600;
 	text-decoration: none;
 	transition: all 0.5s;
 }
