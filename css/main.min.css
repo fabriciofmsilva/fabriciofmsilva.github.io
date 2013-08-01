@@ -25,7 +25,7 @@ code{background-color:#f7f7f9;border:1px solid #e1e1e8;color:#d14;font-size:.8em
 .navi-link,.social-link{font-size:.8em}.header-title-link{color:#FFF}.header-description{color:#88898d;font-weight:400;font-size:1.3rem;margin-top:0;margin-bottom:.8rem}
 .header-line{border-bottom:1px solid rgba(255,255,255,0.15);border-top:1px solid rgba(0,0,0,0.85);height:0;line-height:0;margin:1em auto;padding:0;width:140px}
 .navi-list,.social-list{padding:0}.navi-item{margin-bottom:5px}.navi-link{color:#FFF}.social-item{display:inline-block}.social-link{background-image:url(../img/icons.png);display:block;height:32px;text-indent:-9999px;width:32px}
-.social-link:hover{opacity:.5}.github{background-position:0 0}.twitter{background-position:-34px 0}.plus{background-position:-67px 0}.rss{background-position:-100px 0}
+.social-list:hover .social-link{opacity:.5}.github{background-position:0 0}.twitter{background-position:-34px 0}.plus{background-position:-67px 0}.rss{background-position:-100px 0}
 .github:hover,.twitter:hover,.plus:hover,.rss:hover{opacity:1}.main{margin-left:25%;margin-top:120px;position:relative;right:0;top:0;width:75%}.content{margin:0 0 0 20%;max-width:720px}
 .article-list{padding:0}.article-item{list-style:none}.article-header{margin-bottom:1.5em}.article-title{margin:auto}.article-link{color:#423f37}.article-link:hover{color:#008dde}
 .article-date{display:block;font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;font-size:1.4rem;color:#999}.post-meta-link{font-weight:400}

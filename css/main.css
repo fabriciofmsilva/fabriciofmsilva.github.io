@@ -700,7 +700,7 @@ code {
 	text-indent: -9999px;
 	width: 32px;
 }
-.social-link:hover {
+.social-list:hover .social-link {
 	opacity: 0.5;
 }
 .github {
