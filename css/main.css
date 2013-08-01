@@ -704,13 +704,13 @@ code {
 	background-position: 0 0;
 }
 .twitter {
-	background-image: -34px 0;
+	background-position: -34px 0;
 }
 .plus {
-	background-image: -68px 0;
+	background-position: -68px 0;
 }
 .rss {
-	background-image: -102px 0;
+	background-position: -102px 0;
 }
 .main {
 	margin-left: 25%;
