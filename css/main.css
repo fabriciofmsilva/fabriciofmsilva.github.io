@@ -684,11 +684,33 @@ code {
 .navi-list, .social-list {
 	padding: 0;
 }
-.navi-item, .social-item {
+.navi-item {
 	margin-bottom: 5px;
 }
-.navi-link, .social-link {
+.navi-link {
 	color: #FFF;
+}
+.social-item {
+	display: inline-block;
+}
+.social-link {
+	background-image: url(../img/icons.png);
+	display: block;
+	height: 32px;
+	text-indent: -9999px;
+	width: 32px;
+}
+.github {
+	background-position: 0 0;
+}
+.twitter {
+	background-image: -34px 0;
+}
+.plus {
+	background-image: -68px 0;
+}
+.rss {
+	background-image: -102px 0;
 }
 .main {
 	margin-left: 25%;
