@@ -716,7 +716,7 @@ code {
 	background-position: -100px 0;
 }
 .github:hover, .twitter:hover, .plus:hover, .rss:hover {
-	opacity: 1;
+	opacity: 1 !important;
 }
 .main {
 	margin-left: 25%;
