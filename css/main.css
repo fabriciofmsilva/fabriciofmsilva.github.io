@@ -690,15 +690,20 @@ code {
 .navi-link {
 	color: #FFF;
 }
+.social-list {
+	display: inline-block;
+	margin: auto;
+}
 .social-item {
 	display: inline-block;
 }
 .social-link {
 	background-image: url(../img/icons.png);
 	display: block;
-	height: 32px;
+	height: 30px;
+	margin: 0 2px;
 	text-indent: -9999px;
-	width: 32px;
+	width: 30px;
 }
 .social-list:hover .social-link {
 	opacity: 0.5;
@@ -713,7 +718,7 @@ code {
 	background-position: -67px 0;
 }
 .rss {
-	background-position: -100px 0;
+	background-position: -101px 0;
 }
 .github:hover, .twitter:hover, .plus:hover, .rss:hover {
 	opacity: 1 !important;
