@@ -15,12 +15,12 @@ Pra quem não conhece o [Jekyll](http://jekyllrb.com/), ele é um gerador de pá
 
 Para instalar o Jekyll basta seguir os passos:
 
-1. Instale o [Ruby](http://www.ruby-lang.org/en/downloads/)
-2. Instale o [Ruby DevKit](http://rubyinstaller.org/add-ons/devkit/)
-3. Instale o [Ruby Gems](http://rubygems.org/pages/download)
-4. Instale o [Jekyll](http://jekyllrb.com/)
+1. Instale o [Ruby](http://www.ruby-lang.org/en/downloads/);
+2. Instale o [Ruby DevKit](http://rubyinstaller.org/add-ons/devkit/);
+3. Instale o [Ruby Gems](http://rubygems.org/pages/download);
+4. Instale o [Jekyll](http://jekyllrb.com/).
 
-##Estrutura
+##Estrutura básica
 
 <pre class="lang-html prettyprint linenums prettyprinted">
 .
@@ -40,6 +40,42 @@ Para instalar o Jekyll basta seguir os passos:
 ├── _site
 └── index.html
 </pre>
+
+###_config.yml
+
+Armazena dados de configuração.
+
+###_drafts
+
+Rascunhos de postagens. Não são publicadas.
+
+###_includes
+
+Você pode definir parte de códigos para ser usada nas páginas.
+
+###_layouts
+
+Templates das páginas que serão geradas.
+
+###_posts
+
+Aqui ficam as postagens.
+
+###_site
+
+Local onde os arquivos gerados pelo Jekyll serão colocados.
+
+###index.html
+
+Página inicial do site.
+
+##Criando páginas
+
+Para criar uma página você pode criar um arquivo HTML (por exemplo `sobre.html`) e depois coloca-lo na raiz da aplicação, ou criar uma pasta e colocar um arquivo `index.html` dentro dela, prefiro a segunda forma.
+
+##Criando uma postagem
+
+As postagens são inseridas dentro da pasta _posts, os arquivos devem ser criados seguindo o modelo ANO-MES-DIA-titulo.MARKUP, você pode usar tanto [Markdown](http://daringfireball.net/projects/markdown/) quanto [Textile](http://textile.sitemonks.com/).
 
 ##Jekyll + GitHub Pages
 
