@@ -700,6 +700,9 @@ code {
 	text-indent: -9999px;
 	width: 32px;
 }
+.social-link:hover {
+	opacity: 0.5;
+}
 .github {
 	background-position: 0 0;
 }
@@ -707,10 +710,13 @@ code {
 	background-position: -34px 0;
 }
 .plus {
-	background-position: -68px 0;
+	background-position: -67px 0;
 }
 .rss {
-	background-position: -102px 0;
+	background-position: -100px 0;
+}
+.github:hover, .twitter:hover, .plus:hover, .rss:hover {
+	opacity: 1;
 }
 .main {
 	margin-left: 25%;
