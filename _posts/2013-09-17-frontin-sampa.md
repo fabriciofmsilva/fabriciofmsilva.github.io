@@ -61,4 +61,4 @@ Acredito que faltou alguns detalhes para ser o melhor FrontIn do ano. Por exempl
 
 Não teve Wi-Fi no evento, segundo o que rolou por alto foi a custo para levar uma rede boa até o local. Pra mim a falta de Wi-Fi não foi problema, já que o 3G conseguiu dar conta do recado. Mas a galera conseguiu contornar isso com uma frase linda do Coutinho: vocês estão aqui ao lado de grandes desenvolvedores, então desliguem o celular e vão falar com eles.
 
-O detalhe do Wi-Fi foi compensado com o *Open Bar* que rolou no final, é claro que muito melhor uma cerveja que internet grátis. Outro detalhe foi o ar-condicionado que não deu conta do recado, mas Inferno é quente mesmo... &macr;\_(ツ)_/&macr; 
+O detalhe do Wi-Fi foi compensado com o *Open Bar* que rolou no final, é claro que muito melhor uma cerveja que internet grátis. Outro detalhe foi o ar-condicionado que não deu conta do recado, mas Inferno é quente mesmo!
