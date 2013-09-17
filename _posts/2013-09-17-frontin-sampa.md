@@ -11,7 +11,7 @@ image-alt: FrontInSampa 2013
 
 ##O evento de Front-End mais bacana de São Paulo
 
-Só quem foi no FrontInSampa 2013 sabe que esse *slogan* é verdadeiro. Os organizadores (Elvis, Deivid e o Suissa) sem dúvida acertaram em cheio no evento. Começando pelo local, quem diria um monte de desenvolvedores reunidos em uma boate? E se essa boate fosse na Augusta, uma das ruas mais alternativas de São Paulo? E se fosse no Inferno? Pois é, o evento reuniu mais de 250 desenvolvedores no **Inferno Club**.
+Só quem foi no [FrontInSampa 2013](http://frontinsampa.com.br/) sabe que esse *slogan* é verdadeiro. Os organizadores (Elvis, Deivid e o Suissa) sem dúvida acertaram em cheio no evento. Começando pelo local, quem diria um monte de desenvolvedores reunidos em uma boate? E se essa boate fosse na Augusta, uma das ruas mais alternativas de São Paulo? E se fosse no Inferno? Pois é, o evento reuniu mais de 250 desenvolvedores no **Inferno Club**.
 
 ##Palestras
 
