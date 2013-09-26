@@ -9,11 +9,13 @@ metatitle: Elemento Modal com HTML - Fabrício Silva
 <section class="main">
 <article class="content clearfix">
 <style>
-	dialog {
+	.modal {
+		border: 1px solid rgba(0, 0, 0, 0.3);
 		border-radius: 6px;
+		box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 	}
 
-	dialog::backdrop {
+	.modal::backdrop {
 	  position: fixed;
 	  top: 0;
 	  left: 0;
@@ -22,7 +24,7 @@ metatitle: Elemento Modal com HTML - Fabrício Silva
 	  background-color: rgba(0, 0, 0, 0.8);
 	}
 </style>
-	<dialog>
+	<dialog class="modal">
 	  <p>Box modal!</p>
 	  <button id="close">Fechar</button>
 	</dialog>
