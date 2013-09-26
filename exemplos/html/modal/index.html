@@ -1,0 +1,26 @@
+---
+layout: default
+title: Elemento Modal com HTML
+description: Elemento Modal com HTML!
+canonical: http://www.fabriciofmsilva.com.br/exemplos/html/modal/
+metatitle: Elemento Modal com HTML - Fabrício Silva
+---
+
+<section class="main">
+<article class="content clearfix">
+	<dialog>
+	  <p>Box modal!</p>
+	  <button id="close">Fechar</button>
+	</dialog>
+	<button id="show">Abrir Modal!</button>
+<script>
+	var dialog = document.querySelector('dialog');
+	document.querySelector('#show').onclick = function() {
+	  dialog.show();
+	};
+	document.querySelector('#close').onclick = function() {
+	  dialog.close();
+	};
+</script>
+</article>
+</section>
