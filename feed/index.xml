@@ -20,6 +20,10 @@ title : Atom Feed
    <link href="http://www.fabriciofmsilva.com.br{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://www.fabriciofmsilva.com.br{{ post.id }}</id>
+    <author>
+      <name>Fabrício Silva</name>
+      <uri>http://www.fabriciofmsilva.com.br/</uri>
+    </author>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
