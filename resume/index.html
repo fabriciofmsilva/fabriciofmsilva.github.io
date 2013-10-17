@@ -26,37 +26,45 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 /*! @fabriciofmsilva */
 body {
-color: #555555;
+background: #201E1C;
+color: #333;
 font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
 font-size: 1.6rem;
 font-weight: 300;
 line-height: 1.6;
-margin: auto;
 padding: 20px;
-max-width: 980px;
 }
 h1, h2, h3 {
-color: #0876b4;
+color: #201E1C;
 font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;
 font-weight: normal;
 line-height: 1.2;
 }
 h1 {
-font-size: 3rem;
-margin: 0 0 .2em;
+font-size: 5rem;
+margin: 0;
 }
 h2 {
-border-bottom: 1px dashed #CCCCCC;
-font-size: 2.6rem;
-margin: .8em 0 .2em;
+font-size: 2.2rem;
+font-style: italic;
+margin: 0;
 }
 h3 {
-font-size: 2rem;
-margin: .8em 0 .2em;
+font-size: 2.2rem;
+font-weight: bold;
+margin: 1em 0 .2em;
 }
 a, a:hover, a:visited {
+border-bottom: 1px dotted #008DDE;
 color: #008dde;
 font-weight: 600;
+text-decoration: none;
+transition: all .6s ease-in-out;
+}
+a:hover {
+border-bottom: 1px solid #0197ed;
+color: #0197ed;
+transition: all .3s ease-in-out;
 }
 p {
 font-family: Georgia,"Cambria",serif;
@@ -74,6 +82,43 @@ li {
 font-family: Georgia,"Cambria",serif;
 list-style: none;
 }
+hr {
+border: 0;
+border-top: 1px dotted #E5E4E4;
+clear: both;
+margin: 2em auto;
+}
+.hidden {
+border: 0;
+}
+.wrapper {
+background: #fff;
+border-top: 5px solid #0876b4;
+margin: auto;
+max-width: 980px;
+padding: 50px;
+}
+section > h2 {
+float: left;
+width: 20%;
+}
+section:before, section:after {
+content: " ";
+display: table;
+}
+section:after {
+clear: both;
+}
+.content {
+float: right;
+width: 80%;
+}
+.content > h3:first-child {
+margin-top: 0;
+}
+.footer {
+text-align: center;
+}
 @media print {
 	p {color: #444444;}
 	i {color: #999999;}
@@ -81,67 +126,116 @@ list-style: none;
 </style>
 </head>
 <body>
-<h1>Fabrício Silva</h1>
+<article class="wrapper">
+	<header class="header">
+		<h1>Fabrício Silva</h1>
+		<h2>Desenvolvedor Front-End</h2>
+		<a href="mailto:fabriciofmsilva@gmail.com">fabriciofmsilva@gmail.com</a> <i>/</i> <a href="http://www.fabriciofmsilva.com.br/">fabriciofmsilva.com.br</a></p>
+	</header>
 
-<p>27 anos - Solteiro<br>
-<a href="mailto:fabriciofmsilva@gmail.com">fabriciofmsilva@gmail.com</a> <i>/</i> <a href="http://www.fabriciofmsilva.com.br/">fabriciofmsilva.com.br</a></p>
+	<hr>
+	
+	<section class="objective">
+		<h2>Objetivo</h2>
+		<div class="content">
+			<p>Área de desenvolvimento front-end com foco em HTML e CSS.</p>
+		</div>
+	</section>
 
-<h2>Objetivo</h2>
+	<hr>
 
-<p>Área de desenvolvimento front-end com foco em HTML e CSS.</p>
+	<section class="experience">
+		<h2>Experiência</h2>
+		<div class="content">
+			<h3>SG&amp;C Agência de Comunicação</h3>
+			<p><strong>Web Design</strong> <i>(Março de 2011 – Atual)</i><br>
+			Desenvolvimento de Web Sites com Padrões Web: HTML, CSS e JavaScript (utilizando o <em>Framework</em> jQuery). Manutenção de conteúdo de Web Sites com foco em SEO. Desenvolvimendo de blogs na plataforma WordPress. Criação e desenvolvimento de E-mails Marketing.</p>
 
-<h2>Experiência</h2>
+			<h3>TV Unaerp</h3>
+			<p><strong>Assistente de Arte Web</strong> <i>(Abril de 2009 – Abril de 2011)</i><br>
+			Produção de peças publicitárias como: banners, cartazes e faixas; para a TV Unaerp. Manutenção do site com o CMS Joomla.</p>
+		</div>
+	</section>
 
-<h3>SG&amp;C Agência de Comunicação</h3>
-<p><strong>Web Design</strong> <i>(Março de 2011 – Atual)</i><br>
-Desenvolvimento de Web Sites com Padrões Web: HTML, CSS e JavaScript (utilizando o <em>Framework</em> jQuery). Manutenção de conteúdo de Web Sites com foco em SEO. Desenvolvimendo de blogs na plataforma WordPress. Criação e desenvolvimento de E-mails Marketing.</p>
+	<hr>
 
-<h3>TV Unaerp</h3>
-<p><strong>Assistente de Arte Web</strong> <i>(Abril de 2009 – Abril de 2011)</i><br>
-Produção de peças publicitárias como: banners, cartazes e faixas; para a TV Unaerp. Manutenção do site com o CMS Joomla.</p>
+	<section class="formation">
+		<h2>Formação Acadêmica</h2>
+		
+		<div class="content">
+			<h3>Universidade de Ribeirão Preto</h3>
 
-<h2>Formação Acadêmica</h2>
+			<p><strong>Comunicação Social: Publicidade e Propaganda</strong><br>
+			2008 – 2011</p>
+		</div>
+	</section>
+		
+	<hr>
 
-<h3>Universidade de Ribeirão Preto</h3>
+	<section class="courses">
+		<h2>Cursos</h2>
 
-<p><strong>Comunicação Social: Publicidade e Propaganda</strong><br>
-2008 – 2011</p>
+		<div class="content">
+			<h3>Senac Ribeirão</h3>
 
-<h2>Cursos</h2>
+			<p><strong>HTML5 e CSS3 - Criação de Websites</strong> <i>(40 horas)</i><br>
+			Término em 14 de Dezembro de 2013</p>
 
-<h3>Senac Ribeirão</h3>
+			<h3>Caelum</h3>
+			<p><strong>Curso Desenvolvimento Web com HTML, CSS e JavaScript</strong> <i>(40 horas)</i><br>
+			Término em 08 de Novembro de 2013</p>
+		</div>
+	</section>
 
-<p><strong>HTML5 e CSS3 - Criação de Websites</strong> <i>(40 horas)</i><br>
-Término em 14 de Dezembro de 2013</p>
+	<hr>
 
-<h3>Caelum</h3>
-<p><strong>Curso Desenvolvimento Web com HTML, CSS e JavaScript</strong> <i>(40 horas)</i><br>
-Término em 08 de Novembro de 2013</p>
+	<section class="events">
+		<h2>Eventos</h2>
+		<div class="content">
+			<ul>
+				<li><a href="http://conferenciaweb.w3c.br/">Conferência W3C WEB.BR</a> <i>(Acontece em Novembro de 2013)</i></li>
+				<li><a href="http://frontinsampa.com.br/">FrontIn Sampa</a> <i>(Setembro de 2013)</i></li>
+				<li><a href="http://intercon.imasters.com.br/evento/imasters-intercon-wp/">InterCon Dev WordPress</a> <i>(Julho de 2013)</i></li>
+				<li><a href="http://www.frontinrio.com.br/">Front in Rio</a> <i>(Junho de 2013)</i></li>
+				<li><a href="http://tableless.com.br/tablelessconf/">2º Tableless Conference</a> <i>(Maio de 2013)</i></li>
+				<li><a href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.ContentEventDataServer18,selectEvent&template=946.dwt&event=1565">Road Show TI 2013</a> <i>(Senac Ribeirão - Março de 2013)</i></li>
+			</ul>
+		</div>
+	</section>
 
-<h2>Eventos</h2>
+	<hr>
 
-<ul>
-	<li><a href="http://conferenciaweb.w3c.br/">Conferência W3C WEB.BR</a> <i>(Acontece em Novembro de 2013)</i></li>
-	<li><a href="http://frontinsampa.com.br/">FrontIn Sampa</a> <i>(Setembro de 2013)</i></li>
-	<li><a href="http://intercon.imasters.com.br/evento/imasters-intercon-wp/">InterCon Dev WordPress</a> <i>(Julho de 2013)</i></li>
-	<li><a href="http://www.frontinrio.com.br/">Front in Rio</a> <i>(Junho de 2013)</i></li>
-	<li><a href="http://tableless.com.br/tablelessconf/">2º Tableless Conference</a> <i>(Maio de 2013)</i></li>
-	<li><a href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.ContentEventDataServer18,selectEvent&template=946.dwt&event=1565">Road Show TI 2013</a> <i>(Senac Ribeirão - Março de 2013)</i></li>
-</ul>
+	<section class="language">
+		<h2>Idioma</h2>
+		<div class="content">
+			<p>Inglês básico <i>(Cultura Inglesa - 2013)</i></p>
+		</div>
+	</section>
 
-<h2>Idioma</h2>
-<p>Inglês básico <i>(Cultura Inglesa - 2013)</i></p>
+	<hr>
 
-<h2>Extras</h2>
-<ul>
-	<li>Padrões Web: HTML, CSS e básico de JavaScript</li>
-	<li>Básico de jQuery</li>
-	<li>Microformatos</li>
-	<li>Assessibilidade</li>
-	<li>WordPress</li>
-	<li>Básico de PHP</li>
-	<li>SEO</li>
-</ul>
+	<section class="extras">
+		<h2>Extras</h2>
+		<div class="content">
+			<ul>
+				<li>Padrões Web: HTML, CSS e básico de JavaScript</li>
+				<li>Básico de jQuery</li>
+				<li>Microformatos</li>
+				<li>Assessibilidade</li>
+				<li>WordPress</li>
+				<li>Básico de PHP</li>
+				<li>SEO</li>
+			</ul>
+		</div>
+	</section>
+
+	<hr>
+
+	<footer class="footer">
+		<p>27 anos <i>/</i> Solteiro <i>/</i> Ribeirão Preto - São Paulo<br>
+		<a href="mailto:fabriciofmsilva@gmail.com">fabriciofmsilva@gmail.com</a> <i>/</i> <a href="http://www.fabriciofmsilva.com.br/">fabriciofmsilva.com.br</a><br>
+	</footer>
+</article>
 <script type="text/javascript">
 var _gaq=[['_setAccount','UA-22890269-1'],['_trackPageview']];
 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
