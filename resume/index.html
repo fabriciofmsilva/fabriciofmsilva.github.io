@@ -126,11 +126,11 @@ text-align: center;
 </style>
 </head>
 <body>
-<article class="wrapper">
+<article class="wrapper" itemscope itemtype="http://schema.org/Person">
 	<header class="header">
-		<h1>Fabrício Silva</h1>
-		<h2>Desenvolvedor Front-End</h2>
-		<a href="mailto:fabriciofmsilva@gmail.com">fabriciofmsilva@gmail.com</a> <i>/</i> <a href="http://www.fabriciofmsilva.com.br/">fabriciofmsilva.com.br</a></p>
+		<h1 itemprop="name">Fabrício Silva</h1>
+		<h2 itemprop="jobTitle">Desenvolvedor Front-End</h2>
+		<a href="mailto:fabriciofmsilva@gmail.com" itemprop="email">fabriciofmsilva@gmail.com</a> <i>/</i> <a href="http://www.fabriciofmsilva.com.br/" itemprop="url">fabriciofmsilva.com.br</a></p>
 	</header>
 
 	<hr>
@@ -147,8 +147,8 @@ text-align: center;
 	<section class="experience">
 		<h2>Experiência</h2>
 		<div class="content">
-			<h3>SG&amp;C Agência de Comunicação</h3>
-			<p><strong>Web Design</strong> <i>(Março de 2011 – Atual)</i><br>
+			<h3 itemprop="worksFor">SG&amp;C Agência de Comunicação</h3>
+			<p><strong>Web Design</strong> <i>(<time datetime="2011-03-01">Março de 2011</time> – Atual)</i><br>
 			Desenvolvimento de Web Sites com Padrões Web: HTML, CSS e JavaScript (utilizando o <em>Framework</em> jQuery). Manutenção de conteúdo de Web Sites com foco em SEO. Desenvolvimendo de blogs na plataforma WordPress. Criação e desenvolvimento de E-mails Marketing.</p>
 
 			<h3>TV Unaerp</h3>
@@ -173,17 +173,20 @@ text-align: center;
 	<hr>
 
 	<section class="courses">
-		<h2>Cursos</h2>
+		<h2>Cursos Livres</h2>
 
 		<div class="content">
-			<h3>Senac Ribeirão</h3>
-
-			<p><strong>HTML5 e CSS3 - Criação de Websites</strong> <i>(40 horas)</i><br>
+			<h3>HTML5 e CSS3 - Criação de Websites</h3>
+			<p><strong>Senac Ribeirão</strong> <i>(40 horas)</i><br>
 			Término em 14 de Dezembro de 2013</p>
 
-			<h3>Caelum</h3>
-			<p><strong>Curso Desenvolvimento Web com HTML, CSS e JavaScript</strong> <i>(40 horas)</i><br>
+			<h3>Curso Desenvolvimento Web com HTML, CSS e JavaScript</h3>
+			<p><strong>Caelum</strong> <i>(40 horas)</i><br>
 			Término em 08 de Novembro de 2013</p>
+
+			<h3>Começando com JavaScript</h3>
+			<p><strong>Howto</strong> <i>(15 horas)</i><br>
+			Novembro de 2013</p>
 		</div>
 	</section>
 
@@ -232,7 +235,7 @@ text-align: center;
 	<hr>
 
 	<footer class="footer">
-		<p>27 anos <i>/</i> Solteiro <i>/</i> Ribeirão Preto - São Paulo<br>
+		<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">27 anos <i>/</i> Solteiro <i>/</i> <span itemprop="addressLocality">Ribeirão Preto</span> - <span itemprop="addressRegion">São Paulo</span><br>
 		<a href="mailto:fabriciofmsilva@gmail.com">fabriciofmsilva@gmail.com</a> <i>/</i> <a href="http://www.fabriciofmsilva.com.br/">fabriciofmsilva.com.br</a><br>
 	</footer>
 </article>
