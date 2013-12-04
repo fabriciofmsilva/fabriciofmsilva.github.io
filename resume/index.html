@@ -2,18 +2,13 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-
 <title>Fabrício Silva - Desenvolvedor Front-End</title>
-
 <!-- Meta -->
 <meta name="description" content="Fabrício Silva - Desenvolvedor Front-End">
 <meta name="keywords" content="front-end,web,developer,resume,html5,css3,seo,schem,microdata">
 <meta name="author" content="Fabrício Silva">
-
 <meta name="viewport" content="width=device-width">
-
 <!-- CSS Stylesheet -->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600">
 <style>
 /*! normalize.css v1.1.2 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
 audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:62.5%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}
@@ -33,33 +28,30 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 /*! @fabriciofmsilva */
 body {
-background: #201E1C;
+background: #fff;
 color: #333;
-font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
-font-size: 1.6rem;
+font-family: Georgia,"Cambria",serif;
 font-weight: 300;
 line-height: 1.6;
 padding: 20px;
 }
 h1, h2, h3 {
 color: #201E1C;
-font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;
-font-weight: normal;
+font-weight: bold;
 line-height: 1.2;
 }
 h1 {
-font-size: 5rem;
+font-size: 4rem;
 margin: 0;
 }
 h2 {
-font-size: 2.2rem;
-font-style: italic;
+font-size: 2rem;
 margin: 0;
 }
 h3 {
-font-size: 2.2rem;
+font-size: 2rem;
 font-weight: bold;
-margin: 1em 0 .2em;
+margin: 1.5em 0 .2em;
 }
 a, a:hover, a:visited {
 border-bottom: 1px dotted #008DDE;
@@ -74,62 +66,89 @@ color: #0197ed;
 transition: all .3s ease-in-out;
 }
 p {
-font-family: Georgia,"Cambria",serif;
-margin: .2em 0 .2em;
+font-size: 1.6rem;
+margin: 0 0 .2em;
 }
 i {
-color: #999999;
-font-style: normal;
+color: #777;
 }
 ul {
 margin: auto;
 padding: 0;
 }
 li {
-font-family: Georgia,"Cambria",serif;
+font-size: 1.6rem;
 list-style: none;
 }
 hr {
 border: 0;
 border-top: 1px dotted #E5E4E4;
 clear: both;
-margin: 2em auto;
+margin: 2em auto 1.5em;
 }
 .hidden {
 border: 0;
 }
 .wrapper {
 background: #fff;
-border-top: 5px solid #0876b4;
 margin: auto;
-max-width: 980px;
-padding: 50px;
+max-width: 820px;
+padding: 20px;
 }
-section > h2 {
+section > header {
 float: left;
-width: 15%;
-text-align: right;
+font-style: italic;
+width: 20%;
 }
-section:before, section:after {
+.header:before, .header:after, section:before, section:after {
 content: " ";
 display: table;
 }
-section:after {
+.header:after, section:after {
 clear: both;
+}
+.header-title {
+float: left;
+width: 50%;
+}
+.header-contact {
+float: right;
+padding-top: 18px;
+text-align: right;
+width: 50%;
 }
 .content {
 float: right;
 width: 80%;
 }
-.content h3:first-child {
+.content .item:first-child h3 {
 margin-top: 0;
+}
+.local {
+font-size: 1.4rem;
 }
 .footer {
 text-align: center;
 }
+@media (max-width: 820px) {
+h2 {
+font-size: 2.6rem;
+margin-bottom: 0.4em;
+}
+.header-title, .header-contact {
+padding: 0;
+text-align: center;
+width: 100%;
+}
+section > header, .content {
+float: none;
+width: 100%;
+}
+}
 @media print {
-	p {color: #444444;}
-	i {color: #999999;}
+h2 {font-size: 1.6rem;}
+p {color: #444444;}
+i {color: #999999;}
 }
 </style>
 </head>
@@ -138,15 +157,24 @@ text-align: center;
 <article class="wrapper" itemscope itemtype="http://schema.org/Person">
 <!-- Main Informations -->
 	<header class="header">
-		<h1 itemprop="name">Fabrício Silva</h1>
-		<h2 itemprop="jobTitle">Desenvolvedor Front-End</h2>
-		<a href="mailto:fabriciofmsilva@gmail.com" itemprop="email">fabriciofmsilva@gmail.com</a> <i>/</i> <a href="http://www.fabriciofmsilva.com.br/" itemprop="url">fabriciofmsilva.com.br</a></p>
+		<div class="header-title">
+			<h1 itemprop="name">Fabrício Silva</h1>
+			<h2 itemprop="jobTitle">Desenvolvedor Front-End</h2>
+		</div>
+
+		<div class="header-contact">
+			<p><a href="mailto:fabriciofmsilva@gmail.com" itemprop="email">fabriciofmsilva@gmail.com</a><br>
+			<a href="http://www.fabriciofmsilva.com.br/" itemprop="url">fabriciofmsilva.com.br</a></p>
+		</div>
 	</header>
 
 	<hr>
 	
 	<section class="objective">
-		<h2>Perfil</h2>
+		<header>
+			<h2>Perfil</h2>
+		</header>
+
 		<div class="content">
 			<p>Desenvolvedor front-end com foco em HTML e CSS.</p>
 		</div>
@@ -155,17 +183,20 @@ text-align: center;
 	<hr>
 
 	<section class="experience">
-		<h2>Experiência</h2>
+		<header>
+			<h2>Experiência</h2>
+		</header>
+
 		<div class="content">
-			<div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+			<div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
 				<h3>Desenvolvedor Front-End</h3>
-				<p><strong itemprop="name">SG&amp;C Agência de Comunicação</strong> <i>(<time datetime="2011-03-01">Março de 2011</time> – Atual)</i></p>
+				<p class="local"><em itemprop="name">SG&amp;C Agência de Comunicação</em> <i>/ <time datetime="2011-03-01">Março de 2011</time> - Atual</i></p>
 				<p itemprop="description">Desenvolvimento de Web Sites com Padrões Web: HTML, CSS e JavaScript (utilizando o <em>Framework</em> jQuery). Manutenção de conteúdo de Web Sites com foco em SEO. Desenvolvimendo de blogs na plataforma WordPress. Criação e desenvolvimento de E-mails Marketing.</p>
 			</div>
 
-			<div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+			<div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
 				<h3>Assistente de Arte Web</h3>
-				<p><strong itemprop="name">TV Unaerp</strong> <i>(Abril de 2009 – Abril de 2011)</i></p>
+				<p class="local"><em itemprop="name">TV Unaerp</em> <i>/ Abril de 2009 - Abril de 2011</i></p>
 				<p itemprop="description">Produção de peças publicitárias como: banners, cartazes e faixas; para a TV Unaerp. Manutenção do site com o CMS Joomla.</p>
 			</div>
 		</div>
@@ -174,59 +205,70 @@ text-align: center;
 	<hr>
 
 	<section class="formation">
-		<h2>Formação Acadêmica</h2>
+		<header>
+			<h2>Formação Acadêmica</h2>
+		</header>
 		
 		<div class="content" itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-			<h3>Comunicação Social: Publicidade e Propaganda</h3>
+			<div class="item">
+				<h3>Comunicação Social: Publicidade e Propaganda</h3>
 
-			<p><strong itemprop="name">Universidade de Ribeirão Preto</strong><br>
-			2008 – 2011</p>
+				<p class="local"><em itemprop="name">Universidade de Ribeirão Preto</em> <i>/ <time>2008</time> - <time>2011</time></i></p>
+			</div>
 		</div>
 	</section>
 		
 	<hr>
 
 	<section class="courses">
-		<h2>Cursos Livres</h2>
+		<header>
+			<h2>Cursos Livres</h2>
+		</header>
 
 		<div class="content">
-			<h3>HTML5 e CSS3 - Criação de Websites</h3>
-			<p><strong>Senac Ribeirão</strong> <i>(40 horas)</i><br>
-			Término em 14 de Dezembro de 2013</p>
+			<div class="item">
+				<h3>HTML5 e CSS3 - Criação de Websites</h3>
+				<p class="local"><em>Senac Ribeirão</em> <i>/ <time>Dezembro de 2013</time> (40 horas)</i></p>
+			</div>
 
-			<h3>Curso Desenvolvimento Web com HTML, CSS e JavaScript</h3>
-			<p><strong>Caelum</strong> <i>(40 horas)</i><br>
-			Término em 08 de Novembro de 2013</p>
+			<div class="item">
+				<h3>Curso Desenvolvimento Web com HTML, CSS e JavaScript</h3>
+				<p class="local"><em>Caelum</em> <i>/ <time>Novembro de 2013</time> (40 horas)</i></p>
+			</div>
 
-			<h3>Começando com JavaScript</h3>
-			<p><strong>Howto</strong> <i>(15 horas)</i><br>
-			Novembro de 2013</p>
+			<div class="item">
+				<h3>Começando com JavaScript</h3>
+				<p class="local"><em>Howto</em> <i>/ <time>Novembro de 2013</time> (15 horas)</i></p>
+			</div>
 		</div>
 	</section>
 
 	<hr>
 
 	<section class="events">
-		<h2>Eventos</h2>
+		<header>
+			<h2>Eventos</h2>
+		</header>
+
 		<div class="content">
 			<ul>
 				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://conferenciaweb.w3c.br/" itemprop="url"><span itemprop="name">Conferência W3C WEB.BR</span></a> <i>(Acontece em Novembro de 2013)</i>
+					<a href="http://conferenciaweb.w3c.br/" itemprop="url"><span itemprop="name">Conferência W3C WEB.BR</span></a> <i>/ <time>Novembro de 2013</time></i>
 				</li>
 				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://frontinsampa.com.br/" itemprop="url"><span itemprop="name">FrontIn Sampa</span></a> <i>(Setembro de 2013)</i>
+					<a href="http://frontinsampa.com.br/" itemprop="url"><span itemprop="name">FrontIn Sampa</span></a> <i>/ <time>Setembro de 2013</time></i>
 				</li>
 				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://intercon.imasters.com.br/evento/imasters-intercon-wp/" itemprop="url"><span itemprop="name">InterCon Dev WordPress</span></a> <i>(Julho de 2013)</i>
+					<a href="http://intercon.imasters.com.br/evento/imasters-intercon-wp/" itemprop="url"><span itemprop="name">InterCon Dev WordPress</span></a> <i>/ <time>Julho de 2013</time></i>
 				</li>
 				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://www.frontinrio.com.br/" itemprop="url"><span itemprop="name">Front in Rio</span></a> <i>(Junho de 2013)</i>
+					<a href="http://www.frontinrio.com.br/" itemprop="url"><span itemprop="name">Front in Rio</span></a> <i>/ <time>Junho de 2013</time></i>
 				</li>
 				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://tableless.com.br/tablelessconf/" itemprop="url"><span itemprop="name">2º Tableless Conference</span></a> <i>(Maio de 2013)</i>
+					<a href="http://tableless.com.br/tablelessconf/" itemprop="url"><span itemprop="name">2º Tableless Conference</span></a> <i>/ <time>Maio de 2013</time></i>
 				</li>
 				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.ContentEventDataServer18,selectEvent&template=946.dwt&event=1565" itemprop="url"><span itemprop="name">Road Show TI 2013</span></a> <i>(Senac Ribeirão - Março de 2013)</i>
+					<a href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.ContentEventDataServer18,selectEvent&template=946.dwt&event=1565" itemprop="url"><span itemprop="name">Road Show TI 2013</span></a> <i>/ <time>Março de 2013</time></i>
 				</li>
 			</ul>
 		</div>
@@ -235,16 +277,22 @@ text-align: center;
 	<hr>
 
 	<section class="language">
-		<h2>Idioma</h2>
+		<header>
+			<h2>Idioma</h2>
+		</header>
+
 		<div class="content">
-			<p>Inglês básico <i>(Cultura Inglesa - 2013)</i></p>
+			<p>Inglês básico <i>(Cultura Inglesa / <time>2013</time>)</i></p>
 		</div>
 	</section>
 
 	<hr>
 
 	<section class="extras">
-		<h2>Habilidades</h2>
+		<header>
+			<h2>Habilidades</h2>
+		</header>
+
 		<div class="content">
 			<ul>
 				<li>Padrões Web: HTML, CSS e básico de JavaScript</li>
@@ -261,7 +309,7 @@ text-align: center;
 	<hr>
 
 	<footer class="footer">
-		<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">27 anos <i>/</i> Solteiro <i>/</i> <span itemprop="addressLocality">Ribeirão Preto</span> - <span itemprop="addressRegion">São Paulo</span>
+		<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">27 anos <i>/</i> Solteiro <i>/</i> <span itemprop="addressLocality">Ribeirão Preto</span> <i>/</i> <span itemprop="addressRegion">São Paulo</span>
 
 		<br>
 		
@@ -285,10 +333,10 @@ text-align: center;
 	</footer>
 </article>
 <script type="text/javascript">
-var _gaq=[['_setAccount','UA-22890269-1'],['_trackPageview']];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-s.parentNode.insertBefore(g,s)}(document,'script'));
+//var _gaq=[['_setAccount','UA-22890269-1'],['_trackPageview']];
+//(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+//g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+//s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 </body>
 </html>
