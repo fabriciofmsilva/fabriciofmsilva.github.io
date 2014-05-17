@@ -13,3 +13,5 @@ feedburner: http://feeds.feedburner.com/fabriciofmsilva
 analytics: UA-22890269-1
 
 pygments: false
+
+markdown: kramdown
