@@ -86,6 +86,17 @@ border-top: 1px dotted #E5E4E4;
 clear: both;
 margin: 2em auto 1.5em;
 }
+.list-inline {
+padding-left: 0;
+list-style: none;
+}
+.list-inline li {
+display: inline-block;
+}
+.list-inline li + li:before {
+content: "/";
+color: #777;
+}
 .hidden {
 border: 0;
 }
@@ -156,188 +167,209 @@ i {color: #999999;}
 <!-- Begin Resume -->
 <article class="wrapper" itemscope itemtype="http://schema.org/Person">
 <!-- Main Informations -->
-	<header class="header">
-		<div class="header-title">
-			<h1 itemprop="name">Fabrício Silva</h1>
-			<h2 itemprop="jobTitle">Desenvolvedor Front-End</h2>
-		</div>
+  <header class="header">
+    <div class="header-title">
+      <h1 itemprop="name">Fabrício Silva</h1>
+      <h2 itemprop="jobTitle">Desenvolvedor Front-End</h2>
+    </div>
 
-		<div class="header-contact">
-			<p><a href="mailto:fabriciofmsilva@gmail.com" itemprop="email">fabriciofmsilva@gmail.com</a><br>
-			<a href="http://www.fabriciofmsilva.com.br/" itemprop="url">fabriciofmsilva.com.br</a></p>
-		</div>
-	</header>
+    <div class="header-contact">
+      <p><a href="mailto:fabriciofmsilva@gmail.com" itemprop="email">fabriciofmsilva@gmail.com</a><br>
+      <a href="http://www.fabriciofmsilva.com.br/" itemprop="url">fabriciofmsilva.com.br</a></p>
+    </div>
+  </header>
 
-	<hr>
-	
-	<section class="objective">
-		<header>
-			<h2>Perfil</h2>
-		</header>
+  <hr>
 
-		<div class="content">
-			<p>Desenvolvedor front-end com foco em HTML e CSS.</p>
-		</div>
-	</section>
+  <section class="objective">
+    <header>
+      <h2>Perfil</h2>
+    </header>
 
-	<hr>
+    <div class="content">
+      <p>Desenvolvedor front-end com foco em HTML e CSS.</p>
+    </div>
+  </section>
 
-	<section class="experience">
-		<header>
-			<h2>Experiência</h2>
-		</header>
+  <hr>
 
-		<div class="content">
-			<div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-				<h3>Desenvolvedor Front-End</h3>
-				<p class="local"><em itemprop="name">SG&amp;C Agência de Comunicação</em> <i>/ <time datetime="2011-03-01">Março de 2011</time> - Atual</i></p>
-				<p itemprop="description">Desenvolvimento de Web Sites com Padrões Web: HTML, CSS e JavaScript (jQuery). Recorte de <em lang="en">layouts</em> feitos em Photoshop e Illustrator. Manutenção de conteúdo de Web Sites com foco em SEO. Desenvolvimendo de blogs na plataforma WordPress. Criação e desenvolvimento de E-mails Marketing.</p>
-			</div>
+  <section class="experience">
+    <header>
+      <h2>Experiência</h2>
+    </header>
 
-			<div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-				<h3>Desenvolvedor Front-End <i lang="en">Free lance</i></h3>
-				<p class="local"><em itemprop="name">Agência Websonic</em> <i>/ <time datetime="2013-06-01">Junho de 2013</time> - Atual</i></p>
-				<p itemprop="description">Desenvolvimento de Web Sites a partir do <em lang="en">framework</em> Bootstrap, utilizando os Padrões Web: HTML, CSS e JavaScript (jQuery).</p>
-			</div>
+    <div class="content">
+      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+        <h3>Web Designer</h3>
+        <p class="local"><em itemprop="name">Entire Technology Partners</em> <i>/ <time datetime="2011-03-01">Junho de 2014</time> - Atual</i></p>
+        <p itemprop="description">Desenvolvimento de layouts para sistemas web. Desenvolvimento front-end.</p>
+      </div>
 
-			<div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-				<h3>Assistente de Arte Web</h3>
-				<p class="local"><em itemprop="name">TV Unaerp</em> <i>/ Abril de 2009 - Abril de 2011</i></p>
-				<p itemprop="description">Produção de peças publicitárias como: banners, cartazes e faixas; para a TV Unaerp. Manutenção do site com o CMS Joomla.</p>
-			</div>
-		</div>
-	</section>
+      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+        <h3>Web Designer</h3>
+        <p class="local"><em itemprop="name">SG&amp;C Agência de Comunicação</em> <i>/ <time datetime="2011-03-01">Março de 2011</time> - Junho de 2014</i></p>
+        <p itemprop="description">Desenvolvimento de Web Sites com Padrões Web: HTML, CSS e JavaScript (jQuery). Recorte de <em lang="en">layouts</em> feitos em Photoshop e Illustrator. Manutenção de conteúdo de Web Sites com foco em SEO. Desenvolvimendo de blogs na plataforma WordPress. Criação e desenvolvimento de E-mails Marketing.</p>
+      </div>
 
-	<hr>
+      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+        <h3>Desenvolvedor Front-End <i lang="en">Free lance</i></h3>
+        <p class="local"><em itemprop="name">Agência Websonic</em> <i>/ <time datetime="2013-06-01">Junho de 2013</time> - Atual</i></p>
+        <p itemprop="description">Desenvolvimento de Web Sites a partir do <em lang="en">framework</em> Bootstrap, utilizando os Padrões Web: HTML, CSS e JavaScript (jQuery).</p>
+      </div>
 
-	<section class="formation">
-		<header>
-			<h2>Formação Acadêmica</h2>
-		</header>
-		
-		<div class="content" itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-			<div class="item">
-				<h3>Comunicação Social: Publicidade e Propaganda</h3>
+      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+        <h3>Assistente de Arte Web</h3>
+        <p class="local"><em itemprop="name">TV Unaerp</em> <i>/ Abril de 2009 - Abril de 2011</i></p>
+        <p itemprop="description">Produção de peças publicitárias como: banners, cartazes e faixas; para a TV Unaerp. Manutenção do site com o CMS Joomla.</p>
+      </div>
+    </div>
+  </section>
 
-				<p class="local"><em itemprop="name">Universidade de Ribeirão Preto</em> <i>/ <time>2008</time> - <time>2011</time></i></p>
-			</div>
-		</div>
-	</section>
-		
-	<hr>
+  <hr>
 
-	<section class="courses">
-		<header>
-			<h2>Cursos Livres</h2>
-		</header>
+  <section class="formation">
+    <header>
+      <h2>Formação Acadêmica</h2>
+    </header>
 
-		<div class="content">
-			<div class="item">
-				<h3>HTML5 e CSS3 - Criação de Websites</h3>
-				<p class="local"><em>Senac Ribeirão</em> <i>/ <time>Dezembro de 2013</time> (40 horas)</i></p>
-			</div>
+    <div class="content" itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+      <div class="item">
+        <h3>Comunicação Social: Publicidade e Propaganda</h3>
 
-			<div class="item">
-				<h3>Curso Desenvolvimento Web com HTML, CSS e JavaScript</h3>
-				<p class="local"><em>Caelum</em> <i>/ <time>Novembro de 2013</time> (40 horas)</i></p>
-			</div>
+        <p class="local"><em itemprop="name">Universidade de Ribeirão Preto</em> <i>/ <time>2008</time> - <time>2011</time></i></p>
+      </div>
+    </div>
+  </section>
 
-			<div class="item">
-				<h3>Começando com JavaScript</h3>
-				<p class="local"><em>Howto</em> <i>/ <time>Novembro de 2013</time> (15 horas)</i></p>
-			</div>
-		</div>
-	</section>
+  <hr>
 
-	<hr>
+  <section class="courses">
+    <header>
+      <h2>Cursos Livres</h2>
+    </header>
 
-	<section class="language">
-		<header>
-			<h2>Idioma</h2>
-		</header>
+    <div class="content">
+      <div class="item">
+        <h3>Javascript e Jquery - Fundamentos e Bibliotecas</h3>
+        <p class="local"><em>Senac São Carlos</em> <i>/ <time>Outubro de 2014</time> (40 horas)</i></p>
+      </div>
 
-		<div class="content">
-			<p>Inglês básico <i>(Cultura Inglesa / <time>2013</time>)</i></p>
-		</div>
-	</section>
+      <div class="item">
+        <h3>Arquitetura de CSS</h3>
+        <p class="local"><em>Howto</em> <i>/ <time>Junho de 2014</time> (12 horas)</i></p>
+      </div>
 
-	<hr>
+      <div class="item">
+        <h3>Interfaces web com HTML5 e CSS3</h3>
+        <p class="local"><em>Howto</em> <i>/ <time>Junho de 2014</time> (15 horas)</i></p>
+      </div>
 
-	<section class="extras">
-		<header>
-			<h2>Habilidades</h2>
-		</header>
+      <div class="item">
+        <h3>HTML5 e CSS3 - Criação de Websites</h3>
+        <p class="local"><em>Senac Ribeirão</em> <i>/ <time>Dezembro de 2013</time> (40 horas)</i></p>
+      </div>
 
-		<div class="content">
-			<ul>
-				<li>Padrões Web: HTML, CSS e básico de JavaScript</li>
-				<li>Básico de jQuery</li>
-				<li>Microformatos</li>
-				<li>Assessibilidade</li>
-				<li>SEO</li>
-				<li>Git</li>
-				<li>WordPress</li>
-				<li>Básico de PHP</li>
-			</ul>
-		</div>
-	</section>
+      <div class="item">
+        <h3>Curso Desenvolvimento Web com HTML, CSS e JavaScript</h3>
+        <p class="local"><em>Caelum</em> <i>/ <time>Novembro de 2013</time> (40 horas)</i></p>
+      </div>
 
-	<hr>
+      <div class="item">
+        <h3>Começando com JavaScript</h3>
+        <p class="local"><em>Howto</em> <i>/ <time>Novembro de 2013</time> (15 horas)</i></p>
+      </div>
+    </div>
+  </section>
 
-	<section class="events">
-		<header>
-			<h2>Eventos</h2>
-		</header>
+  <hr>
 
-		<div class="content">
-			<ul>
-				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://conferenciaweb.w3c.br/" itemprop="url"><span itemprop="name">Conferência W3C WEB.BR</span></a> <i>/ <time>Novembro de 2013</time></i>
-				</li>
-				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://frontinsampa.com.br/" itemprop="url"><span itemprop="name">FrontIn Sampa</span></a> <i>/ <time>Setembro de 2013</time></i>
-				</li>
-				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://intercon.imasters.com.br/evento/imasters-intercon-wp/" itemprop="url"><span itemprop="name">InterCon Dev WordPress</span></a> <i>/ <time>Julho de 2013</time></i>
-				</li>
-				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://www.frontinrio.com.br/" itemprop="url"><span itemprop="name">Front in Rio</span></a> <i>/ <time>Junho de 2013</time></i>
-				</li>
-				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://tableless.com.br/tablelessconf/" itemprop="url"><span itemprop="name">2º Tableless Conference</span></a> <i>/ <time>Maio de 2013</time></i>
-				</li>
-				<li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
-					<a href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.ContentEventDataServer18,selectEvent&template=946.dwt&event=1565" itemprop="url"><span itemprop="name">Road Show TI 2013</span></a> <i>/ <time>Março de 2013</time></i>
-				</li>
-			</ul>
-		</div>
-	</section>
+  <section class="language">
+    <header>
+      <h2>Idioma</h2>
+    </header>
 
-	<hr>
+    <div class="content">
+      <p>Inglês básico <i>(Cultura Inglesa / <time>2013</time>)</i></p>
+    </div>
+  </section>
 
-	<footer class="footer">
-		<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">27 anos <i>/</i> Solteiro <i>/</i> <span itemprop="addressLocality">Ribeirão Preto</span> <i>/</i> <span itemprop="addressRegion">São Paulo</span>
+  <hr>
 
-		<br>
-		
-		<a href="http://twitter.com/fabriciofmsilva">Twitter</a>
+  <section class="extras">
+    <header>
+      <h2>Habilidades</h2>
+    </header>
 
-		<i>/</i>
+    <div class="content">
+      <ul class="list-inline">
+        <li>Padrões Web: HTML, CSS e JavaScript (Básico)</li>
+        <li>jQuery (Básico)</li>
+        <li>Microformatos</li>
+        <li>Assessibilidade</li>
+        <li>SEO</li>
+        <li>Git</li>
+        <li>WordPress</li>
+        <li>PHP (Básico)</li>
+      </ul>
+    </div>
+  </section>
 
-		<a href="http://github.com/fabriciofmsilva">GitHub</a>
+  <hr>
 
-		<i>/</i>
+  <section class="events" style="display :none;">
+    <header>
+      <h2>Eventos</h2>
+    </header>
 
-		<a href="http://www.linkedin.com/in/fabriciofmsilva">LinkedIn</a>
+    <div class="content">
+      <ul>
+        <li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
+          <a href="http://conferenciaweb.w3c.br/" itemprop="url"><span itemprop="name">Conferência W3C WEB.BR</span></a> <i>/ <time>Novembro de 2013</time></i>
+        </li>
+        <li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
+          <a href="http://frontinsampa.com.br/" itemprop="url"><span itemprop="name">FrontIn Sampa</span></a> <i>/ <time>Setembro de 2013</time></i>
+        </li>
+        <li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
+          <a href="http://intercon.imasters.com.br/evento/imasters-intercon-wp/" itemprop="url"><span itemprop="name">InterCon Dev WordPress</span></a> <i>/ <time>Julho de 2013</time></i>
+        </li>
+        <li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
+          <a href="http://www.frontinrio.com.br/" itemprop="url"><span itemprop="name">Front in Rio</span></a> <i>/ <time>Junho de 2013</time></i>
+        </li>
+        <li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
+          <a href="http://tableless.com.br/tablelessconf/" itemprop="url"><span itemprop="name">2º Tableless Conference</span></a> <i>/ <time>Maio de 2013</time></i>
+        </li>
+        <li itemprop="performerIn" itemscope itemtype="http://schema.org/Event">
+          <a href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.ContentEventDataServer18,selectEvent&template=946.dwt&event=1565" itemprop="url"><span itemprop="name">Road Show TI 2013</span></a> <i>/ <time>Março de 2013</time></i>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-		<i>/</i>
+  <hr>
 
-		<a href="https://plus.google.com/105011365395783776506/" rel="author">Plus</a>
+  <footer class="footer">
+    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">27 anos <i>/</i> Solteiro <i>/</i> <span itemprop="addressLocality">Ribeirão Preto</span> <i>/</i> <span itemprop="addressRegion">São Paulo</span>
 
-		<i>/</i>
-		
-		<a href="mailto:fabriciofmsilva@gmail.com">E-mail</a>
-	</footer>
+    <br>
+
+    <a href="http://twitter.com/fabriciofmsilva">Twitter</a>
+
+    <i>/</i>
+
+    <a href="http://github.com/fabriciofmsilva">GitHub</a>
+
+    <i>/</i>
+
+    <a href="http://www.linkedin.com/in/fabriciofmsilva">LinkedIn</a>
+
+    <i>/</i>
+
+    <a href="https://plus.google.com/105011365395783776506/" rel="author">Plus</a>
+
+    <i>/</i>
+
+    <a href="mailto:fabriciofmsilva@gmail.com">E-mail</a>
+  </footer>
 </article>
 <script type="text/javascript">
 //var _gaq=[['_setAccount','UA-22890269-1'],['_trackPageview']];
