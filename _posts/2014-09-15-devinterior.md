@@ -5,7 +5,7 @@ description: "O primeiro DevInterior Meetup"
 date:   2014-09-15 22:22:12
 categories: evento
 tags: evento
-image: http://www.fabriciofmsilva.com.br/img/2014/devinterior.jpg
+image: http://www.fabriciofmsilva.com.br/img/2014/09-16-devinterior.jpg
 image-alt: DevInterior
 ---
 
