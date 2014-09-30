@@ -9,7 +9,7 @@ image: http://www.fabriciofmsilva.com.br/img/2014/09-16-devinterior.jpg
 image-alt: DevInterior
 ---
 
-Amanhã vai acontecer o primeiro [DevInterior Meetup](http://www.meetup.com/devinterior/) aqui tem Ribeirão Preto.
+Amanhã vai acontecer o primeiro [DevInterior Meetup](http://www.meetup.com/devinterior/) aqui em Ribeirão Preto.
 
 ##Como surgiu a ideia
 
