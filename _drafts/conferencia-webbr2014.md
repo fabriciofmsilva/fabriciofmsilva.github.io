@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "Conferência Web.br 2014"
+description: "Como foram os dois dias da Conferência Web.br do W3C, comemorando os 25 anos da Web e 20 anos de W3C."
+date:   2014-09-30 20:41:12
+categories: evento
+tags: evento
+image: http://www.fabriciofmsilva.com.br/img/2013/conferencia-webbr-2014.jpg
+image-alt: Conferência Web.br 2014
+---
+
+Semana passada aconteceu a Conferência Web.br do W3C. Certamente um dos melhores eventos que eu já fui. A Web está fazendo 25 anos e por isso o evento foi todo especial, com direito a "bolo", coquetel e muito mais...
+
+
+##As palestras
+
+Como cheguei atrasado não conseguir assistir o keynote do Doug Schepers, falando sobre The power of SVG and the Open Web. Mas pelo feedback do pessoal a palestra foi sensacional.
+
+Depois do coffee teve um batepapo sobre Internet e Web das Coisas com Antônio Moreiras, Thiago Rondon, Marcelo Pimenta e a Yasodara Cordova na mediação.
+
+Voltando do almoço assisti o ZOFE ao vivo com o Daniel Filho e o Zeno Rocha. Sou fã do podcast e não perco um capítulo.
+
+Depois Almir Filho falando sobre Padrões Throttle e Debounce em Web Apps.
+
+Internacionalização na Booking: 2200+ maneiras de ver um mesmo website com o Eduardo Shiota.
+
+A/B Testing: "em Deus acreditamos, todos os outros precisam de dados" com Caio Godim.
+
+Bootstrap - Amor e ódio com a Hanneli Tavante.
+
+Debate sobre desenvolvimento Front End no Brasil e no mundo Autores da coletânea Front End.
+
+E pra fechar o keynote do Akita falando sobre Restrições = Inovação.
+
+
+##Workshop
+
+Grunt
+
+Almir Filho e Davidson Felipe
+
+Queria ter assitido o workshop de Angular.JS, mas perder o Zofe ao vivo seria triste demais.
+
+
+##A cereja do bolo
+
+Uma das coisas mais bacanas foi que finalmente venci minha timidez e sai conversando com as pessoas do evento.
+
+Finalmente conheci a maior parte da galera que eu adimiro e só tinha contato pelo Web.
+
+Conheci o Elvis Detona.
+
+O David Marques.
+
+O Felquis, mas não sei se ele vai lembrar de mim...
+
+O Tanure.
+
+O Eduardo Matos.
+
+O Reinaldo Ferraz.
+
+O Almir Filho e o Davidson.
+
+O Shiota.
+
+O Diego Eis.
+
+Sem contar poder rever o Felipe Fialho. Também conversei muito com o Luiz Real, que foi meu instrutor na Caelum.
+
+Foi uma pena não ter conseguido falar com o Akita ou a Hanneli.
