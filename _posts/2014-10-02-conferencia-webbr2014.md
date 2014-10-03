@@ -2,10 +2,10 @@
 layout: post
 title:  "Conferência Web.br 2014"
 description: "Como foram os dois dias da Conferência Web.br do W3C, comemorando os 25 anos da Web e 20 anos de W3C."
-date:   2014-09-30 20:41:12
+date:   2014-10-02 20:41:12
 categories: evento
 tags: evento
-image: http://www.fabriciofmsilva.com.br/img/2013/conferencia-webbr-2014.jpg
+image: http://www.fabriciofmsilva.com.br/img/2014/conferencia-webbr-2014.jpg
 image-alt: Conferência Web.br 2014
 ---
 
