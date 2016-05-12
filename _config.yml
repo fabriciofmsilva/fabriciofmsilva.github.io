@@ -1,17 +1,30 @@
-permalink: /:title/
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
+# Site settings
 title: Fabrício Silva
 name: Fabrício Silva
-description: My web site powered by Jekyll and GiHub Pages
+description: > # this means to ignore newlines until "baseurl:"
+  My web site powered by Jekyll and GiHub Pages
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://fabriciofmsilva.com.br" # the base hostname & protocol for your site
 domain: fabriciofmsilva.com.br
+lang: pt-BR
+
+permalink: /:title/
 
 author: Fabrício Silva
 github: http://github.com/fabriciofmsilva
 twitter: http://twitter.com/fabriciofmsilva
-plus: https://plus.google.com/105011365395783776506/
+linkedin: https://www.linkedin.com/in/fabriciofmsilva
+plus: https://plus.google.com/+FabricioFMSilva
 feedburner: http://feeds.feedburner.com/fabriciofmsilva
 analytics: UA-22890269-1
 
+# Build settings
 pygments: false
-
 markdown: kramdown

@@ -13,7 +13,7 @@ Para fazer o <i lang="en" class="idiomatic" title="Destaque de sintaxe">syntax h
 
 Curta os exemplos com HTML, CSS e JavaScript.
 
-##HTML
+## HTML
 
 <pre class="lang-html prettyprint linenums">
 &lt;!DOCTYPE html&gt;
@@ -23,12 +23,12 @@ Curta os exemplos com HTML, CSS e JavaScript.
   &lt;title&gt;&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  
+
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
 
-##CSS
+## CSS
 
 <pre class="lang-css prettyprint linenums">
 body {
@@ -46,7 +46,7 @@ p {
 }
 </pre>
 
-##JavaScript
+## JavaScript
 
 <pre class="lang-js prettyprint linenums">
 function myFunction() {
@@ -54,7 +54,7 @@ function myFunction() {
 }
 </pre>
 
-##Instalando o Google Prettify
+## Instalando o Google Prettify
 
 Faça o <i lang="en" class="idiomatic">download</i> dos arquivos [prettify.js](http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js) e [prettify.css](http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css).
 
@@ -82,7 +82,7 @@ jQuery(document).ready(function(){
 });
 </pre>
 
-###Inserindo um código
+### Inserindo um código
 
 Para inserir um código basta usar a tag <code>&lt;pre&gt;</code>
 

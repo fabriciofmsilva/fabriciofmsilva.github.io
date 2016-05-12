@@ -11,7 +11,7 @@ image-alt: DevInterior
 
 Amanhã vai acontecer o primeiro [DevInterior Meetup](http://www.meetup.com/devinterior/) aqui em Ribeirão Preto.
 
-##Como surgiu a ideia
+## Como surgiu a ideia
 
 Depois de frenquentar alguns dos melhores eventos de <i lang="en">front end</i> do Brasil, surgiu a vontade de fazer um evento aqui em Ribeirão Preto. Depois de pesquisar muito e conversar com alguns dos organizadores dos eventos, percebi que não estava preparado para organizar um grande evento. A ideia acabou ficando de lado. Depois de um tempo acabei recebendo o convite para um Meetup sobre CSS que o [Felipe Fialho](http://felipefialho.com/) estava ajudando a organizando. Como era em São Paulo acabei não podendo ir. Mas depois de ver a postagem sobre o sucesso do Meetup, no blog do [Raphael Fabeni](http://www.raphaelfabeni.com.br/nascimento-meetup-css/), me animei a fazer algo aqui. Troquei uma ideia com o **Caio Tarifa**, que também animou e de cara colocou o **Ronaldo Faria Lima** na jogada.
 
@@ -21,7 +21,7 @@ Definimos o tema como [Git](http://git-scm.com/), com o intuito de englobar toda
 
 No começo estavamos com receio de não conseguir público. Mas assim que a data se aproximou a galera começou a fazer a inscrição. Chegamos na casa dos 26 inscritos, o que é bom demais, nosso limite era de 30. Já posso dizer que o evento é um sucesso. Conseguimos organizar tudo em pouco tempo, e ainda podemos contar com o apoio de grandes nomes do mercado. Os desenvolvedores de Ribeirão Preto apoiaram a causa, sairam da zona de conforto e partiram para um nosso primeiro Meetup.
 
-##O evento
+## O evento
 
 No último dia conseguimos preencher todas as vagas. Foi incrível. Tive uma enorme satisfação ao ver a sala cheia. O Saulo do Supera foi muito atencioso e nos ajudou durante o evento todo. Finalmente conheci alguns desenvolvedores de Ribeirão Preto e todos foram muito receptivos. Posso dizer que o evento foi um sucesso.
 

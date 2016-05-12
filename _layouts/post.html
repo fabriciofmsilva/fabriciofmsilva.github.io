@@ -1,30 +1,38 @@
-{% include meta.html %}
-<body>
-{% include header.html %}
-<section class="main clearfix">
-<article class="content article" itemscope itemtype="http://schema.org/Article">
-<header class="article-header">
-<h1 itemprop="name" class="article-title">{{ page.title }}</h1>
-<p class="article-date">
-	<time datetime="{{ page.date }}" itemprop="datePublished" content="{{ page.date | date: "%d %b %Y" }}">{{ page.date | date: "%d %b %Y" }}</time>
-	por <a href="{{ site.plus }}" itemprop="author" class="post-meta-link">{{ site.name }}</a>
-</p>
-</header>
-<div itemprop="articleBody" class="article-body">
-<figure>
-{% if page.image %}
-<img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
-{% else %}
-<img src="{{ site.url }}/img/fabricio-silva.jpg" alt="Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript" class="box-img" itemprop="image">
-{% endif %}
-</figure>
-{{ content }}
-</div>
-<footer class="article-footer">
-{% include disqus.html %}
-</footer>
-</article>
-</section>
-{% include footer.html %}
-</body>
+<!DOCTYPE html>
+  <html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <section class="main">
+      <article class="container article" itemscope itemtype="http://schema.org/Article">
+        <header class="article-header">
+          <h1 itemprop="name" class="article-title">{{ page.title }}</h1>
+          <p class="article-date">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
+            <a href="{{ site.plus }}" itemprop="author" class="post-meta-link">{{ site.name }}</a>
+          </p>
+        </header>
+
+        <div itemprop="articleBody" class="article-body">
+          <figure>
+          {% if page.image %}
+            <img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
+          {% else %}
+            <img src="{{ site.url }}/img/fabricio-silva.jpg" alt="Fabrício Silva - Desenvolvedor Front-End, HTML, CSS e JavaScript" class="box-img" itemprop="image">
+          {% endif %}
+          </figure>
+
+          {{ content }}
+        </div>
+
+        <footer class="article-footer">
+          {% include disqus.html %}
+        </footer>
+      </article>
+    </section>
+
+    {% include footer.html %}
+  </body>
 </html>

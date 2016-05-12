@@ -1,6 +1,27 @@
 <footer class="footer">
-  <div class="content clearfix">
-	 <p class="credits">© Fabrício Silva - Movido a <a href="http://jekyllrb.com/">Jekyll</a> - Hospedado por <a href="http://pages.github.com/">GitHub Pages</a> - Site em construção. Sempre!</p>
+  <div class="container">
+  <nav class="navi">
+    <ul class="navi-list">
+      <li class="navi-item">
+        <a href="/about/" class="navi-link">About</a>
+      </li>
+      <li class="navi-item" style="display: none;">
+        <a href="/palestras/" class="navi-link">Palestras</a>
+      </li>
+      <li class="navi-item">
+        <a href="/projects/" class="navi-link">Projects</a>
+      </li>
+    </ul>
+  </nav>
+
+  <ul class="social-list">
+    <li class="social-item"><a href="{{ site.github }}" class="social-link github">GitHub</a></li>
+    <li class="social-item"><a href="{{ site.linkedin }}" class="social-link plus">LinkedIn</a></li>
+    <li class="social-item"><a href="{{ site.twitter }}" class="social-link twitter">Twitter</a></li>
+    <li class="social-item"><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="social-link rss">Feed</a></li>
+  </ul>
+
+	 <p class="credits">© {{ site.title }}, {{ site.time | date: '%Y' }} - Movido a <a href="http://jekyllrb.com/">Jekyll</a> - Hospedado por <a href="http://pages.github.com/">GitHub Pages</a></p>
   </div>
 </footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
