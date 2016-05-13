@@ -15,6 +15,9 @@ url: "http://fabriciofmsilva.com.br" # the base hostname & protocol for your sit
 domain: fabriciofmsilva.com.br
 lang: pt-BR
 
+reading_time: true
+words_per_minute: 200
+
 permalink: /:title/
 
 author: Fabrício Silva

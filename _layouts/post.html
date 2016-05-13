@@ -12,6 +12,9 @@
           <p class="article__date">
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
             <a class="article__author sr-only" href="{{ site.plus }}" itemprop="author">{{ site.name }}</a>
+            {% if site.reading_time %}
+            <span>{% include read-time.html %}</span>
+            {% endif %}
           </p>
         </header>
 
