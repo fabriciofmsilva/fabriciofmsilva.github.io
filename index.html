@@ -17,7 +17,11 @@ isHome: true
         <ul class="articles">
       {% endif %}
         <li class="article">
+          {% if post.link %}
+          <a class="article__title article__title--externo" href="{{ post.link }}">{{ post.title }}</a>
+          {% else %}
           <a class="article__title" href="{{ post.url }}">{{ post.title }}</a>
+          {% endif %}
           <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d" }}</time>
         </li>
 
