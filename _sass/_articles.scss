@@ -1,0 +1,26 @@
+/**
+ * Articles
+ */
+.articles {
+  list-style: none;
+}
+
+.article {
+  margin-bottom: .5em;
+}
+
+.article__title {
+  font-size: $title-font-size;
+  font-weight: 500;
+}
+
+.article__date {
+  font-weight: 200;
+  color: $grey-color;
+}
+
+.article__content {
+  & p {
+    margin-bottom: 1.6em;
+  }
+}

@@ -12,6 +12,20 @@ dl, dd, ol, ul, figure {
 
 
 /**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+
+
+/**
  * Images
  */
 img {
@@ -22,13 +36,48 @@ img {
 
 
 /**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+    border-bottom: 1px solid $grey-color-light;
+
+    &:visited {
+      color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+      color: $brand-color;
+      border-bottom: 1px solid $brand-color;
+      text-decoration: none;
+    }
+}
+
+
+
+/**
  * Container
  */
 .container {
-  max-width: 720px;
+  max-width: $content-width;
   margin-right: auto;
   margin-left: auto;
   @extend %clearfix;
+
+  @include media-query($on-tablet) {
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+  }
+}
+
+
+
+/**
+ * Main
+ */
+.main {
+  margin-bottom: 2em;
 }
 
 
@@ -43,4 +92,20 @@ img {
         content: " ";
         clear: both;
     }
+}
+
+
+
+/**
+ * ScreenReader Only
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }

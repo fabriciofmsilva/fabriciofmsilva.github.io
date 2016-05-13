@@ -1,0 +1,21 @@
+/**
+ * Nav
+ */
+.nav {
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.nav__list {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-right: .5em;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

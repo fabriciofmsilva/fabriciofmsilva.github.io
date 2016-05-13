@@ -1,3 +1,19 @@
 /**
  * Header
  */
+.header {
+  margin-bottom: 2em;
+}
+
+.header__title {
+  & a,
+  & a:visited {
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: 1px solid $grey-color-light;
+
+    &:hover {
+      border-bottom-color: $brand-color;
+    }
+  }
+}
