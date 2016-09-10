@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Postagem - Blog</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="brand">
+        <a href="index.html"><span>G</span> BLOG</a>
+      </h1>
+
+      <nav class="navigation">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="page.html">Página</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="post">
+    <div class="container">
+      <section class="articles">
+        <article class="article">
+          <h1 class="title">Lorem ipsum dolor sit</h1>
+          <p class="article-header">
+            Por <span class="author">João das Neves</span>
+            <time class="date" datetime="2016-09-07">7/9/2016</time>
+            <span class="comments">0</span>
+          </p>
+          <figure class="media">
+            <a href="post.html">
+              <img src="content/images/nature.jpg" alt="Natureza">
+            </a>
+          </figure>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit at dolorum, iusto laboriosam repellendus beatae vel nemo animi sunt illum tempore amet labore accusamus. Natus enim, quam saepe omnis quos?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate praesentium fugiat, architecto error necessitatibus explicabo aperiam ea. Quo repellendus error itaque ratione quibusdam nesciunt beatae debitis. Eaque, vel?</p>
+          <h2>Lorem ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim itaque, nulla animi. Delectus quae similique veritatis qui, iste saepe maxime.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident magni dolore, voluptatum eius voluptas quibusdam deserunt totam ipsam distinctio veniam a temporibus facere error illum tempore numquam minima vel nesciunt reiciendis iusto enim, facilis porro laborum consequatur. Voluptatum, veniam nemo.</p>
+          <figure class="media">
+            <a href="post.html">
+              <img src="content/images/nature2.jpg" alt="Natureza 2">
+            </a>
+          </figure>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ex, doloribus deserunt error velit quo id eos at tenetur perspiciatis maiores, consequatur, est accusamus placeat dicta rerum iste perferendis. Doloribus.</p>
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quos dicta ducimus optio omnis praesentium harum ea unde exercitationem provident!
+          </blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quidem modi excepturi repudiandae illo deleniti reiciendis delectus, quasi sunt fugit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, adipisci, magni. Repudiandae aperiam ut possimus ipsum, odio labore magni aliquid expedita consequatur at? Magni magnam iusto consequatur voluptatum blanditiis sapiente.</p>
+          <div class="media">
+            <video controls>
+              <source src="content/videos/video.mp4" type="video/mp4">
+              <source src="content/videos/video.ogg" type="video/ogg">
+              Seu navegador não suporta vídeos HTML5.
+            </video>
+          </div>
+          <h2>Lorem ipsum dolor sit</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate assumenda iure, aliquam recusandae repellendus pariatur delectus. Facilis laborum fugiat repudiandae voluptatem nostrum. Facilis animi aliquam fugit sunt, odit magni natus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reprehenderit ea quaerat ab perferendis ipsam, est aliquid adipisci sed expedita. Molestias blanditiis, sequi consequatur excepturi nemo culpa libero minus, nihil consectetur quos quo? Culpa est id dolore maiores hic, velit.</p>
+          <audio controls>
+            <source src="content/audios/horse.ogg" type="audio/ogg">
+            <source src="content/audios/horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta audios HTML5.
+          </audio>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quisquam voluptas esse earum, doloremque optio quod tempore, dolore, sequi aperiam ab! In modi molestiae dolores, nisi labore beatae esse eum libero id, fugiat a nostrum repudiandae eveniet asperiores sit impedit aperiam nam ipsa cum quas nemo perferendis maxime, recusandae cupiditate.</p>
+        </article>
+
+        <section class="about">
+          <h2 class="title">Sobre o autor</h2>
+          <div class="content">
+            <img src="content/images/autor.jpg" alt="Autor">
+            <h3>João das Neves</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, molestias et quod voluptatem voluptas, expedita!</p>
+          </div>
+        </section>
+
+        <section class="comments">
+          <h2 class="title">Deixe o seu comentário</h2>
+          <form class="form" id="form">
+            <div class="form-group">
+              <textarea class="form-control" id="comment" placeholder="Comentário *"></textarea>
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" id="name" type="text" placeholder="Nome *">
+              <input class="form-control" id="email" type="text" placeholder="E-mail *">
+            </div>
+            <div class="error" id="error"></div>
+
+            <button class="btn">Postar</button>
+          </form>
+        </section>
+
+        <section class="comments">
+          <h2 class="title">Comentários</h2>
+          <div class="comments" id="comments"></div>
+        </section>
+      </section>
+
+      <aside class="sidebar">
+        <section class="widget">
+          <h3 class="title">Mais Recentes</h3>
+          <ul class="list">
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/nature-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Natureza</span>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/culture-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Cultura</span>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/travel-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Viagem</span>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/design-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Design</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="widget">
+          <h3 class="title">Autores</h3>
+          <ul class="list">
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/autor.jpg" alt="Postagem">
+                <h4>João das Neves</h4>
+                <span class="count">4 artigos</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <section class="widgets">
+        <div class="widget">
+          <h3 class="title">Patrocinadores</h3>
+          <ul class="list list-images">
+            <li class="item">
+              <img src="content/images/patrocinador1.jpg" alt="Patrocinador">
+            </li>
+            <li class="item">
+              <img src="content/images/patrocinador2.jpg" alt="Patrocinador">
+            </li>
+            <li class="item">
+              <img src="content/images/patrocinador3.jpg" alt="Patrocinador">
+            </li>
+            <li class="item">
+              <img src="content/images/patrocinador4.jpg" alt="Patrocinador">
+            </li>
+          </ul>
+        </div>
+
+        <div class="widget">
+          <h3 class="title">Mais acessados</h3>
+          <ul class="list">
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/nature-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Design</span>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/travel-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Viagem</span>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/design-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Design</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="widget">
+          <h3 class="title">Mais recentes</h3>
+          <ul class="list">
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/nature-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Design</span>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/culture-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Cultura</span>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" href="post.html">
+                <img class="img-thumb" src="content/images/travel-thumb.jpg" alt="Postagem">
+                <h4>Lorem ipsum dolor sit</h4>
+                <time class="date" datetime="2016-09-07">7/9/2016</time> <span class="category">Viagem</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section class="footer-bottom">
+      <div class="container">
+        <small class="copy">&copy; Copy 2016 - GoT Blog</small>
+
+        <nav class="navigation">
+          <a class="link active" href="index.html">Home</a>
+          <a class="link" href="page.html">Página</a>
+        </nav>
+      </div>
+    </section>
+  </footer>
+
+  <script src="js/comment.js"></script>
+</body>
+</html>
