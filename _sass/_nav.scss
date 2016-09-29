@@ -2,8 +2,21 @@
  * Nav
  */
 .nav {
-  display: inline-block;
-  margin-right: .5em;
+  a {
+    display: inline-block;
+    margin-right: .5em;
+
+    &,
+    &:visited {
+      color: $grey-color;
+      text-decoration: none;
+      border-bottom: none;
+    }
+
+    &:hover {
+      color: $text-color;
+    }
+  }
 }
 
 .nav__list {

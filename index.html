@@ -4,46 +4,64 @@ isHome: true
 ---
 
 <main class="main">
-  <div class="container">
-    {% for post in site.posts %}
-      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-      {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-      {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-      {% capture next_month %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+  {% for post in site.posts %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
-      {% if forloop.first %}
-      <section class="archive">
-        <h2 class="archive__title" id="{{ this_year }}">{{ this_year }}</h2>
-        <ul class="articles">
-      {% endif %}
-        <li class="article">
-          {% if post.link %}
-          <a class="article__title article__title--externo" href="{{ post.link }}">{{ post.title }}</a>
-          {% else %}
-          <a class="article__title" href="{{ post.url }}">{{ post.title }}</a>
-          {% endif %}
-          <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d" }}</time>
-        </li>
-
-        {% if forloop.last %}
-        </ul>
-      </section>
-      {% else %}
-        {% if this_year != next_year %}
-        </ul>
-        </section>
-
-        <section class="archive">
-        <h2 class="archive__title" id="{{ next_year }}">{{ next_year }}</h2>
-        <ul class="articles">
+    {% if forloop.first %}
+    <section class="archive">
+      <h2 class="archive-title" id="{{ this_year }}">{{ this_year }}</h2>
+      <a id="{{ this_year }}-{{ this_month | date: '%m' }}"></a>
+      <ul class="articles">
+    {% endif %}
+      <li class="article">
+        {% if post.link %}
+        <h3 class="article-title"><a class="link-external" href="{{ post.link }}" data-external=" [externo]">{{ post.title }}</a></h3>
         {% else %}
-          {% if this_month != next_month %}
-          </ul>
-          <a id="{{ this_year }}-{{ this_month | date: '%m' }}"></a>
-          <ul class="articles">
-          {% endif %}
+        <h3 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        {% endif %}
+        <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}">
+          {% assign m = post.date | date: "%-m" %}
+          {{ post.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Janeiro
+            {% when '2' %}Fevereiro
+            {% when '3' %}Março
+            {% when '4' %}Abril
+            {% when '5' %}Maio
+            {% when '6' %}Junho
+            {% when '7' %}Julho
+            {% when '8' %}Agosto
+            {% when '9' %}Setembro
+            {% when '10' %}Outubro
+            {% when '11' %}Novembro
+            {% when '12' %}Dezembro
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+        </time>
+      </li>
+
+      {% if forloop.last %}
+      </ul>
+    </section>
+    {% else %}
+      {% if this_year != next_year %}
+      </ul>
+      </section>
+
+      <section class="archive">
+        <h2 class="archive-title" id="{{ next_year }}">{{ next_year }}</h2>
+        <a id="{{ next_year }}-{{ next_month | date: '%m' }}"></a>
+        <ul class="articles">
+      {% else %}
+        {% if this_month != next_month %}
+        </ul>
+        <a id="{{ this_year }}-{{ next_month | date: '%m' }}"></a>
+        <ul class="articles">
         {% endif %}
       {% endif %}
-    {% endfor %}
-  </div>
+    {% endif %}
+  {% endfor %}
 </main>

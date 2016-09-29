@@ -3,29 +3,38 @@
  */
 .articles {
   list-style: none;
-}
 
-.article {
-  margin-bottom: .5em;
-}
-
-.article__title {
-  font-size: $title-font-size;
-  font-weight: 500;
-}
-
-.article__title--externo {
-  &:after {
-    content: " [externo]";
+  .article-title {
+    font-size: 1.5rem;
   }
 }
 
-.article__date {
-  font-weight: 200;
-  color: $grey-color;
+.article {
+  margin-bottom: 1.2rem;
 }
 
-.article__content {
+.article-title {
+  font-size: 2.1rem;
+  margin-bottom: 0;
+
+  a {
+    color: $text-color;
+    border-bottom: none;
+  }
+
+  @include media-query($on-tablet) {
+    font-size: 2.1rem;
+  }
+}
+
+.article-date {
+  font-size: .75rem;
+  font-weight: 200;
+  color: $grey-color;
+  text-transform: uppercase;
+}
+
+.article-content {
   & p {
     margin-bottom: 1.6em;
   }
