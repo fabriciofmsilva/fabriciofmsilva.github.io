@@ -29,9 +29,12 @@ feedburner: http://feeds.feedburner.com/fabriciofmsilva
 analytics: UA-22890269-1
 
 # Build settings
-pygments: false
 markdown: kramdown
 
 # gems
 gems:
   - jekyll-sitemap
+
+# sass
+sass:
+  sass_dir: _sass
