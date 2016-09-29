@@ -1,0 +1,17 @@
+/**
+ * Post Layout
+ */
+.post {
+  .header {
+    margin-bottom: .25em;
+
+    .nav {
+      display: none;
+    }
+  }
+
+  .header-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}

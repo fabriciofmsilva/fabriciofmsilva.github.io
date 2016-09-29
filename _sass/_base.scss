@@ -14,23 +14,66 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
-    line-height: $base-line-height;
-    color: $text-color;
-    background-color: $background-color;
+html {
+  font-size: 1.25rem;
 }
 
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+
+/**
+ * Typography
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: .5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -.025rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
 
 
 /**
  * Images
  */
 img {
-    max-width: 100%;
-    vertical-align: middle;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 
@@ -39,19 +82,25 @@ img {
  * Links
  */
 a {
+  color: $brand-color;
+  text-decoration: none;
+  border-bottom: 1px solid $grey-color-light;
+
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+
+  &:hover {
     color: $brand-color;
+    border-bottom: 1px solid $brand-color;
     text-decoration: none;
-    border-bottom: 1px solid $grey-color-light;
+  }
+}
 
-    &:visited {
-      color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-      color: $brand-color;
-      border-bottom: 1px solid $brand-color;
-      text-decoration: none;
-    }
+.link-external {
+  &:after {
+    content: attr(data-external);
+  }
 }
 
 
@@ -61,13 +110,14 @@ a {
  */
 .container {
   max-width: $content-width;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 2em 1em;
   @extend %clearfix;
 
   @include media-query($on-tablet) {
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 4em;
+    padding-bottom: 4em;
   }
 }
 
@@ -87,11 +137,11 @@ a {
  */
 %clearfix {
 
-    &:after {
-        display: table;
-        content: " ";
-        clear: both;
-    }
+  &:after {
+      display: table;
+      content: " ";
+      clear: both;
+  }
 }
 
 

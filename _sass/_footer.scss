@@ -2,16 +2,16 @@
  * Footer
  */
 .footer {
+  padding-top: 2em;
+  font-size: .75rem;
+  color: $grey-color;
+  text-align: center;
+  border-top: 1px dashed $grey-color-light;
+
   a {
     &,
     &:visited {
-      color: $text-color;
-      text-decoration: none;
-      border-bottom: 1px solid $grey-color-light;
-    }
-
-    &:hover {
-      border-bottom-color: $brand-color;
+      color: $grey-color;
     }
   }
 }
