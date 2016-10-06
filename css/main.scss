@@ -24,15 +24,15 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: darken($grey-color, 25%);
 
 // Width of the content area
-$content-width: 720px;
+$content-width: 56rem;
 
-$on-mobile: 600px;
-$on-tablet: 720px;
+$on-mobile: 40rem;
+$on-tablet: 56rem;
 
 
 
 // Use media queries like this:
-// @include media-query($on-palm) {
+// @include media-query($on-tablet) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;
@@ -56,5 +56,5 @@ $on-tablet: 720px;
   "archive",
   "post",
   "about",
-  "prettyprint"
+  "highlight"
 ;

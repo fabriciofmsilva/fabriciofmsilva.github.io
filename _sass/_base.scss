@@ -17,10 +17,14 @@
  */
 html {
   font-size: 1rem;
+
+  @include media-query($on-tablet) {
+    font-size: 1.1rem;
+  }
 }
 
 body {
-  max-width: 56rem;
+  max-width: $content-width;
   margin: auto;
   padding: 2rem 2rem 2rem 2.5rem;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
