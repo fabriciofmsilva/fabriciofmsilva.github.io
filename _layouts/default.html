@@ -2,8 +2,7 @@
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
   {% include head.html %}
 
-  <body class="container">
-    {% include header.html %}
+  <body>
     {{ content }}
     {% include footer.html %}
   </body>

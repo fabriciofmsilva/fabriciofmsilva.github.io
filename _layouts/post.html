@@ -1,57 +1,54 @@
-<!DOCTYPE html>
-  <html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-  {% include head.html %}
+---
+layout: default
+---
 
-  <body class="post container">
-    {% include header.html %}
+<header class="header">
+  <h1 class="header-title-small">
+    <a href="{{ site.url }}">{{ site.name }}</a>
+  </h1>
+</header>
 
-    <section class="main">
-      <article class="article" itemscope itemtype="http://schema.org/Article">
-        <header class="article-header">
-          <h1 class="article-title" itemprop="name">{{ page.title }}</h1>
-          <p class="article-date">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
-              {% assign m = page.date | date: "%-m" %}
-              {{ page.date | date: "%-d" }}
-              {% case m %}
-                {% when '1' %}Janeiro
-                {% when '2' %}Fevereiro
-                {% when '3' %}Março
-                {% when '4' %}Abril
-                {% when '5' %}Maio
-                {% when '6' %}Junho
-                {% when '7' %}Julho
-                {% when '8' %}Agosto
-                {% when '9' %}Setembro
-                {% when '10' %}Outubro
-                {% when '11' %}Novembro
-                {% when '12' %}Dezembro
-              {% endcase %}
-              {{ page.date | date: "%Y" }}
-            </time>
-            <a class="article-author sr-only" href="{{ site.plus }}" itemprop="author">{{ site.name }}</a>
-            {% if site.reading_time %}
-            <span> | {% include read-time.html %}</span>
-            {% endif %}
-          </p>
-        </header>
+<article class="article" itemscope itemtype="http://schema.org/Article">
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">{{ page.title }}</h1>
+    <p class="article-date">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+        {% assign m = page.date | date: "%-m" %}
+        {{ page.date | date: "%-d" }}
+        {% case m %}
+          {% when '1' %}Janeiro
+          {% when '2' %}Fevereiro
+          {% when '3' %}Março
+          {% when '4' %}Abril
+          {% when '5' %}Maio
+          {% when '6' %}Junho
+          {% when '7' %}Julho
+          {% when '8' %}Agosto
+          {% when '9' %}Setembro
+          {% when '10' %}Outubro
+          {% when '11' %}Novembro
+          {% when '12' %}Dezembro
+        {% endcase %}
+        {{ page.date | date: "%Y" }}
+      </time>
+      <a class="article-author sr-only" href="{{ site.plus }}" itemprop="author">{{ site.name }}</a>
+      {% if site.reading_time %}
+      <span> | {% include read-time.html %}</span>
+      {% endif %}
+    </p>
+  </header>
 
-        <div class="article-content" itemprop="articleBody">
-          {% if page.image %}
-          <figure>
-            <img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
-          </figure>
-          {% endif %}
+  <div class="article-content" itemprop="articleBody">
+    {% if page.image %}
+    <figure>
+      <img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
+    </figure>
+    {% endif %}
 
-          {{ content }}
-        </div>
+    {{ content }}
+  </div>
 
-        <footer class="article-footer">
-          {% include disqus.html %}
-        </footer>
-      </article>
-    </section>
-
-    {% include footer.html %}
-  </body>
-</html>
+  <footer class="article-footer">
+    {% include disqus.html %}
+  </footer>
+</article>

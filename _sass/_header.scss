@@ -2,10 +2,11 @@
  * Header
  */
 .header {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
-.header-title {
+.header-title,
+.header-title-small {
   font-weight: 200;
 
   & a,
@@ -17,4 +18,10 @@
     &:hover {
     }
   }
+}
+
+.header-title-small {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
