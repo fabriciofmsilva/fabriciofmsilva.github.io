@@ -65,5 +65,13 @@
       margin-bottom: 1rem;
       font-size: .9rem;
     }
+
+    cite {
+      display: block;
+      font-family: $base-font-family;
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
   }
 }

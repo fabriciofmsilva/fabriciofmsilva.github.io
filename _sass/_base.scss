@@ -27,7 +27,7 @@ body {
   max-width: $content-width;
   margin: auto;
   padding: 2rem 2rem 2rem 2.5rem;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: $base-font-family;
   color: $text-color;
   background-color: $background-color;
 }
@@ -112,18 +112,16 @@ img {
  * Links
  */
 a {
-  color: $brand-color;
+  color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 2px solid;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: inherit;
   }
 
   &:hover {
-    color: $brand-color;
-    border-bottom: 1px solid $brand-color;
-    text-decoration: none;
+    border-bottom-color: lighten($text-color, 25%);
   }
 }
 
