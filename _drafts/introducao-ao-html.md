@@ -14,12 +14,13 @@ HTML é a abreviação para <i lang="en">HyperText Markup Language</i> (Linguage
 
 Atualmente HTML é a linguagem mais utilizada na Web para desenvolver páginas e applicações Web. O HTML foi criado por volta de 1991 pelo Sir Tim Berners-Lee no CERN. O HTML foi baseado em SGML (Standard Generalized Markup Language).
 
-Se você quer se aventurar no mundo de desenvolvimento Web HTML é o ponto de partida. Como disse Diego Eis tudo começa e termina no HTML.
-
 
 
 Por que aprender HTML?
 ---
+
+HTML é o coração da Web. Se você quer se aventurar no mundo de desenvolvimento Web HTML é o ponto de partida. Como disse Diego Eis <q>tudo começa e termina no HTML</q>.
+
 
 
 Elementos
@@ -34,12 +35,14 @@ Elementos
 {% endhighlight %}
 
 
+
 Tags (Etiquetas)
 ---
 
 {% highlight html %}
 <p>Isso é texto dentro de um parágrafo.</p>
 {% endhighlight %}
+
 
 
 Atributos
@@ -50,8 +53,10 @@ Atributos
 {% endhighlight %}
 
 
+
 Referências a caracteres com nome
 --
+
 
 
 Comentários
@@ -62,6 +67,8 @@ Você pode criar um comentário no seu código que não será mostrado na págin
 {% highlight html %}
 <!-- Aqui vai o seu comentário -->
 {% endhighlight %}
+
+Vale lembrar que o ideal é trabalhar com o mínimo de comentários possível. Ou seja, se você precisou explicar o código é porque o código pode estar complexo e pode ser melhorado.
 
 
 
@@ -86,9 +93,9 @@ Estrutura básica de um documento
 
 ### Doctype
 
-A declaração doctype não é uma tag HTML, mas sim uma instrução para que o navegador saiba qual a versão do HTML a você utilizou para escrever a página. A declaração doctype deve estar na primeira linha do documento, antes mesmo da tag `<html>`.
+A declaração `doctype` não é uma tag HTML, mas sim uma instrução para que o navegador saiba qual a versão do HTML que você utilizou para escrever a página. A declaração `doctype` deve estar na primeira linha do documento, antes mesmo da tag `<html>`.
 
-A declaração doctype no HTML5 é muito simples.
+A declaração `doctype` no HTML5 é muito simples.
 
 {% highlight html %}
 <!DOCTYPE html!>
@@ -97,12 +104,18 @@ A declaração doctype no HTML5 é muito simples.
 
 ### HTML
 
+A **tag** `<html>` é primeira tag do documento.
+
 {% highlight html %}
 <html></html>
 {% endhighlight %}
 
 
 ### Head
+
+A **tag** `<head>` é onde vamos inserir todas as meta-informações para o nosso navegador, mecanismos de buscas, etc.
+
+As informações inseridas aqui nem sempre vão ser mostradas para o usuário.
 
 {% highlight html %}
 <head></head>
@@ -118,6 +131,8 @@ A declaração doctype no HTML5 é muito simples.
 
 ### Body
 
+Na **tag** `<body>` é onde vamos inserir todo o conteúdo 'visível' para o usuário.
+
 {% highlight html %}
 <body></body>
 {% endhighlight %}
@@ -128,5 +143,4 @@ Referências
 ---
 
 - [Introdução ao HTML](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction)
-- [Curso de HTML5](http://www.w3c.br/cursos/html5/conteudo/)
-- [Curso](https://www.caelum.com.br/curso-html-css-javascript/)
+- [Guia Front-End](https://www.casadocodigo.com.br/pages/sumario-guia-frontend)
