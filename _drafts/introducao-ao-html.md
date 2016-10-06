@@ -25,29 +25,29 @@ Por que aprender HTML?
 Elementos
 ---
 
-```html
+{% highlight html %}
 <html>
   <body>
     <p>Minha primeira página Web.</p>
   </body>
 </html>
-```
+{% endhighlight %}
 
 
 Tags (Etiquetas)
 ---
 
-```html
+{% highlight html %}
 <p>Isso é texto dentro de um parágrafo.</p>
-```
+{% endhighlight %}
 
 
 Atributos
 ---
 
-```html
+{% highlight html %}
 <input required="required">
-```
+{% endhighlight %}
 
 
 Referências a caracteres com nome
@@ -59,9 +59,9 @@ Comentários
 
 Você pode criar um comentário no seu código que não será mostrado na página quando esta foi exibida no navegador. Comentários são uteis para explicar uma seção de marcação, auxiliar outras pessoas que forem dar manutenção na página, ou mesmo lembrar você futuramente. Para criar um comentário no HTML basta apenas usar a seguinte marcação:
 
-```html
+{% highlight html %}
 <!-- Aqui vai o seu comentário -->
-```
+{% endhighlight %}
 
 
 
@@ -90,37 +90,37 @@ A declaração doctype não é uma tag HTML, mas sim uma instrução para que o 
 
 A declaração doctype no HTML5 é muito simples.
 
-```html
+{% highlight html %}
 <!DOCTYPE html!>
-```
+{% endhighlight %}
 
 
 ### HTML
 
-```html
+{% highlight html %}
 <html></html>
-```
+{% endhighlight %}
 
 
 ### Head
 
-```html
+{% highlight html %}
 <head></head>
-```
+{% endhighlight %}
 
 
 #### Metatag Charset
 
-```html
+{% highlight html %}
 <meta charset="UTF-8">
-```
+{% endhighlight %}
 
 
 ### Body
 
-```html
+{% highlight html %}
 <body></body>
-```
+{% endhighlight %}
 
 
 
