@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-  {% include head.html %}
+---
+layout: default
+---
 
-  <body>
-    {{ content }}
-  </body>
-</html>
+{{ content }}

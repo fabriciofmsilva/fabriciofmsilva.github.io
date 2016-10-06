@@ -2,6 +2,7 @@
  * Articles
  */
 .articles {
+  padding: 0;
   list-style: none;
 
   .article-title {
@@ -13,9 +14,14 @@
   margin-bottom: 1.2rem;
 }
 
+.article-header {
+  margin-bottom: 1rem;
+}
+
 .article-title {
   font-size: 2.1rem;
   margin-bottom: 0;
+  text-transform: uppercase;
 
   a {
     color: $text-color;
@@ -28,14 +34,36 @@
 }
 
 .article-date {
-  font-size: .75rem;
-  font-weight: 200;
+  font-size: .8rem;
   color: $grey-color;
-  text-transform: uppercase;
 }
 
 .article-content {
-  & p {
-    margin-bottom: 1.6em;
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    font-family: Garamond, "Adobe Garamond Pro", Georgia, serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  li {
+    font-family: Garamond, "Adobe Garamond Pro", Georgia, serif;
+  }
+
+  blockquote {
+    p {
+      margin-bottom: 1rem;
+      font-size: .9rem;
+    }
   }
 }
