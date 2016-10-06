@@ -2,14 +2,11 @@
  * Syntax Highlight
  */
 .highlight {
+  position: relative;
   margin-bottom: 2rem;
-  font-size: 1rem;
+  font-size: .8rem;
   line-height: 1.6;
   background-color: #fafafa;
-
-  @include media-query($on-tablet) {
-    font-size: .8rem;
-  }
 
   pre {
     padding: 2rem 1.5rem;
@@ -20,6 +17,17 @@
       padding: 0;
       white-space: pre;
       word-wrap: normal;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        padding: .25em 1em;
+        font-size: .7rem;
+        background-color: rgba(0,0,0,.05);
+        content: attr(data-lang);
+      }
     }
   }
 
