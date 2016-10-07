@@ -1,12 +1,16 @@
 ---
+layout: post
 title: Atalhos para o Sublime Text
+description: Meu editor de código, Sublime Text
+date: 2016-10-06 00:00:08
+categories: tool
+tags: sublimetext
+image: /img/post/generic.jpg
+image-alt: Sublime Text
 ---
 
-Atalhos para o Sublime Text
-==========
-
 Atalhos usados
----------
+---
 
 - Cmd (⌘) – the Command Key symbol
 - Ctrl (⌃) - the Control Key symbol
@@ -18,6 +22,6 @@ Atalhos usados
 
 
 Goto Anything (`Cmd + P`)
-----------
+---
 
 

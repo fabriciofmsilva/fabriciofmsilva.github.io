@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Começando com HTML"
-description: "Começando com HTML"
-date: 2016-10-05 23:12:23
-categories: html
+title: Começando com HTML
+description: Começando com HTML
+date: 2016-10-06 00:00:01
+categories: frontend
 tags: html
+image: /img/post/generic.jpg
+image-alt: HTML
 ---
-
 O que é HTML?
 ---
 

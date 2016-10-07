@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Sublime Text"
-description: "Meu editor de código, Sublime Text"
-date:   2013-07-31 18:41:12
-categories: evento
-tags: evento
-image: http://www.fabriciofmsilva.com.br/img/2013/sublime-text.jpg
+title:  Sublime Text
+description: Meu editor de código, Sublime Text
+date: 2016-10-06 00:00:07
+categories: tool
+tags: sublimetext
+image: /img/post/generic.jpg
 image-alt: Sublime Text
 ---
 
