@@ -39,12 +39,12 @@ layout: default
 
   <div class="article-content" itemprop="articleBody">
     {% if page.image %}
-    <figure>
+    <figure class="article-image">
       <img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
     </figure>
     {% endif %}
 
-    {{ content }}
+    {{ content | toc }}
   </div>
 
   <footer class="article-footer">

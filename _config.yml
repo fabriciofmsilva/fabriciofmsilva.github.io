@@ -34,6 +34,7 @@ markdown: kramdown
 # gems
 gems:
   - jekyll-sitemap
+  - jekyll-toc
 
 # sass
 sass:
