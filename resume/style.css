@@ -46,6 +46,7 @@ hr {
     margin-right: auto;
     margin-left: auto;
     padding: 0;
+    padding-bottom: 3rem;
   }
 }
 
@@ -54,7 +55,6 @@ hr {
 /* Header */
 .header {
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .brand {
@@ -135,10 +135,18 @@ hr {
   color: #333;
 }
 
+.education + .education {
+  margin-top: 2rem;
+}
+
 .item {
   position: relative;
   margin-bottom: 2rem;
   padding-left: 2rem;
+}
+
+.item:last-of-type {
+  margin-bottom: 0;
 }
 
 .item + h2 {
@@ -261,16 +269,32 @@ hr {
   width: 60%;
 }
 
+.meter[data-value="50"]:before {
+  width: 50%;
+}
+
 .meter[data-value="40"]:before {
   width: 40%;
+}
+
+.meter[data-value="30"]:before {
+  width: 30%;
 }
 
 .meter[data-value="20"]:before {
   width: 20%;
 }
 
+.meter[data-value="15"]:before {
+  width: 15%;
+}
+
 .meter[data-value="10"]:before {
   width: 10%;
+}
+
+.meter[data-value="5"]:before {
+  width: 5%;
 }
 
 
@@ -284,4 +308,40 @@ hr {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+
+/**
+ * Print styles
+ */
+@page {
+  size: Letter;
+  margin: .3cm 1cm;
+}
+
+@media print {
+  html {
+    font-size: 11pt;
+  }
+
+  body {
+    line-height: 1.6;
+  }
+
+  hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .item {
+    margin-bottom: 1.5rem;
+  }
+
+  .skills h3 {
+    margin-bottom: .75rem;
+  }
+
+  .resume {
+    padding-bottom: 0;
+  }
 }
