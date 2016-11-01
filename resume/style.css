@@ -1,0 +1,347 @@
+/**
+ * Fabrício Silva
+ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 2;
+  font-size: .8rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1;
+}
+
+p {
+  margin: 0;
+  color: #707070;
+}
+
+address {
+  font-style: normal;
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+
+/* Resume */
+.resume {
+  padding: 1rem;
+}
+
+@media (min-width: 60rem) {
+  .resume {
+    max-width: 60rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+}
+
+
+
+/* Header */
+.header {
+  padding-top: 1rem;
+}
+
+.brand {
+    text-transform: uppercase;
+}
+
+.brand h1 {
+  max-width: 12rem;
+  margin-top: .25em;
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.brand h2 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: .1rem;
+}
+
+.contact p {
+  color: #333;
+}
+
+.contact {
+  line-height: 2;
+}
+
+.contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* Grid */
+@media (min-width: 60rem), print {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-half {
+    flex-basis: 48%;
+    flex-grow: 0;
+  }
+
+  .col-two-third {
+    flex-basis: 70%;
+    flex-grow: 0;
+  }
+
+  .col-one-third {
+    flex-basis: 20%;
+    flex-grow: 0;
+  }
+}
+
+
+/* Entry */
+.entry h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.entry h3 {
+  margin-bottom: .25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.local {
+  margin-bottom: .5rem;
+  color: #333;
+}
+
+.education + .education {
+  margin-top: 2rem;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.item:last-of-type {
+  margin-bottom: 0;
+}
+
+.item + h2 {
+  margin-top: 1rem;
+}
+
+.item:before {
+  position: absolute;
+  top: .2rem;
+  left: 13px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #909090;
+  border-radius: 50%;
+  content: "";
+}
+
+.item:after {
+  position: absolute;
+  top: calc(1rem - 3px);
+  left: 15px;
+  display: block;
+  width: 1px;
+  height: calc(100% + .75rem + 6px);
+  background-color: #909090;
+  content: "";
+}
+
+.item:last-of-type:after {
+  height: calc(100% - 1rem);
+}
+
+
+/* Social */
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social li {
+  margin-bottom: .5rem;
+}
+
+.social a {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  height: 24px;
+  text-decoration: none;
+  line-height: 24px;
+  color: #333;
+}
+
+.social .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* Skills */
+.skills {
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  display: flex;
+}
+
+.skills h3 {
+  flex-basis: 30%;
+  flex-grow: 0;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.skills .meter {
+  flex-basis: 60%;
+  flex-grow: 0;
+}
+
+
+/* Meter */
+.meter {
+  position: relative;
+  height: .5rem;
+  border: 1px solid #707070;
+}
+
+.meter:before {
+  display: block;
+  width: 0;
+  height: 100%;
+  content: "";
+  background-color: #707070;
+}
+
+.meter[data-value="100"]:before {
+  width: 100%;
+}
+
+.meter[data-value="90"]:before {
+  width: 90%;
+}
+
+.meter[data-value="80"]:before {
+  width: 80%;
+}
+
+.meter[data-value="70"]:before {
+  width: 70%;
+}
+
+.meter[data-value="60"]:before {
+  width: 60%;
+}
+
+.meter[data-value="50"]:before {
+  width: 50%;
+}
+
+.meter[data-value="40"]:before {
+  width: 40%;
+}
+
+.meter[data-value="30"]:before {
+  width: 30%;
+}
+
+.meter[data-value="20"]:before {
+  width: 20%;
+}
+
+.meter[data-value="15"]:before {
+  width: 15%;
+}
+
+.meter[data-value="10"]:before {
+  width: 10%;
+}
+
+.meter[data-value="5"]:before {
+  width: 5%;
+}
+
+
+/* Helpers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+/**
+ * Print styles
+ */
+@page {
+  size: Letter;
+  margin: .3cm 1cm;
+}
+
+@media print {
+  html {
+    font-size: 11pt;
+  }
+
+  body {
+    line-height: 1.6;
+  }
+
+  hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .item {
+    margin-bottom: 1.5rem;
+  }
+
+  .skills h3 {
+    margin-bottom: .75rem;
+  }
+
+  .resume {
+    padding-bottom: 0;
+  }
+}

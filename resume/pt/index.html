@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>Fabrício Silva - Front-End Developer</title>
+<title>Fabrício Silva - Desenvolvedor Front-End</title>
 <!-- Meta -->
-<meta name="description" content="Fabrício Silva - Front-End Developer">
-<meta name="keywords" content="front-end,web,developer,resume,html5,css3,seo,schema">
+<meta name="description" content="Fabrício Silva - Desenvolvedor Front-End">
+<meta name="keywords" content="front-end,web,developer,resume,html5,css3,seo,schem,microdata">
 <meta name="author" content="Fabrício Silva">
 <meta name="viewport" content="width=device-width">
 <!-- CSS Stylesheet -->
@@ -173,37 +173,27 @@ width: 100%;
 }
 @media print {
   body {
-    font-size: 10pt !important;
+    font-size: 15pt !important;
   }
+
   .header-info {
-    font-size: 10pt !important;
+    font-size: 14pt !important;
   }
-  .header-contact {
-    padding-top: 0 !important;
-    font-size: 10pt !important;
-    line-height: 1.4;
-  }
-  .header-contact p {
-    margin: 0;
-  }
+
   h1 {
+    font-size: 24pt !important;
+  }
+
+  h2 {
     font-size: 20pt !important;
   }
-  h2 {
-    font-size: 16pt !important;
-  }
+
   .entry-header h2 {
-    font-size: 14px !important;
+    font-size: 18px !important;
   }
+
   h3 {
-    margin-top: 1.2em;
-    font-size: 12pt !important;
-  }
-  p {
-    font-size: 11pt !important;
-  }
-  .resume {
-    padding: 0;
+    font-size: 15pt !important;
   }
 }
 </style>
@@ -215,13 +205,12 @@ width: 100%;
   <header class="header">
     <div class="header-title">
       <h1 itemprop="name">Fabrício Silva</h1>
-      <h2 itemprop="jobTitle">Front-End Developer</h2>
+      <h2 itemprop="jobTitle">Desenvolvedor Front-End</h2>
     </div>
 
     <div class="header-contact">
       <p><a href="mailto:fabriciofmsilva@gmail.com" itemprop="email">fabriciofmsilva@gmail.com</a><br>
       <a href="http://www.fabriciofmsilva.com.br/" itemprop="url">fabriciofmsilva.com.br</a></p>
-      <p>+55 16 99177-1556</p>
     </div>
   </header>
 
@@ -233,7 +222,7 @@ width: 100%;
     </header>
 
     <div class="content">
-      <p>Front-end developer focused on web and hybrid mobile development with HTML, CSS and JavaScript.</p>
+      <p>Desenvolvedor front-end com foco em HTML, CSS e JavaScript.</p>
     </div>
   </section>
 
@@ -241,32 +230,32 @@ width: 100%;
 
   <section class="entry experience">
     <header class="entry-header">
-      <h2>Work experience</h2>
+      <h2>Experiência</h2>
     </header>
 
     <div class="content">
-      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole">
-        <h3>Front-end Developer / Hybrid Mobile Developer</h3>
-        <p class="local"><em itemprop="name">IBM</em> <i>/ <time datetime="2015-03-02" itemprop="startDate">May 2015</time> - <time datetime="2016-06-23" itemprop="endDate">present</time></i></p>
-        <p itemprop="description">Front-end developer focused on hybrid mobile development with IBM MobileFirst Platform, using HTML, CSS, SASS, JavaScript, AngularJS and Ionic Framework.</p>
+      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+        <h3>Mobile Front-end Developer</h3>
+        <p class="local"><em itemprop="name">IBM</em> <i>/ <time datetime="2015-03-02">Março de 2015</time> - atual</i></p>
+        <p itemprop="description">Desenvolvimento de aplicações híbridas comerciais na plataforma IBM WorkLight, utilizando AngularJS e Ionic.</p>
       </div>
 
-      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole">
+      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
         <h3>Web Designer</h3>
-        <p class="local"><em itemprop="name">Entire Technology Partners</em> <i>/ <time datetime="2014-06-01" itemprop="startDate">June 2014</time> - <time datetime="2015-05-01" itemprop="endDate">May 2015</time></i></p>
-        <p itemprop="description">Web Designer focused on front-end development and user interface design. Work with two principal products, e-Trade and e-Supply.</p>
+        <p class="local"><em itemprop="name">Entire Technology Partners</em> <i>/ <time datetime="2011-03-01">Junho de 2014</time> - Março de 2015</i></p>
+        <p itemprop="description">Design e desenvolvimento de interfaces voltadas para sistemas web e mobile: plataforma de vendas (e-Trade) e plataforma de compras (e-Supply).</p>
       </div>
 
-      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole" style="display: none;">
-        <h3>Front-End Developer Free lancer</h3>
-        <p class="local"><em itemprop="name">Agência Websonic</em> <i>/ <time datetime="2013-06-01" itemprop="startDate">June 2013</time> - <time datetime="2015-05-01" itemprop="startDate">March 2015</time></i></p>
-        <p itemprop="description">Front-end developer freelancer. Development of websites with HTML, CSS and JavaScript using Twitter Bootstrap.</p>
+      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization" style="display: none;">
+        <h3>Desenvolvedor Front-End <i lang="en">Free lancer</i></h3>
+        <p class="local"><em itemprop="name">Agência Websonic</em> <i>/ <time datetime="2013-06-01">Junho de 2013</time> - Março de 2015</i></p>
+        <p itemprop="description">Desenvolvimento front-end a partir de layouts produzidos por terceiros.</p>
       </div>
 
-      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole">
+      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
         <h3>Web Designer</h3>
-        <p class="local"><em itemprop="name">SG&amp;C Agência de Comunicação</em> <i>/ <time datetime="2011-03-01" itemprop="startDate">March 2011</time> - <time datetime="2014-06-01" itemprop="startDate">June 2014</time></i></p>
-        <p itemprop="description">Web Designer focused on Front-end development. Development websites and hotsites with HTML, CSS, JavaScript, Accessibility and SEO. Development email marketing.</p>
+        <p class="local"><em itemprop="name">SG&amp;C Agência de Comunicação</em> <i>/ <time datetime="2011-03-01">Março de 2011</time> - Junho de 2014</i></p>
+        <p itemprop="description">Desenvolvimento de web sites. Desenvolvimendo de blogs na plataforma WordPress. Design e desenvolvimento de e-mail marketing. Manutenção de conteúdo com foco em SEO. </p>
       </div>
     </div>
   </section>
@@ -280,7 +269,7 @@ width: 100%;
 
     <div class="content">
       <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
-        <h3>Specialization, Web Engineering</h3>
+        <h3>Especialização, Engenharia Web</h3>
 
         <p class="local">
           <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
@@ -291,7 +280,7 @@ width: 100%;
       </div>
 
       <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
-        <h3>Bachelor of Social Communication, Advertising</h3>
+        <h3>Comunicação Social: Publicidade e Propaganda</h3>
 
         <p class="local">
           <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
@@ -306,43 +295,43 @@ width: 100%;
 
   <section class="entry courses">
     <header class="entry-header">
-      <h2>Courses</h2>
+      <h2>Cursos Livres</h2>
     </header>
 
     <div class="content">
       <div class="item">
-        <h3>Organizing the JavaScript</h3>
-        <p class="local"><em>Howtocode</em> <i>/ <time>November 2015</time> (15 hours)</i></p>
+        <h3>Organizando o JavaScript</h3>
+        <p class="local"><em>Howtocode</em> <i>/ <time>Novembro de 2015</time> (15 horas)</i></p>
       </div>
 
       <div class="item">
-        <h3>Javascript and jQuery - Fundaments and libraries</h3>
-        <p class="local"><em>Senac São Carlos</em> <i>/ <time>October 2014</time> (40 hours)</i></p>
+        <h3>Javascript e jQuery - Fundamentos e Bibliotecas</h3>
+        <p class="local"><em>Senac São Carlos</em> <i>/ <time>Outubro de 2014</time> (40 horas)</i></p>
       </div>
 
       <div class="item">
-        <h3>CSS Architecture</h3>
-        <p class="local"><em>Howtocode</em> <i>/ <time>June 2014</time> (8 hours)</i></p>
+        <h3>Arquitetura de CSS</h3>
+        <p class="local"><em>Howtocode</em> <i>/ <time>Junho de 2014</time> (8 horas)</i></p>
       </div>
 
       <div class="item">
-        <h3>Web interfaces with HTML5 and CSS3</h3>
-        <p class="local"><em>Howtocode</em> <i>/ <time>June 2014</time> (12 hours)</i></p>
+        <h3>Interfaces web com HTML5 e CSS3</h3>
+        <p class="local"><em>Howtocode</em> <i>/ <time>Junho de 2014</time> (12 horas)</i></p>
       </div>
 
       <div class="item">
-        <h3>HTML5 e CSS3 - Websites creation</h3>
-        <p class="local"><em>Senac Ribeirão</em> <i>/ <time>December 2013</time> (40 hours)</i></p>
+        <h3>HTML5 e CSS3 - Criação de Websites</h3>
+        <p class="local"><em>Senac Ribeirão</em> <i>/ <time>Dezembro de 2013</time> (40 horas)</i></p>
       </div>
 
       <div class="item">
-        <h3>Web development whit HTML, CSS and JavaScript</h3>
-        <p class="local"><em>Caelum</em> <i>/ <time>November 2013</time> (40 hours)</i></p>
+        <h3>Curso Desenvolvimento Web com HTML, CSS e JavaScript</h3>
+        <p class="local"><em>Caelum</em> <i>/ <time>Novembro de 2013</time> (40 horas)</i></p>
       </div>
 
       <div class="item">
-        <h3>Starting whit JavaScript</h3>
-        <p class="local"><em>Howtocode</em> <i>/ <time>November 2013</time> (15 hours)</i></p>
+        <h3>Começando com JavaScript</h3>
+        <p class="local"><em>Howtocode</em> <i>/ <time>Novembro de 2013</time> (15 horas)</i></p>
       </div>
     </div>
   </section>
@@ -351,12 +340,12 @@ width: 100%;
 
   <section class="entry language">
     <header class="entry-header">
-      <h2>Languages</h2>
+      <h2>Idiomas</h2>
     </header>
 
     <div class="content">
-      <p>English intermediatry | International English <i>(Cultura Inglesa / <time>2013 - 2014</time>)</i></p>
-      <p>Portuguese native</p>
+      <p>Inglês intermediário | International English <i>(Cultura Inglesa / <time>2013 - 2014</time>)</i></p>
+      <p>Portugues nativo</p>
     </div>
   </section>
 
@@ -364,7 +353,7 @@ width: 100%;
 
   <section class="entry extras">
     <header class="entry-header">
-      <h2>Technical skills</h2>
+      <h2>Habilidades</h2>
     </header>
 
     <div class="content">
@@ -386,7 +375,7 @@ width: 100%;
 
   <section class="entry events" style="display :none;">
     <header class="entry-header">
-      <h2>Events</h2>
+      <h2>Eventos</h2>
     </header>
 
     <div class="content">
@@ -416,33 +405,23 @@ width: 100%;
   <hr style="display :none;">
 
   <footer class="footer">
-    <div>
-      30 anos
-      <i>/</i>
-      Solteiro
-      <i>/</i>
-      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <span itemprop="addressLocality">Hortolândia</span>
-        <i>/</i>
-        <span itemprop="addressRegion">São Paulo</span>
-        <i>/</i>
-        <span itemprop="addressCountry">Brazil</span>
-      </span>
-    </div>
+    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">28 anos <i>/</i> Solteiro <i>/</i> <span itemprop="addressLocality">Ribeirão Preto</span> <i>/</i> <span itemprop="addressRegion">São Paulo</span>
 
-    <a href="http://twitter.com/fabriciofmsilva">twitter</a>
+    <br>
+
+    <a href="http://twitter.com/fabriciofmsilva">Twitter</a>
 
     <i>/</i>
 
-    <a href="http://github.com/fabriciofmsilva">github</a>
+    <a href="http://github.com/fabriciofmsilva">GitHub</a>
 
     <i>/</i>
 
-    <a href="http://www.linkedin.com/in/fabriciofmsilva">linkedin</a>
+    <a href="http://www.linkedin.com/in/fabriciofmsilva">LinkedIn</a>
 
     <i>/</i>
 
-    <a href="mailto:fabriciofmsilva@gmail.com">email</a>
+    <a href="mailto:fabriciofmsilva@gmail.com">E-mail</a>
   </footer>
 </article>
 <script type="text/javascript">

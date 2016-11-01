@@ -1,17 +1,19 @@
 ---
 layout: post
-title:  "Jekyll"
-description: "Como instalar o Jekyll"
-date:   2013-07-31 18:41:12
-categories: evento
-tags: evento
-image: http://www.fabriciofmsilva.com.br/img/2013/jekyll.jpg
+title:  Jekyll
+description: Como instalar o Jekyll
+date: 2016-10-06 00:00:04
+categories: tool
+tags: jekyll
+image: /img/post/generic.jpg
 image-alt: Jekyll
 ---
-
 Pra quem não conhece o [Jekyll](http://jekyllrb.com/), ele é um gerador de páginas estáticas desenvolvido em Ruby. Estou usando ele aqui para gerar o meu site.
 
-##Instalando o Jekyll
+
+
+Instalando o Jekyll
+---
 
 Para instalar o Jekyll basta seguir os passos:
 
@@ -20,9 +22,12 @@ Para instalar o Jekyll basta seguir os passos:
 3. Instale o [Ruby Gems](http://rubygems.org/pages/download);
 4. Instale o [Jekyll](http://jekyllrb.com/).
 
-##Estrutura básica
 
-<pre class="lang-html prettyprint linenums prettyprinted">
+
+Estrutura básica
+---
+
+{% highlight diretory %}
 .
 ├── _config.yml
 ├── _drafts
@@ -39,44 +44,60 @@ Para instalar o Jekyll basta seguir os passos:
 |   └── 2009-04-26-barcamp-boston-4-roundup.md
 ├── _site
 └── index.html
-</pre>
+{% endhighlight %}
 
-###_config.yml
+
+### _config.yml
 
 Armazena dados de configuração.
 
-###_drafts
+
+### _drafts
 
 Rascunhos de postagens. Não são publicadas.
 
-###_includes
+
+### _includes
 
 Você pode definir parte de códigos para ser usada nas páginas.
 
-###_layouts
+
+### _layouts
 
 Templates das páginas que serão geradas.
 
-###_posts
+
+### _posts
 
 Aqui ficam as postagens.
 
-###_site
+
+### _site
 
 Local onde os arquivos gerados pelo Jekyll serão colocados.
 
-###index.html
+
+### index.html
 
 Página inicial do site.
 
-##Criando páginas
+
+
+Criando páginas
+---
 
 Para criar uma página você pode criar um arquivo HTML (por exemplo `sobre.html`) e depois coloca-lo na raiz da aplicação, ou criar uma pasta e colocar um arquivo `index.html` dentro dela, prefiro a segunda forma.
 
-##Criando uma postagem
+
+
+Criando uma postagem
+---
 
 As postagens são inseridas dentro da pasta _posts, os arquivos devem ser criados seguindo o modelo ANO-MES-DIA-titulo.MARKUP, você pode usar tanto [Markdown](http://daringfireball.net/projects/markdown/) quanto [Textile](http://textile.sitemonks.com/).
 
-##Jekyll + GitHub Pages
+
+
+Jekyll + GitHub Pages
+---
 
 Você pode publicar o seu site no [GitHub Pages](http://pages.github.com/).

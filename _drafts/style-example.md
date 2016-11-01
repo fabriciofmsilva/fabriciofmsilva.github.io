@@ -35,7 +35,7 @@ Lorem ipsum dolor sit amet, [test link](#) adipiscing elit. **This is strong.** 
 ## Blockquotes
 
 > Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
-> <cite>Lorem Ipsum</cite>
+> <cite>John Armless</cite>
 
 ## List Types
 
