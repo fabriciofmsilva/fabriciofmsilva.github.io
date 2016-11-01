@@ -21,4 +21,5 @@ gem "minima"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-sitemap", "~> 0.11.0"
+  gem "jekyll-toc", "~> 0.1.1"
 end

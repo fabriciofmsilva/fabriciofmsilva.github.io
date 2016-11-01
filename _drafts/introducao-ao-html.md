@@ -7,25 +7,25 @@ categories: frontend
 tags: html
 image: /img/post/generic.jpg
 image-alt: HTML
+toc: true
 ---
-O que é HTML?
----
+## O que é HTML?
 
-HTML é a abreviação para <i lang="en">HyperText Markup Language</i> (Linguagem de Marcação e HiperTexto). Como o próprio nome diz ela serve para marcar conteudo (adicionar semântica) e adicionar ligações (links) entre documentos.
+HTML é a abreviação para <i lang="en">HyperText Markup Language</i> (Linguagem de Marcação e HiperTexto). Como o próprio nome diz ela serve para marcar conteúdo (adicionar semântica) e adicionar ligações (links) entre documentos.
 
-Atualmente HTML é a linguagem mais utilizada na Web para desenvolver páginas e applicações Web. O HTML foi criado por volta de 1991 pelo Sir Tim Berners-Lee no CERN. O HTML foi baseado em SGML (Standard Generalized Markup Language).
-
-
-
-Por que aprender HTML?
----
-
-HTML é o coração da Web. Se você quer se aventurar no mundo de desenvolvimento Web HTML é o ponto de partida. Como disse Diego Eis <q>tudo começa e termina no HTML</q>.
+O HTML foi criado por volta de 1991 pelo Sir Tim Berners-Lee no CERN, seu objetivo era criar uma forma de divulgar as pesquisas para seus colegas.
 
 
 
-Elementos
----
+## Por que aprender HTML?
+
+HTML é o coração da Web. Se você quer se aventurar no mundo de desenvolvimento Web HTML é o ponto de partida. Como disse [Diego Eis](http://diegoeis.com/), <q>tudo começa e termina no HTML</q>. Caso você esteja interessado em trabalhar com front-end (lado do cliente), o HTML é a coisa mais importante que você deve dominar. Neste artigo vou apresentar os conceitos básicos da linguagem.
+
+
+
+## Elementos (blocos de construção semanticos)
+
+O HTML trabalha com um conjunto de elementos, cujo o objetivo é criar um significado **semântico** no conteúdo. Um elmento é formado por um conjunto de **tags** (veremos depois esse conceito) e o conteúdo que as **tags** delimitam.
 
 {% highlight html %}
 <html>
@@ -37,8 +37,9 @@ Elementos
 
 
 
-Tags (Etiquetas)
----
+## Tags (etiquetas)
+
+
 
 {% highlight html %}
 <p>Isso é texto dentro de um parágrafo.</p>
@@ -46,8 +47,9 @@ Tags (Etiquetas)
 
 
 
-Atributos
----
+## Atributos
+
+Os atributos normalmente consistem em duas partes, o nome do atributo e o seu valor.
 
 {% highlight html %}
 <input required="required">
@@ -55,15 +57,13 @@ Atributos
 
 
 
-Referências a caracteres com nome
---
+### Referências a caracteres com nome
 
 
 
-Comentários
----
+## Comentários
 
-Você pode criar um comentário no seu código que não será mostrado na página quando esta foi exibida no navegador. Comentários são uteis para explicar uma seção de marcação, auxiliar outras pessoas que forem dar manutenção na página, ou mesmo lembrar você futuramente. Para criar um comentário no HTML basta apenas usar a seguinte marcação:
+Você pode criar um comentário no seu código que não será mostrado na página quando esta foi exibida no navegador. Comentários são úteis para explicar uma seção de marcação, auxiliar outras pessoas que forem dar manutenção na página, ou mesmo lembrar você futuramente. Para criar um comentário no HTML basta apenas usar a seguinte marcação:
 
 {% highlight html %}
 <!-- Aqui vai o seu comentário -->
@@ -73,8 +73,7 @@ Vale lembrar que o ideal é trabalhar com o mínimo de comentários possível. O
 
 
 
-Estrutura básica de um documento
----
+## Estrutura básica de um documento
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -105,7 +104,7 @@ A declaração `doctype` no HTML5 é muito simples.
 
 ### HTML
 
-A **tag** `<html>` é primeira tag do documento.
+A **tag** `<html>` é primeira tag do documento. É ela quem diz que todo o conteúdo ali é uma página HTML.
 
 {% highlight html %}
 <html></html>
@@ -140,8 +139,7 @@ Na **tag** `<body>` é onde vamos inserir todo o conteúdo 'visível' para o usu
 
 
 
-Referências
----
+## Referências
 
 - [Introdução ao HTML](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction)
 - [Guia Front-End](https://www.casadocodigo.com.br/pages/sumario-guia-frontend)
