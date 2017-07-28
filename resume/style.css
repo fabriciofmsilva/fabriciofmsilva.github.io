@@ -7,8 +7,8 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: #333;
-  line-height: 2;
-  font-size: .8rem;
+  line-height: 1.8;
+  font-size: 1rem;
 }
 
 h1,
@@ -20,7 +20,8 @@ h3 {
 
 p {
   margin: 0;
-  color: #707070;
+  color: #333;
+  font-weight: 300;
 }
 
 address {
@@ -28,10 +29,10 @@ address {
 }
 
 hr {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
   border: none;
-  border-bottom: 1px solid #c9c9c9;
+  border-bottom: 1px solid #ecf0f1;
 }
 
 
@@ -40,9 +41,9 @@ hr {
   padding: 1rem;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 50rem) {
   .resume {
-    max-width: 60rem;
+    max-width: 50rem;
     margin-right: auto;
     margin-left: auto;
     padding: 0;
@@ -71,8 +72,9 @@ hr {
 }
 
 .brand h2 {
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
   letter-spacing: .1rem;
 }
 
@@ -80,9 +82,9 @@ hr {
   color: #333;
 }
 
-.contact {
+/* .contact {
   line-height: 2;
-}
+} */
 
 .contact a {
   color: inherit;
@@ -117,17 +119,29 @@ hr {
 /* Entry */
 .entry h2 {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7f8c8d;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
 }
 
 .entry h3 {
   margin-bottom: .25rem;
   font-size: 1rem;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
+  /* text-transform: uppercase; */
+  letter-spacing: .05rem;
+}
+
+.subtitle-info {
+  font-style: italic;
+  font-weight: 300;
+  color: #7f8c8d;
+}
+
+.text {
+  padding-left: .75rem;
 }
 
 .local {
@@ -141,8 +155,8 @@ hr {
 
 .item {
   position: relative;
-  margin-bottom: 2rem;
-  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+  padding-left: .75rem;
 }
 
 .item:last-of-type {
@@ -153,7 +167,7 @@ hr {
   margin-top: 1rem;
 }
 
-.item:before {
+/* .item:before {
   position: absolute;
   top: .2rem;
   left: 13px;
@@ -174,11 +188,11 @@ hr {
   height: calc(100% + .75rem + 6px);
   background-color: #909090;
   content: "";
-}
-
+} */
+/*
 .item:last-of-type:after {
   height: calc(100% - 1rem);
-}
+} */
 
 
 /* Social */
@@ -211,90 +225,23 @@ hr {
 
 /* Skills */
 .skills {
+  margin: 0;
+  margin-bottom: 2rem;
   padding: 0;
+  padding-left: .75rem;
   list-style: none;
 }
 
 .skills li {
-  display: flex;
+  display: inline-block;
 }
 
-.skills h3 {
-  flex-basis: 30%;
-  flex-grow: 0;
-  margin-bottom: 1rem;
-  font-size: .8rem;
-  font-weight: 300;
-  text-transform: none;
+.skills li:after {
+  content: ",";
 }
 
-.skills .meter {
-  flex-basis: 60%;
-  flex-grow: 0;
-}
-
-
-/* Meter */
-.meter {
-  position: relative;
-  height: .5rem;
-  border: 1px solid #707070;
-}
-
-.meter:before {
-  display: block;
-  width: 0;
-  height: 100%;
+.skills li:last-of-type:after {
   content: "";
-  background-color: #707070;
-}
-
-.meter[data-value="100"]:before {
-  width: 100%;
-}
-
-.meter[data-value="90"]:before {
-  width: 90%;
-}
-
-.meter[data-value="80"]:before {
-  width: 80%;
-}
-
-.meter[data-value="70"]:before {
-  width: 70%;
-}
-
-.meter[data-value="60"]:before {
-  width: 60%;
-}
-
-.meter[data-value="50"]:before {
-  width: 50%;
-}
-
-.meter[data-value="40"]:before {
-  width: 40%;
-}
-
-.meter[data-value="30"]:before {
-  width: 30%;
-}
-
-.meter[data-value="20"]:before {
-  width: 20%;
-}
-
-.meter[data-value="15"]:before {
-  width: 15%;
-}
-
-.meter[data-value="10"]:before {
-  width: 10%;
-}
-
-.meter[data-value="5"]:before {
-  width: 5%;
 }
 
 
@@ -321,15 +268,15 @@ hr {
 
 @media print {
   html {
-    font-size: 11pt;
+    font-size: 13px;
   }
 
   body {
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
   hr {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
 

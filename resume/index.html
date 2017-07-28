@@ -10,189 +10,6 @@
 <meta name="viewport" content="width=device-width">
 <!-- CSS Stylesheet -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:300,400">
-<style>
-/*! @fabriciofmsilva */
-/*
-body {
-padding: 20px;
-font-family: Georgia, "Cambria", serif;
-font-size: 1.25em;
-font-weight: 300;
-line-height: 1.6;
-color: #333;
-background: #fff;
-}
-h1, h2, h3 {
-font-family: "Oswald", sans-serif;
-color: #201E1C;
-font-weight: 400;
-line-height: 1.2;
-}
-h1 {
-font-size: 4.25em;
-margin: 0;
-}
-h2 {
-margin: 0;
-font-size: 2em;
-font-weight: 300;
-}
-h3 {
-font-size: 2rem;
-font-weight: 400;
-margin: 1.5em 0 .2em;
-}
-h3 i {
-font-weight: 300;
-}
-a, a:hover, a:visited {
-border-bottom: 1px dotted #008DDE;
-color: #008dde;
-font-weight: 600;
-text-decoration: none;
-transition: all .6s ease-in-out;
-}
-a:hover {
-border-bottom: 1px solid #0197ed;
-color: #0197ed;
-transition: all .3s ease-in-out;
-}
-p {
-font-size: 1.6rem;
-margin: 0 0 .2em;
-}
-i {
-color: #6f6f6f;
-}
-ul {
-margin: auto;
-padding: 0;
-}
-li {
-font-size: 1.6rem;
-list-style: none;
-}
-hr {
-border: 0;
-border-top: 1px dotted #E5E4E4;
-clear: both;
-margin: 2em auto 1.5em;
-}
-.list-inline {
-padding-left: 0;
-list-style: none;
-}
-.list-inline li {
-display: inline-block;
-}
-.list-inline li:after {
-padding-right: 4px;
-content: ",";
-color: #777;
-}
-.list-inline li:last-of-type:after {
-content: "";
-}
-.hidden {
-border: 0;
-}
-.resume {
-background: #fff;
-margin: auto;
-max-width: 820px;
-padding: 20px;
-}
-.entry-header {
-float: left;
-width: 18%;
-font-style: italic;
-}
-.entry-header h2 {
-  font-size: 1.75em;
-}
-.header:before, .header:after, section:before, section:after {
-content: " ";
-display: table;
-}
-.header:after, section:after {
-clear: both;
-}
-.header-title {
-float: left;
-width: 50%;
-}
-.header-contact {
-float: right;
-width: 50%;
-padding-top: 18px;
-font-weight: bold;
-text-align: right;
-}
-.content {
-float: right;
-width: 80%;
-}
-.content .item:first-child h3 {
-margin-top: 0;
-}
-.local {
-font-size: 1.4rem;
-}
-.footer {
-text-align: center;
-}
-@media screen and (max-width: 820px) {
-h2 {
-font-size: 2.6rem;
-margin-bottom: 0.4em;
-}
-.header-title, .header-contact {
-padding: 0;
-text-align: center;
-width: 100%;
-}
-.entry-header, .content {
-float: none;
-width: 100%;
-}
-}
-@media print {
-  body {
-    font-size: 10pt !important;
-  }
-  .header-info {
-    font-size: 10pt !important;
-  }
-  .header-contact {
-    padding-top: 0 !important;
-    font-size: 10pt !important;
-    line-height: 1.4;
-  }
-  .header-contact p {
-    margin: 0;
-  }
-  h1 {
-    font-size: 20pt !important;
-  }
-  h2 {
-    font-size: 16pt !important;
-  }
-  .entry-header h2 {
-    font-size: 14px !important;
-  }
-  h3 {
-    margin-top: 1.2em;
-    font-size: 12pt !important;
-  }
-  p {
-    font-size: 11pt !important;
-  }
-  .resume {
-    padding: 0;
-  }
-}
-*/
-</style>
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 </head>
@@ -228,7 +45,7 @@ width: 100%;
     <div class="row">
       <div class="col-two-third">
         <h2>Biography</h2>
-        <p>Front-end developer focused on web and hybrid mobile development with more then 5 years experience. Flexible in working environments having positioned from small digital agencies until large companies.</p>
+        <p class="text">Front-end developer focused on web and hybrid mobile development with more then 5 years experience. Flexible in working environments having positioned from small digital agencies until large companies.</p>
       </div>
 
       <ul class="col-one-third social">
@@ -268,97 +85,105 @@ width: 100%;
 
   <hr>
 
-  <div class="row">
-    <section class="col-half entry experience">
-      <h2>Work Experience</h2>
+  <section class="entry experience">
+    <h2>Work Experience</h2>
 
-      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole">
-        <h3>Front-end / Hybrid Mobile Developer</h3>
-        <p class="local">
-          <span itemprop="name">IBM</span> | <time datetime="2015-03-02" itemprop="startDate">May 2015</time> - <time datetime="2016-06-23" itemprop="endDate">present</time>
-        </p>
+    <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole">
+      <h3>
+        <span itemprop="roleName">Front-end <span class="sr-only">Developer</span></span> / Hybrid Mobile Developer, <span itemprop="name">IBM</span>
+        <span class="subtitle-info">
+          - <time datetime="2015-03-02" itemprop="startDate">May 2015</time> - <time datetime="2016-06-23" itemprop="endDate">present</time>
+          - Hortolândia, SP
+        </span>
+      </h3>
 
-        <p itemprop="description">Responsible for building web/mobile applications with AngularJS and Ionic Framework. Worked with a modern workflows including automation via Gulp, continuous integration with Jenkins, and automated testing with Karma + Jasmine and Protractor.</p>
-      </div>
-
-      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole">
-        <h3>Web Designer</h3>
-        <p class="local">
-          <span itemprop="name">Entire Technology Partners</span> | <time datetime="2014-06-01" itemprop="startDate">June 2014</time> - <time datetime="2015-05-01" itemprop="endDate">May 2015</time></p>
-
-        <p itemprop="description">Focused on creating web/mobile user interfaces and implemented with HTML, CSS and JavaScript in .NET platform. Worked in two principal products, e-Trade and e-Supply.</p>
-      </div>
-
-      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole" style="display: none;">
-        <h3>Front-End Developer Free lancer</h3>
-        <p class="local">
-          <span itemprop="name">Agência Websonic</span> | <time datetime="2013-06-01" itemprop="startDate">June 2013</time> - <time datetime="2015-05-01" itemprop="startDate">March 2015</time>
-        </p>
-        <p itemprop="description">Front-end developer freelancer. Development of websites with HTML, CSS and JavaScript using Twitter Bootstrap.</p>
-      </div>
-
-      <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole">
-        <h3>Web Designer</h3>
-        <p class="local">
-          <span itemprop="name">SG&amp;C Agência de Comunicação</span> | <time datetime="2011-03-01" itemprop="startDate">March 2011</time> - <time datetime="2014-06-01" itemprop="startDate">June 2014</time>
-        </p>
-
-        <p itemprop="description">Collaborated with art directors and designers to develop websites, landing pages, hotsites, and emails marketing.</p>
-      </div>
-    </section>
-
-    <div class="col-half">
-      <section class="entry education">
-        <h2>Education</h2>
-
-        <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
-          <h3>Specialization, Web Engineering</h3>
-          <p class="local">
-            <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-              <span itemprop="name">Senac</span>
-            </span>
-            | <time itemprop="startDate">2016</time> - <time itemprop="endDate">2017</time>
-          </p>
-        </div>
-
-        <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
-          <h3>Bachelor, Advertising</h3>
-          <p class="local">
-            <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-              <span itemprop="name">Universidade de Ribeirão Preto</span>
-            </span>
-            | <time itemprop="startDate">2008</time> - <time itemprop="endDate">2011</time>
-          </p>
-        </div>
-      </section>
-
-      <section class="entry education">
-        <h2>Additional Education</h2>
-
-        <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
-          <h3>Free Course, Programming</h3>
-          <p class="local">
-            <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-              <span itemprop="name">Pluralsight</span>
-            </span>
-            | <time itemprop="startDate">2016</time> - <time itemprop="endDate">2017</time>
-          </p>
-          <p>HTML, CSS, JavaScript, AngularJS, NodeJS</p>
-        </div>
-
-        <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
-          <h3>Free Course, Programming</h3>
-          <p class="local">
-            <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-              <span itemprop="name">Alura</span>
-            </span>
-            | <time itemprop="startDate">2015</time> - <time itemprop="endDate">2016</time>
-          </p>
-          <p>HTML, CSS, JavaScript, AngularJS, NodeJS, MongoDB, Android, iOS, Java, PHP, C#, .NET, SQL, DevOps</p>
-        </div>
-      </section>
+      <p itemprop="description">Responsible for building web/mobile applications with AngularJS and Ionic Framework. Worked with a modern workflows including automation via Gulp, continuous integration with Jenkins, and automated testing with Karma + Jasmine and Protractor.</p>
     </div>
-  </div>
+
+    <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole">
+      <h3>
+        <span itemprop="roleName">Web Designer</span>, <span itemprop="name">Entire Technology Partners</span>
+        <span class="subtitle-info">
+          - <time datetime="2014-06-01" itemprop="startDate">June 2014</time> - <time datetime="2015-05-01" itemprop="endDate">May 2015</time>
+          - Ribeirão Preto, SP
+        </span>
+      </h3>
+
+      <p itemprop="description">Focused on creating web/mobile user interfaces and implemented with HTML, CSS and JavaScript in .NET platform. Worked in two principal products, e-Trade and e-Supply.</p>
+    </div>
+
+    <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole" style="display: none;">
+      <h3>Front-End Developer Free lancer</h3>
+      <p class="local">
+        <span itemprop="name">Agência Websonic</span> | <time datetime="2013-06-01" itemprop="startDate">June 2013</time> - <time datetime="2015-05-01" itemprop="startDate">March 2015</time>
+      </p>
+      <p itemprop="description">Front-end developer freelancer. Development of websites with HTML, CSS and JavaScript using Twitter Bootstrap.</p>
+    </div>
+
+    <div class="item" itemprop="worksFor" itemscope itemtype="http://schema.org/OrganizationRole">
+      <h3>
+       <span itemprop="roleName"> Web Designer</span>, <span itemprop="name">SG&amp;C Agência de Comunicação</span>
+       <span class="subtitle-info">
+        - <time datetime="2011-03-01" itemprop="startDate">March 2011</time> - <time datetime="2014-06-01" itemprop="startDate">June 2014</time>
+        - Ribeirão Preto, SP
+       </span>
+      </h3>
+
+      <p itemprop="description">Collaborated with art directors and designers to develop websites, landing pages, hotsites, and emails marketing.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="entry education">
+    <h2>Education</h2>
+
+    <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
+      <h3>Specialization, Web Engineering</h3>
+      <p class="local">
+        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <span itemprop="name">Senac</span>
+        </span>
+        | <time itemprop="startDate">2016</time> - <time itemprop="endDate">2017</time>
+      </p>
+    </div>
+
+    <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
+      <h3>Bachelor, Advertising</h3>
+      <p class="local">
+        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <span itemprop="name">Universidade de Ribeirão Preto</span>
+        </span>
+        | <time itemprop="startDate">2008</time> - <time itemprop="endDate">2011</time>
+      </p>
+    </div>
+  </section>
+
+  <section class="entry education">
+    <h2>Additional Education</h2>
+
+    <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
+      <h3>Free Course, Programming</h3>
+      <p class="local">
+        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <span itemprop="name">Pluralsight</span>
+        </span>
+        | <time itemprop="startDate">2016</time> - <time itemprop="endDate">2017</time>
+      </p>
+      <p>HTML, CSS, JavaScript, AngularJS, NodeJS</p>
+    </div>
+
+    <div class="item" itemprop="alumniOf" itemscope itemtype="http://schema.org/OrganizationRole">
+      <h3>Free Course, Programming</h3>
+      <p class="local">
+        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <span itemprop="name">Alura</span>
+        </span>
+        | <time itemprop="startDate">2015</time> - <time itemprop="endDate">2016</time>
+      </p>
+      <p>HTML, CSS, JavaScript, AngularJS, NodeJS, MongoDB</p>
+    </div>
+  </section>
 
   <section class="entry courses sr-only">
     <header class="entry-header">
@@ -405,73 +230,32 @@ width: 100%;
 
   <hr>
 
-  <div class="row">
-    <section class="col-half entry skill">
-      <h2>Technical skills</h2>
+  <section class="entry skill">
+    <h2>Technical skills</h2>
 
-      <ul class="skills">
-        <li>
-          <h3>HTML</h3>
-          <div class="meter" data-value="100"></div>
-        </li>
-        <li>
-          <h3>CSS</h3>
-          <div class="meter" data-value="90"></div>
-        </li>
-        <li>
-          <h3>JavaScript</h3>
-          <div class="meter" data-value="80"></div>
-        </li>
-        <li>
-          <h3>Node</h3>
-          <div class="meter" data-value="50"></div>
-        </li>
-        <li>
-          <h3>SQL</h3>
-          <div class="meter" data-value="30"></div>
-        </li>
-        <li>
-          <h3>NoSQL</h3>
-          <div class="meter" data-value="30"></div>
-        </li>
-        <li>
-          <h3>Tooling</h3>
-          <div class="meter" data-value="50"></div>
-        </li>
-        <li>
-          <h3>Agile</h3>
-          <div class="meter" data-value="60"></div>
-        </li>
-        <li>
-          <h3>DevOps</h3>
-          <div class="meter" data-value="30"></div>
-        </li>
-      </ul>
-    </section>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Node</li>
+      <li>SQL</li>
+      <li>NoSQL</li>
+      <li>Tooling</li>
+      <li>Agile</li>
+      <li>DevOps</li>
+    </ul>
+  </section>
 
-    <section class="col-half entry language">
-      <h2>Languages</h2>
+  <section class="entry language">
+    <h2>Languages</h2>
 
-      <ul class="skills">
-        <li>
-          <h3>Portuguese</h3>
-          <div class="meter" data-value="100"></div>
-        </li>
-        <li>
-          <h3>English</h3>
-          <div class="meter" data-value="50"></div>
-        </li>
-        <li>
-          <h3>Spanish</h3>
-          <div class="meter" data-value="15"></div>
-        </li>
-        <li>
-          <h3>German</h3>
-          <div class="meter" data-value="5"></div>
-        </li>
-      </ul>
-    </section>
-  </div>
+    <ul class="skills">
+      <li>Portuguese (native)</li>
+      <li>English (intermediate)</li>
+      <!-- <li>Spanish</li>
+      <li>German</li> -->
+    </ul>
+  </section>
 
   <section class="entry events sr-only">
     <header class="entry-header">
