@@ -7,7 +7,7 @@
     <title>Podcast</title>
     <style>
       .audio {
-        width: 100%;
+        width: 80%;
         margin: 2rem 0;
       }
       
@@ -20,12 +20,9 @@
         padding: .5rem 2rem;
         border: 1px solid #ccc;
       }
-      
-      .button-add {
-        width: 20%;
-      }
-      
+       
       .button {
+        width: 20%;
         padding: .5rem 2rem;
         color: #fff;
         background-color: #ccc;
@@ -38,8 +35,10 @@
       <input class="input" type="text">
       <button class="button button-add">Add</button>
     </div>
-    <audio class="audio" controls></audio>
-    <button class="button button-play">Play</button>
+    <div class="form-group">
+      <audio class="audio" controls></audio>
+      <button class="button button-play">Play</button>
+    </div>
 
     <script>
       const inputEl = document.querySelector('.input');
