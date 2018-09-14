@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Podcast</title>
+  </head>
+  <body>
+    <div>
+      <input class="input" type="text">
+      <button class="button-add">Add</button>
+    </div>
+    <audio class="audio" controls></audio>
+    <button class="button-play">Play</button>
+
+    <script>
+      const inputEl = document.querySelector('.input');
+      const audioEl = document.querySelector('.audio');
+      const buttonAddEl = document.querySelector('.button-add');
+      const buttonPlayEl = document.querySelector('.button-play');
+      
+      buttonAddEl.addEventListener('click', function(event) {
+        event.preventDefault();
+        audioEl.src = inputEl.value;
+      }, false);
+
+      buttonPlayEl.addEventListener('click', function(event) {
+        event.preventDefault();
+        audioEl.playbackRate = 2;
+        audioEl.play();
+      }, false);
+    </script>
+  </body>
+</html>
