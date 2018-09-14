@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Podcast</title>
+    <style>
+      .audio {
+        width: 100%;
+        margin: 2rem 0;
+      }
+      
+      .input {
+        width: 80%;
+        padding: .5rem 2rem;
+        border-color: #ccc;
+      }
+      
+      .button-add {
+        width: 20%;
+      }
+      
+      .button {
+        padding: .5rem 2rem;
+        color: #fff;
+        background-color: #ccc;
+        border: 0;
+      }
+    </style>
   </head>
   <body>
     <div>
       <input class="input" type="text">
-      <button class="button-add">Add</button>
+      <button class="button button-add">Add</button>
     </div>
     <audio class="audio" controls></audio>
-    <button class="button-play">Play</button>
+    <button class="button button-play">Play</button>
 
     <script>
       const inputEl = document.querySelector('.input');
