@@ -49,9 +49,15 @@
       const buttonAddEl = document.querySelector('.button-add');
       const buttonPlayEl = document.querySelector('.button-play');
 
+      const currentTrack = window.localStorage.getItem('currentTrack');
+      if (currentTrack) {
+        audioEl.src = currentTrack;
+      }
+
       buttonAddEl.addEventListener('click', function(event) {
         event.preventDefault();
         audioEl.src = inputEl.value;
+        window.localStorage.setItem('currentTrack', inputEl.value);
         const currentTime = window.localStorage.getItem('currentTime');
         if (currentTime) {
             audioEl.currentTime = currentTime;
@@ -72,6 +78,7 @@
       audioEl.addEventListener('ended', function() {
         console.log('ended');
         window.localStorage.removeItem('currentTime');
+        window.localStorage.removeItem('currentTrack');
       });
     </script>
   </body>
