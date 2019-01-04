@@ -10,46 +10,50 @@ if (currentTrack) {
   audioEl.src = currentTrack;
 }
 
-buttonAddEl.addEventListener('click', function(event) {
-  event.preventDefault();
-  audioEl.src = inputEl.value;
-  window.localStorage.setItem('currentTrack', inputEl.value);
-  const currentTime = window.localStorage.getItem('currentTime');
-  if (currentTime) {
-    audioEl.currentTime = currentTime;
-  }
-}, false);
+if (buttonAddEl) {
+  buttonAddEl.addEventListener('click', function(event) {
+    event.preventDefault();
+    audioEl.src = inputEl.value;
+    window.localStorage.setItem('currentTrack', inputEl.value);
+    const currentTime = window.localStorage.getItem('currentTime');
+    if (currentTime) {
+      audioEl.currentTime = currentTime;
+    }
+  }, false);
+}
 
-buttonPlayEl.addEventListener('click', function(event) {
-  event.preventDefault();
-  audioEl.playbackRate = 2;
-  audioEl.play();
-}, false);
+if (buttonPlayEl) {
+  buttonPlayEl.addEventListener('click', function(event) {
+    event.preventDefault();
+    audioEl.playbackRate = 2;
+    audioEl.play();
+  }, false);
+}
 
-buttonSpeedDecreaseEl.addEventListener('click', function(event) {
-  event.preventDefault();
-  console.log('before', audioEl.playbackRate);
-  audioEl.playbackRate = speedDecrease(audioEl.playbackRate);
-  console.log('after', audioEl.playbackRate);
-}, false);
+if (buttonSpeedDecreaseEl) {
+  buttonSpeedDecreaseEl.addEventListener('click', function(event) {
+    event.preventDefault();
+    audioEl.playbackRate = speedDecrease(audioEl.playbackRate);
+  }, false);
+}
 
-buttonSpeedIncreaseEl.addEventListener('click', function(event) {
-  event.preventDefault();
-  console.log('before', audioEl.playbackRate);
-  audioEl.playbackRate = speedIncrease(audioEl.playbackRate);
-  console.log('after', audioEl.playbackRate);
-}, false);
+if (buttonSpeedIncreaseEl) {
+  buttonSpeedIncreaseEl.addEventListener('click', function(event) {
+    event.preventDefault();
+    audioEl.playbackRate = speedIncrease(audioEl.playbackRate);
+  }, false);
+}
 
-audioEl.addEventListener('timeupdate', function() {
-  console.log('timeupdate');
-  window.localStorage.setItem('currentTime', audioEl.currentTime);
-});
+if (audioEl) {
+  audioEl.addEventListener('timeupdate', function() {
+    window.localStorage.setItem('currentTime', audioEl.currentTime);
+  });
 
-audioEl.addEventListener('ended', function() {
-  console.log('ended');
-  window.localStorage.removeItem('currentTime');
-  window.localStorage.removeItem('currentTrack');
-});
+  audioEl.addEventListener('ended', function() {
+    window.localStorage.removeItem('currentTime');
+    window.localStorage.removeItem('currentTrack');
+  });
+}
 
 function speedDecrease(current) {
   return current - .5;
