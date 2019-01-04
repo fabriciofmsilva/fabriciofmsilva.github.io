@@ -5,42 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Podcast</title>
-    <style>
-      .audio {
-        width: 80%;
-        margin: 2rem 0;
-      }
-      
-      .form-group {
-        display: flex;
-        align-items: center;
-      }
-      
-      .input {
-        width: 80%;
-        height: 40px;
-        padding: .5rem 2rem;
-        border: 1px solid #ccc;
-      }
-       
-      .button {
-        width: 20%;
-        height: 40px;
-        padding: .5rem 2rem;
-        color: #fff;
-        background-color: #ccc;
-        border: 1px solid #ccc;
-      }
-    </style>
+    <link rel="stylesheet" href="audio.css">
   </head>
+
   <body>
+    <nav class="nav">
+      <a class="nav-link" href="/">Home</a>
+    </nav>
+
     <div class="form-group">
-      <input class="input" type="text">
-      <button class="button button-add">Add</button>
+      <input class="form-control" type="text">
     </div>
+
+    <div class="form-group">
+      <button class="button" data-action="add">Add</button>
+    </div>
+
     <div class="form-group">
       <audio class="audio" controls></audio>
-      <button class="button button-play">Play</button>
+    </div>
+
+    <div class="form-group">
+      <button class="button" data-action="speed-increase">+ 0.5</button>
+      <button class="button" data-action="speed-decrease">- 0.5</button>
+      <button class="button" data-action="play">Play 2x</button>
     </div>
     
     <div class="ads">
@@ -57,43 +45,6 @@
       </script>
     </div>
 
-    <script>
-      const inputEl = document.querySelector('.input');
-      const audioEl = document.querySelector('.audio');
-      const buttonAddEl = document.querySelector('.button-add');
-      const buttonPlayEl = document.querySelector('.button-play');
-
-      const currentTrack = window.localStorage.getItem('currentTrack');
-      if (currentTrack) {
-        audioEl.src = currentTrack;
-      }
-
-      buttonAddEl.addEventListener('click', function(event) {
-        event.preventDefault();
-        audioEl.src = inputEl.value;
-        window.localStorage.setItem('currentTrack', inputEl.value);
-        const currentTime = window.localStorage.getItem('currentTime');
-        if (currentTime) {
-            audioEl.currentTime = currentTime;
-        }
-      }, false);
-
-      buttonPlayEl.addEventListener('click', function(event) {
-        event.preventDefault();
-        audioEl.playbackRate = 2;
-        audioEl.play();
-      }, false);
-
-      audioEl.addEventListener('timeupdate', function() {
-        console.log('timeupdate');
-        window.localStorage.setItem('currentTime', audioEl.currentTime);
-      });
-
-      audioEl.addEventListener('ended', function() {
-        console.log('ended');
-        window.localStorage.removeItem('currentTime');
-        window.localStorage.removeItem('currentTrack');
-      });
-    </script>
+    <script src="audio.js"></script>
   </body>
 </html>
