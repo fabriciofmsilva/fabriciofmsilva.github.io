@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Podcast</title>
-    <link rel="stylesheet" href="/audio/audio.css">
+    <link rel="stylesheet" href="audio.css">
   </head>
 
   <body>
     <nav class="nav">
-      <a class="nav-link" href="/">Home</a>
+      <a href="/">Home</a>
     </nav>
 
     <div class="form-group">
-      <input class="form-control" type="text">
+      <label for="audioURL">Audio URL</label>
+      <input class="form-control" id="audioURL" type="text">
     </div>
 
     <div class="form-group">
       <button class="button" data-action="add">Add</button>
     </div>
+
+    <hr>
 
     <div class="form-group">
       <audio class="audio" controls></audio>
@@ -45,6 +48,6 @@
       </script>
     </div>
 
-    <script src="/audio/audio.js"></script>
+    <script src="audio.js"></script>
   </body>
 </html>
