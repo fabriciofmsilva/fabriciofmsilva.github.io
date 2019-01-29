@@ -1,54 +1,47 @@
 ---
 layout: default
-title: Projetos
-description: Últimos projetos desenvolvidos.
-canonical: http://www.fabriciofmsilva.com.br/projetos/
+title: Projects
+description: Last projects
+canonical: http://www.fabriciofmsilva.com.br/projects/
 ---
 
-<section class="main">
-<article class="container">
-	<h1>Projetos</h1>
-	<p>Todos os projetos que participei</p>
-	<h2>2013</h2>
-	<ul>
-		<li><a href="http://www.opictelecom.com.br/" target="_blank">Opic Telecom</a></li>
-		<li><a href="http://www.ejcon.com.br/" target="_blank">EJCON - Empresa Júnior de Consultoria</a></li>
-		<li><a href="http://www.pontonaturalfranquia.com.br/" target="_blank">Ponto Natural</a></li>
-		<li><a href="http://feronia.com.br/" target="_blank">Feronia</a></li>
-		<li><a href="http://www.sgec.com.br/" target="_blank">SG&C</a></li>
-		<li><a href="http://www.waldorfribeirao.org/" target="_blank">Waldorf Ribeirão</a></li>
-		<li><a href="http://www.educparapensar.com.br/" target="_blank">EDUC</a></li>
-	</ul>
-	<h2>2012</h2>
-	<ul>
-		<li><a href="http://www.unimedribeirao.com.br/" target="_blank">Unimed Ribeirão</a></li>
-		<li><a href="http://conselhosdeamiga.com.br/" target="_blank">Conselhos de Amiga</a></li>
-		<li><a href="http://blog.consorcioluiza.com.br/" target="_blank">Consórcio Luiza (Blog)</a></li>
-		<li><a href="http://www.publinobile.com.br/" target="_blank">Publi Nobile</a></li>
-		<li><a href="http://www.medribcorretora.com.br/" target="_blank">MedRib Corretora</a></li>
-		<li><a href="http://www.itacua.com.br/" target="_blank">Itacuã</a></li>
-		<li><a href="http://www.fazendasantacecilia.com.br/" target="_blank">Fazenda Santa Cecília</a></li>
-		<li><a href="http://www.controlcore.com.br/" target="_blank">Control Core</a></li>
-		<li><a href="http://www.bronzejeans.com.br/" target="_blank">Bronze Jeans</a></li>
-		<li><a href="http://www.proctogastroclinica.com.br/" target="_blank">Procto Gastro Clínica</a></li>
-		<li><a href="http://www.lavive.com.br/" target="_blank">Lavive</a></li>
-		<li><a href="http://www.publicsilk.com.br/" target="_blank">Public Silk</a></li>
-		<li><a href="http://www.rafasupervarejao.com.br/" target="_blank">Rafas Super Varejão</a></li>
-		<li><a href="http://www.photoalbumuniversal.com.br/" target="_blank">Photoalbum Universal</a></li>
-		<li><a href="http://www.hospitalespecializado.com.br/" target="_blank">Hospital Especializado</a></li>
-		<li><a href="http://www.grupopassalacqua.com.br/" target="_blank">Grupo Passalacqua</a></li>
-		<li><a href="http://www.publinobile.com.br/" target="_blank">Publi Nobile</a></li>
-		<li><a href="http://www.valini.com.br/" target="_blank">Valini & Associados</a></li>
-		<li><a href="http://www.ruysalgado.com.br/" target="_blank">Ruy Salgado</a></li>
-	</ul>
-	<h2>2011</h2>
-	<ul>
-		<li><a href="http://www.shoppingdocalcado.com.br/" target="_blank">Shopping do Calçado de Franca</a></li>
-		<li><a href="http://www.barrosoturismo.com.br/" target="_blank">Barroso Turismo</a></li>
-		<li><a href="http://www.styrocorte.com.br/" target="_blank">Styrocorte</a></li>
-		<li><a href="http://www.tubosverola.com.br/" target="_blank">Tubos Verola</a></li>
-		<li><a href="http://www.pragtech.com.br/" target="_blank">Pragtech</a></li>
-		<li><a href="http://www.turboluz.com.br/" target="_blank">Turboluz</a></li>
-	</ul>
-</article>
-</section>
+{% include header.html %}
+
+<main class="main">
+  {% for project in site.projects %}
+    {% capture this_year %}{{ project.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ project.date | date: "%B" }}{% endcapture %}
+    {% capture next_year %}{{ project.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ project.previous.date | date: "%B" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <section class="archive">
+      <h2 class="archive-title" id="{{ this_year }}">{{ this_year }}</h2>
+      <a id="{{ this_year }}-{{ this_month | date: '%m' }}"></a>
+      <ul class="articles">
+    {% endif %}
+      <li class="article">
+        <a href="{{ project.link }}">{{ project.title }}</a>
+      </li>
+    {% if forloop.last %}
+      </ul>
+    </section>
+    {% else %}
+      {% if this_year != next_year %}
+      </ul>
+      </section>
+
+      <section class="archive">
+        <h2 class="archive-title" id="{{ next_year }}">{{ next_year }}</h2>
+        <a id="{{ next_year }}-{{ next_month | date: '%m' }}"></a>
+        <ul class="articles">
+      {% else %}
+        {% if this_month != next_month %}
+        </ul>
+        <a id="{{ this_year }}-{{ next_month | date: '%m' }}"></a>
+        <ul class="articles">
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</main>
