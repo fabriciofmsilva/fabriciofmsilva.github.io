@@ -15,32 +15,30 @@ canonical: http://www.fabriciofmsilva.com.br/projects/
        <h2 class="archive-title" id="{{ currentyear }}">{{ currentyear }}</h2>
       {% capture year %}{{currentyear}}{% endcapture %}
     {% endif %}
-    <ul class="articles">
-      <li>
-        <p>
-          <a href="{{ project.link | prepend: site.url }}">{{ project.title }}</a>
-          &mdash;
-          <time class="article-date" datetime="{{ project.date | date_to_xmlschema }}">
-          {% assign m = project.date | date: "%-m" %}
-          {% case m %}
-            {% when '1' %}Janeiro
-            {% when '2' %}Fevereiro
-            {% when '3' %}Março
-            {% when '4' %}Abril
-            {% when '5' %}Maio
-            {% when '6' %}Junho
-            {% when '7' %}Julho
-            {% when '8' %}Agosto
-            {% when '9' %}Setembro
-            {% when '10' %}Outubro
-            {% when '11' %}Novembro
-            {% when '12' %}Dezembro
-          {% endcase %}
-          {{ project.date | date: "%-d" }}
-          </time>
-        </p>
-      </li>
-    </ul>
+    <article class="article">
+      <p>
+        <a href="{{ project.link | prepend: site.url }}">{{ project.title }}</a>
+        &mdash;
+        <time class="article-date" datetime="{{ project.date | date_to_xmlschema }}">
+        {% assign m = project.date | date: "%-m" %}
+        {% case m %}
+          {% when '1' %}Janeiro
+          {% when '2' %}Fevereiro
+          {% when '3' %}Março
+          {% when '4' %}Abril
+          {% when '5' %}Maio
+          {% when '6' %}Junho
+          {% when '7' %}Julho
+          {% when '8' %}Agosto
+          {% when '9' %}Setembro
+          {% when '10' %}Outubro
+          {% when '11' %}Novembro
+          {% when '12' %}Dezembro
+        {% endcase %}
+        {{ project.date | date: "%-d" }}
+        </time>
+      </p>
+    </article>
   {% endfor %}
   </section>
 </main>

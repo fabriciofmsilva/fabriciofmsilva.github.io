@@ -7,11 +7,4 @@
   color: $grey-color;
   text-align: center;
   border-top: 1px dashed $grey-color-light;
-
-  a {
-    &,
-    &:visited {
-      color: $grey-color;
-    }
-  }
 }

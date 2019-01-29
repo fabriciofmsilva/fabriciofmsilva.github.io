@@ -112,16 +112,18 @@ img {
  * Links
  */
 a {
-  color: inherit;
+  color: $link-color;
   text-decoration: none;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
 
   &:visited {
-    color: inherit;
+    color: darken($link-color, 5%);
+    border-bottom-color: darken($link-color, 5%);
   }
 
   &:hover {
-    border-bottom-color: lighten($text-color, 25%);
+    color: darken($link-color, 15%);
+    border-bottom-color: darken($link-color, 15%);
   }
 }
 

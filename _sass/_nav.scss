@@ -5,16 +5,16 @@
   a {
     display: inline-block;
     margin-right: .5em;
+    color: $grey-color;
+    border-bottom-color: darken($link-color, 5%);
 
-    &,
     &:visited {
-      color: $grey-color;
-      text-decoration: none;
-      border-bottom: none;
+      border-bottom-color: darken($link-color, 5%);
     }
 
     &:hover {
-      color: $text-color;
+      color: $link-color;
+      border-bottom-color: darken($link-color, 5%);
     }
   }
 }

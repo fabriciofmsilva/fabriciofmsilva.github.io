@@ -12,36 +12,34 @@ isHome: true
         <h2 class="archive-title" id="{{ currentyear }}">{{ currentyear }}</h2>
       {% capture year %}{{currentyear}}{% endcapture %}
     {% endif %}
-    <ul class="articles">
-      <li>
-        <p>
-          {% if post.link %}
-          <a class="link-external" href="{{ post.link }}" data-external=" [externo]">{{ post.title }}</a>
-          {% else %}
-          <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
-          {% endif %}
-          &mdash;
-          <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}">
-          {% assign m = post.date | date: "%-m" %}
-          {% case m %}
-            {% when '1' %}Janeiro
-            {% when '2' %}Fevereiro
-            {% when '3' %}Março
-            {% when '4' %}Abril
-            {% when '5' %}Maio
-            {% when '6' %}Junho
-            {% when '7' %}Julho
-            {% when '8' %}Agosto
-            {% when '9' %}Setembro
-            {% when '10' %}Outubro
-            {% when '11' %}Novembro
-            {% when '12' %}Dezembro
-          {% endcase %}
-          {{ post.date | date: "%-d" }}
-          </time>
-        </p>
-      </li>
-    </ul>
+    <article class="article">
+      <p>
+        {% if post.link %}
+        <a class="link-external" href="{{ post.link }}" data-external=" [externo]">{{ post.title }}</a>
+        {% else %}
+        <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+        {% endif %}
+        &mdash;
+        <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}">
+        {% assign m = post.date | date: "%-m" %}
+        {% case m %}
+          {% when '1' %}Janeiro
+          {% when '2' %}Fevereiro
+          {% when '3' %}Março
+          {% when '4' %}Abril
+          {% when '5' %}Maio
+          {% when '6' %}Junho
+          {% when '7' %}Julho
+          {% when '8' %}Agosto
+          {% when '9' %}Setembro
+          {% when '10' %}Outubro
+          {% when '11' %}Novembro
+          {% when '12' %}Dezembro
+        {% endcase %}
+        {{ post.date | date: "%-d" }}
+        </time>
+      </p>
+    </article>
   {% endfor %}
   </section>
 </main>
