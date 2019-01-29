@@ -18,7 +18,9 @@ canonical: http://www.fabriciofmsilva.com.br/projects/
     <ul class="articles">
       <li>
         <p>
-          <a href="{{ project.link | prepend: site.url }}">{{ project.title }}</a> &mdash;
+          <a href="{{ project.link | prepend: site.url }}">{{ project.title }}</a>
+          &mdash;
+          <time class="article-date" datetime="{{ project.date | date_to_xmlschema }}">
           {% assign m = project.date | date: "%-m" %}
           {% case m %}
             {% when '1' %}Janeiro
@@ -35,7 +37,8 @@ canonical: http://www.fabriciofmsilva.com.br/projects/
             {% when '12' %}Dezembro
           {% endcase %}
           {{ project.date | date: "%-d" }}
-          </p>
+          </time>
+        </p>
       </li>
     </ul>
   {% endfor %}
