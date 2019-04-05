@@ -11,7 +11,7 @@ name: Fabrício Silva
 description: > # this means to ignore newlines until "baseurl:"
   Web developer focused in front-end
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://fabriciofmsilva.com.br" # the base hostname & protocol for your site
+url: "https://fabriciofmsilva.com.br" # the base hostname & protocol for your site
 domain: fabriciofmsilva.com.br
 lang: pt-BR
 
@@ -21,11 +21,11 @@ words_per_minute: 200
 permalink: /:title/
 
 author: Fabrício Silva
-github: http://github.com/fabriciofmsilva
-twitter: http://twitter.com/fabriciofmsilva
+github: https://github.com/fabriciofmsilva
+twitter: https://twitter.com/fabriciofmsilva
 linkedin: https://www.linkedin.com/in/fabriciofmsilva
 plus: https://plus.google.com/+FabricioFMSilva
-feedburner: http://feeds.feedburner.com/fabriciofmsilva
+feedburner: https://feeds.feedburner.com/fabriciofmsilva
 analytics: UA-22890269-1
 
 collections:
