@@ -8,4 +8,4 @@ install:
 script:
   - echo "skipping tests"
 after_success:
-  - npm run test:lh -- --perf=80 --pwa=80 --a11y=80 --bp=80 --seo=80 https://fabriciofmsilva.com.br
+  - npm run lh -- --perf=80 --pwa=80 --a11y=80 --bp=80 --seo=80 https://fabriciofmsilva.com.br

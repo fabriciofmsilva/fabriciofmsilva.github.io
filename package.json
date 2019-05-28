@@ -4,8 +4,8 @@
   "description": "Fabrício Silva ===",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:lh": "lighthousebot"
+    "lh": "lighthousebot",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
