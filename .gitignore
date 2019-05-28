@@ -5,3 +5,6 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+
+# Node
+node_modules/

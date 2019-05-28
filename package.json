@@ -1,0 +1,23 @@
+{
+  "name": "fabriciofmsilva.github.io",
+  "version": "1.0.0",
+  "description": "Fabrício Silva ===",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:lh": "lighthousebot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabriciofmsilva/fabriciofmsilva.github.io.git"
+  },
+  "author": "Fabrício Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabriciofmsilva/fabriciofmsilva.github.io/issues"
+  },
+  "homepage": "https://github.com/fabriciofmsilva/fabriciofmsilva.github.io#readme",
+  "devDependencies": {
+    "lighthousebot": "git+https://github.com/ebidel/lighthousebot.git"
+  }
+}
