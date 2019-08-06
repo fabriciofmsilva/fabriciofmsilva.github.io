@@ -9,5 +9,7 @@ image: /img/post/generic.jpg
 image-alt: Generic
 toc: true
 ---
-## Big picture
+1. The big picture: what can you do with the technology
+2. How to get started
+3. The 20% you need to know to be the most effective
 
