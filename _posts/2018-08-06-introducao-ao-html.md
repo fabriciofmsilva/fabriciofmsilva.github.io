@@ -2,19 +2,23 @@
 layout: post
 title: Começando com HTML
 description: Começando com HTML
-date: 2016-10-06 00:00:01
+date: 2018-08-06 08:13:01
 categories: frontend
 tags: html
 image: /img/post/generic.jpg
 image-alt: HTML
 toc: true
 ---
+
+> Tudo começa e termina no HTML | Diego Eis
+
 ## O que é HTML?
 
 HTML é a abreviação para <i lang="en">HyperText Markup Language</i> (Linguagem de Marcação e HiperTexto). Como o próprio nome diz ela serve para marcar conteúdo (adicionar semântica) e adicionar ligações (links) entre documentos.
 
 O HTML foi criado por volta de 1991 pelo Sir Tim Berners-Lee no CERN, seu objetivo era criar uma forma de divulgar as pesquisas para seus colegas.
 
+No passado o <abbr title="World Wide Web Consortium">W3C</abbr> era o responsável pelos padrões do HTML, porém hoje ele é definido pelo **<abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr>**, uma organização formada pelos principais navegadores do mercado.
 
 
 ## Por que aprender HTML?
@@ -22,10 +26,9 @@ O HTML foi criado por volta de 1991 pelo Sir Tim Berners-Lee no CERN, seu objeti
 HTML é o coração da Web. Se você quer se aventurar no mundo de desenvolvimento Web HTML é o ponto de partida. Como disse [Diego Eis](http://diegoeis.com/), <q>tudo começa e termina no HTML</q>. Caso você esteja interessado em trabalhar com front-end (lado do cliente), o HTML é a coisa mais importante que você deve dominar. Neste artigo vou apresentar os conceitos básicos da linguagem.
 
 
-
 ## Elementos (blocos de construção semanticos)
 
-O HTML trabalha com um conjunto de elementos, cujo o objetivo é criar um significado **semântico** no conteúdo. Um elmento é formado por um conjunto de **tags** (veremos depois esse conceito) e o conteúdo que as **tags** delimitam.
+O HTML trabalha com um conjunto de elementos, cujo o objetivo é criar um significado **semântico** no conteúdo. Um elemento é formado por um conjunto de **tags** (veremos depois esse conceito) e o conteúdo que as **tags** delimitam.
 
 {% highlight html %}
 <html>
@@ -36,15 +39,17 @@ O HTML trabalha com um conjunto de elementos, cujo o objetivo é criar um signif
 {% endhighlight %}
 
 
+### Elementos em bloco e em linha
+
+Elementos em blocos são exibidos pela largura toda do documento e ficam um abaixo do outro. Já os blocos em linha ocupam o tamanho do conteúdo que marca e ficam um após o outro.
+
 
 ## Tags (etiquetas)
-
 
 
 {% highlight html %}
 <p>Isso é texto dentro de um parágrafo.</p>
 {% endhighlight %}
-
 
 
 ## Atributos
@@ -56,11 +61,6 @@ Os atributos normalmente consistem em duas partes, o nome do atributo e o seu va
 {% endhighlight %}
 
 
-
-### Referências a caracteres com nome
-
-
-
 ## Comentários
 
 Você pode criar um comentário no seu código que não será mostrado na página quando esta foi exibida no navegador. Comentários são úteis para explicar uma seção de marcação, auxiliar outras pessoas que forem dar manutenção na página, ou mesmo lembrar você futuramente. Para criar um comentário no HTML basta apenas usar a seguinte marcação:
@@ -70,7 +70,6 @@ Você pode criar um comentário no seu código que não será mostrado na págin
 {% endhighlight %}
 
 Vale lembrar que o ideal é trabalhar com o mínimo de comentários possível. Ou seja, se você precisou explicar o código é porque o código pode estar complexo e pode ser melhorado.
-
 
 
 ## Estrutura básica de um documento
@@ -136,7 +135,6 @@ Na **tag** `<body>` é onde vamos inserir todo o conteúdo 'visível' para o usu
 {% highlight html %}
 <body></body>
 {% endhighlight %}
-
 
 
 ## Referências
