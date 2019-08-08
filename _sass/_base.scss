@@ -79,7 +79,8 @@ small {
 code {
   padding: 0 .5rem;
   font-family: "Source Code Pro", monospace;
-  background: #fafafa;
+  color: #d14;
+  background: $code-color;
 }
 
 blockquote {

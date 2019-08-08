@@ -28,7 +28,7 @@ Lorem ipsum dolor sit amet, [test link](#) adipiscing elit. **This is strong.** 
 
 ## Images
 
-![Large example image](http://placehold.it/800x400 "Large example image")
+![Large example image](http://placehold.it/900x400 "Large example image")
 ![Medium example image](http://placehold.it/400x200 "Medium example image")
 ![Small example image](http://placehold.it/200x200 "Small example image")
 
