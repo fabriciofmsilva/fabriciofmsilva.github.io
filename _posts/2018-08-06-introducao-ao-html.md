@@ -7,7 +7,6 @@ categories: frontend
 tags: html
 image: /img/post/generic.jpg
 image-alt: HTML
-toc: true
 ---
 
 > Tudo começa e termina no HTML | Diego Eis

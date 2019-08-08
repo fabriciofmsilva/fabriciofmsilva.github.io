@@ -111,10 +111,13 @@ img {
 /**
  * Links
  */
-a {
+a,
+.link {
   color: $link-color;
   text-decoration: none;
   border-bottom: 1px solid;
+  font-style: inherit;
+  cursor: pointer;
 
   &:visited {
     color: darken($link-color, 5%);
@@ -133,6 +136,13 @@ a {
   }
 }
 
+
+/**
+ * Buttons
+ */
+button {
+  font-size: 1rem;
+}
 
 
 /**
