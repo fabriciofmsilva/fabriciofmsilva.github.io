@@ -3,6 +3,7 @@ layout: post
 title: Introdução ao HTML
 description: Uma breve introdução ao HTML, passando pela sua história e conceitos básicos
 date: 2019-08-06 08:13:01
+last-update: 2019-08-17 11:10:01
 categories: frontend
 tags: html
 image: /img/post/generic.jpg
