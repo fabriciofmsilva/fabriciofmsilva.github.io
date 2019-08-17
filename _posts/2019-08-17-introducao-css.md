@@ -2,7 +2,7 @@
 layout: post
 title: Introdução ao CSS
 description: Uma breve introdução ao CSS, passando pela sua história e conceitos básicos
-date: 2018-08-17 09:41:00
+date: 2019-08-17 09:41:00
 categories: frontend
 tags: css
 image: /img/post/generic.jpg
