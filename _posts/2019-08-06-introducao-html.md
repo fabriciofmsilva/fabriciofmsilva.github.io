@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introdução ao HTML
-description: Introdução ao HTML
+description: Uma breve introdução ao HTML, passando pela sua história e conceitos básicos
 date: 2019-08-06 08:13:01
 categories: frontend
 tags: html
@@ -137,6 +137,11 @@ Na **tag** `<body>` é onde vamos inserir todo o conteúdo 'visível' para o usu
 {% highlight html %}
 <body></body>
 {% endhighlight %}
+
+
+## Exemplo
+
+Aqui vamos criar um portfólio online.
 
 
 ## Referências
