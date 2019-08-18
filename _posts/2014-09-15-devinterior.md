@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "DevInterior"
-description: "O primeiro DevInterior Meetup"
-date:   2014-09-15 22:22:12
+title: DevInterior
+description: O primeiro DevInterior Meetup
+date: 2014-09-15 22:22:12
+last-update: 2014-09-17 10:00:00
 categories: evento
 tags: evento
 image: http://www.fabriciofmsilva.com.br/img/2014/09-16-devinterior.jpg
@@ -24,5 +25,3 @@ No começo estavamos com receio de não conseguir público. Mas assim que a data
 ## O evento
 
 No último dia conseguimos preencher todas as vagas. Foi incrível. Tive uma enorme satisfação ao ver a sala cheia. O Saulo do Supera foi muito atencioso e nos ajudou durante o evento todo. Finalmente conheci alguns desenvolvedores de Ribeirão Preto e todos foram muito receptivos. Posso dizer que o evento foi um sucesso.
-
-[Last update 17-09-2014]

@@ -142,8 +142,104 @@ Na **tag** `<body>` é onde vamos inserir todo o conteúdo 'visível' para o usu
 
 ## Exemplo
 
-Aqui vamos criar um portfólio online.
+Para mostrar um exemplo de uma página completa com HTML, vamos criar uma home page para servir como portfólio. Abaixo segue o texto que vamos usar como base:
 
+{% highlight html %}
+Fabrício Silva
+Front-end Developer
+
+E-mail | Twitter | LinkedIn | GitHub
+Sobre | Projetos
+
+Minha Experiência
+
+Texto sobre a experiência.
+
+Design
+HTML | CSS | Bootstrap
+Texto
+
+Code
+JavaScript | Angular | NodeJS
+Texto
+
+Ferramentas
+Git | WebPack
+Text
+
+Últimas do blog
+Título da postagem
+Resumo
+Foto
+
+Últimos projetos
+Título do projeto
+Resumo
+Foto
+
+@ Fabrício Silva
+Feito com HTML e ❤.
+{% endhighlight %}
+
+{% highlight html %}
+<!doctype hmtl>
+<html>
+  <head>
+    <title>Fabrício Silva | Desenvolvedor front-end</title>
+  </head>
+  <body>
+    <h1>Fabrício Silva</h1>
+    <h2>Desenvolvedor front-end</h2>
+
+    <ul>
+      <li>
+        <a href="mailto:fabriciofmsilva@gmail.com">E-mail</a>
+      </li>
+      <li>
+        <a href="#">Twitter</a>
+      </li>
+      <li>
+        <a href="#">LinkedIn</a>
+      </li>
+      <li>
+        <a href="#">GitHub</a>
+      </li>
+    <ul>
+    <nav>
+      <a href="#about">Sobre</a>
+    Projetos</a>
+
+    Minha Experiência
+
+    Texto sobre a experiência.
+
+    Design
+    HTML | CSS | Bootstrap
+    Texto
+
+    Code
+    JavaScript | Angular | NodeJS
+    Texto
+
+    Ferramentas
+    Git | WebPack
+    Text
+
+    Últimas do blog
+    Título da postagem
+    Resumo
+    Foto
+
+    Últimos projetos
+    Título do projeto
+    Resumo
+    Foto
+
+    @ Fabrício Silva
+    Feito com HTML e ❤.
+  </body>
+</html>
+{% endhighlight %}
 
 ## Referências
 

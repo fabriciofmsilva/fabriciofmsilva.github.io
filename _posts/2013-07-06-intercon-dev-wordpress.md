@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "InterCon Dev +WordPress"
-description: "InterCon Dev +WordPress evento do iMasters"
-date:   2013-07-06 16:12:23
+title: InterCon Dev +WordPress
+description: InterCon Dev +WordPress evento do iMasters
+date: 2013-07-06 16:12:23
 categories: evento
 tags: evento
 image: http://www.fabriciofmsilva.com.br/img/2013/wordpress.jpg

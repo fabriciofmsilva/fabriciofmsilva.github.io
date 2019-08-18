@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Front-End Meetup #5 Campinas"
-description: "Como foi a experiência do meu primeiro Meetup em Campinas."
-date:   2016-02-28 20:41:12
+title: "Front-End Meetup #5 Campinas"
+description: Como foi a experiência do meu primeiro Meetup em Campinas
+date: 2016-02-28 20:41:12
 categories: evento
 tags: evento
 link: https://medium.com/@fabriciofmsilva/front-end-meetup-5-campinas-e-uber-2c24ffb99cfe#.bfw9fs22n
