@@ -3,7 +3,7 @@ layout: post
 title: Introdução ao HTML
 description: Uma breve introdução ao HTML, passando pela sua história e conceitos básicos
 date: 2019-08-06 08:13:01
-last-update: 2019-08-17 11:10:01
+last-update: 2019-08-20 08:38:01
 categories: frontend
 tags: html
 image: /img/post/generic.jpg
@@ -207,36 +207,47 @@ Feito com HTML e ❤.
     <ul>
     <nav>
       <a href="#about">Sobre</a>
-    Projetos</a>
+      <a href="#about">Projetos</a>
+    </nav>
 
-    Minha Experiência
+    <h2>Minha Experiência</h2>
 
-    Texto sobre a experiência.
+    <p>Texto sobre a experiência.</p>
 
-    Design
-    HTML | CSS | Bootstrap
-    Texto
+    <h3>Design</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Bootstrap</li>
+    </ul>
+    <p>Texto</p>
 
-    Code
-    JavaScript | Angular | NodeJS
-    Texto
+    <h3>Code</h3>
+    <ul>
+      <li>JavaScript</li>
+      <li>Angular</li>
+      <li>NodeJS</li>
+    </ul>
+    <p>Texto</p>
 
-    Ferramentas
-    Git | WebPack
-    Text
+    <h3>Ferramentas</h3>
+    <ul>
+      <li>Git</li>
+      <li>WebPack</li>
+    </ul>
+    <p>Text</p>
 
-    Últimas do blog
-    Título da postagem
-    Resumo
+    <h2>Últimos projetos</h2>
+    <h3>Título do projeto</h3>
+    <p>Resumo</p>
     Foto
 
-    Últimos projetos
-    Título do projeto
-    Resumo
+    <h2>Últimas do blog</h2>
+    <h3>Título da postagem</h3>
+    <p>Resumo</p>
     Foto
 
-    @ Fabrício Silva
-    Feito com HTML e ❤.
+    <small>@ Fabrício Silva | Feito com HTML e ❤.</small>
   </body>
 </html>
 {% endhighlight %}
