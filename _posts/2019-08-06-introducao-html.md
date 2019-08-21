@@ -188,67 +188,79 @@ Feito com HTML e ❤.
     <title>Fabrício Silva | Desenvolvedor front-end</title>
   </head>
   <body>
-    <h1>Fabrício Silva</h1>
-    <h2>Desenvolvedor front-end</h2>
+    <header>
+      <h1>Fabrício Silva</h1>
+      <h2>Desenvolvedor front-end</h2>
 
-    <ul>
-      <li>
-        <a href="mailto:fabriciofmsilva@gmail.com">E-mail</a>
-      </li>
-      <li>
-        <a href="#">Twitter</a>
-      </li>
-      <li>
-        <a href="#">LinkedIn</a>
-      </li>
-      <li>
-        <a href="#">GitHub</a>
-      </li>
-    <ul>
-    <nav>
-      <a href="#about">Sobre</a>
-      <a href="#projects">Projetos</a>
-      <a href="#blog">Blog</a>
-    </nav>
+      <ul>
+        <li>
+          <a href="mailto:fabriciofmsilva@gmail.com">E-mail</a>
+        </li>
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">LinkedIn</a>
+        </li>
+        <li>
+          <a href="#">GitHub</a>
+        </li>
+      <ul>
 
-    <h2 id="about">Minha Experiência</h2>
+      <nav>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#blog">Blog</a>
+      </nav>
+    </header>
 
-    <p>Texto sobre a experiência.</p>
+    <main>
+      <section id="about">
+        <h2>Minha Experiência</h2>
+        <p>Texto sobre a experiência.</p>
 
-    <h3>Design</h3>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Bootstrap</li>
-    </ul>
-    <p>Texto</p>
+        <h3>Design</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+        </ul>
+        <p>Texto</p>
 
-    <h3>Code</h3>
-    <ul>
-      <li>JavaScript</li>
-      <li>Angular</li>
-      <li>NodeJS</li>
-    </ul>
-    <p>Texto</p>
+        <h3>Code</h3>
+        <ul>
+          <li>JavaScript</li>
+          <li>Angular</li>
+          <li>NodeJS</li>
+        </ul>
+        <p>Texto</p>
 
-    <h3>Ferramentas</h3>
-    <ul>
-      <li>Git</li>
-      <li>WebPack</li>
-    </ul>
-    <p>Text</p>
+        <h3>Ferramentas</h3>
+        <ul>
+          <li>Git</li>
+          <li>WebPack</li>
+        </ul>
+        <p>Text</p>
+      </section>
 
-    <h2 id="projects">Últimos projetos</h2>
-    <h3>Título do projeto</h3>
-    <p>Resumo</p>
-    Foto
+      <section id="projects">
+        <h2>Últimos projetos</h2>
+        <h3>Título do projeto</h3>
+        <p>Resumo</p>
+        Foto
+      </section>
 
-    <h2 id="blog">Últimas do blog</h2>
-    <h3>Título da postagem</h3>
-    <p>Resumo</p>
-    Foto
+      <section id="blog">
+        <h2>Últimas do blog</h2>
+        <h3>Título da postagem</h3>
+        <p>Resumo</p>
+        Foto
+      </section>
+    </main>
 
-    <small>@ Fabrício Silva | Feito com HTML e ❤.</small>
+    <footer>
+      <small>@ Fabrício Silva | Feito com HTML e ❤.</small>
+    </footer>
   </body>
 </html>
 {% endhighlight %}
