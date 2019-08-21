@@ -78,13 +78,60 @@ Para selecionar um `id` usando a `#` na frente no nome do ID.
 
 ### Seletores complexos
 
+Podemos criar alguns seletores mais complexos combinando os anteriores.
+
+{% highlight css %}
+.header .title {
+  color: rebeccapurple;
+}
+{% endhighlight %}
+
 ## Valores e unidades
+
+Classificamos as unidades em dois tipos as fixas e as relativas.
+
+Dentre as fixas podemos destacar o `px`.
+
+Já nas relativas temos o `em`, `rem`, `%`.
 
 ## Cascata e herança
 
+A primeira letra do CSS é Cascata.
+
+{% highlight css %}
+p {
+  color: rebeccapurple;
+}
+{% endhighlight %}
+
 ## O modelo de caixa (box model)
 
-## Display e Positioning
+O modelo básico de caixa CSS é o <em lang="en">box model</em>, ele leva em conta o tamanho do `container`, `padding`, `margin` e `border`.
+
+## Display
+
+Hoje temos alguns tipos de `display`s, vamos falar um pouco sobre os básicos.
+
+O `display: block;` faz com que o bloco ocupe todo a largura da janela empurrando os próximos conteúdos para baixo. Como exemplos de `block` temos os elementos `div`, `article`, `header`, `footer`.
+
+Já o `display: inline;` faz com que o bloco se comporte como uma palavra em uma linha. São exemplos as *tags* `span`, `em`, `strong`.
+
+Podemos fazer um mix dos dois displays usando o `display: inline-block;`, aqui basicamente temos um elemento que se comporta como o `inline` porém aceita as mudanças do `margin` e `padding`.
+
+Outro muito usado é o `display: none;`, usamos para esconder um elemento da tela e todos os seus filhos. Usando o `none` é como se o elemento não estivesse no <abbr title="Document Object Model">DOM</abbr>.
+
+Temos outros tipos de `display` como `list-item`, `inline-table`, `table`, `table-cell`, `table-column`, `table-column-group`, `table-footer-group`, `table-header-group`, `table-row`, `table-row-group`, `flex`, `inline-flex`, `grid`, `inline-grid`, `run-in`. Você pode conferir o que cada uma faz no link [display mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/display). Aqui o destaque fica com o `flex`, usado para trabalhar com o **flexbox** e o `grid`, usado para trabalhar com o **CSS Grid**, mas eles fogem do escopo deste artigo (num futuro quando criar os artigos coloco o link aqui).
+
+E pra fechar ainda podemos usar a propriedade `inherit`, que faz com que o elemento herde o valor do pai.
+
+<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="fabriciofmsilva" data-slug-hash="oNvYeXL" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Display">
+  <span>See the Pen <a href="https://codepen.io/fabriciofmsilva/pen/oNvYeXL/">
+  Display</a> by Fabrício Silva (<a href="https://codepen.io/fabriciofmsilva">@fabriciofmsilva</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+## Positioning
 
 ## Fontes
 
