@@ -121,7 +121,7 @@ Podemos fazer um mix dos dois displays usando o `display: inline-block;`, aqui b
 
 Outro muito usado é o `display: none;`, usamos para esconder um elemento da tela e todos os seus filhos. Usando o `none` é como se o elemento não estivesse no <abbr title="Document Object Model">DOM</abbr>.
 
-Temos outros tipos de `display` como `list-item`, `inline-table`, `table`, `table-cell`, `table-column`, `table-column-group`, `table-footer-group`, `table-header-group`, `table-row`, `table-row-group`, `flex`, `inline-flex`, `grid`, `inline-grid`, `run-in`. Você pode conferir o que cada uma faz no link [display mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/display). Aqui o destaque fica com o `flex`, usado para trabalhar com o **flexbox** e o `grid`, usado para trabalhar com o **CSS Grid**, mas eles fogem do escopo deste artigo (num futuro quando criar os artigos coloco o link aqui).
+Você pode conferir outros tipos de `display` no [mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/display). Aqui o destaque fica com o `flex`, usado para trabalhar com o **flexbox** e o `grid`, usado para trabalhar com o **CSS Grid**, mas eles fogem do escopo deste artigo (num futuro quando criar os artigos coloco o link aqui).
 
 E pra fechar ainda podemos usar a propriedade `inherit`, que faz com que o elemento herde o valor do pai.
 
@@ -133,6 +133,23 @@ E pra fechar ainda podemos usar a propriedade `inherit`, que faz com que o eleme
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## Positioning
+
+Os elementos seguem um padrão na exibição quando renderizados no DOM. Porém podemos usar a propriedade `position` para modificar esse comportamento. Por padrão a maioria dos elementos tem o `position: static;`, isso faz com que eles se mantenham no fluxo da página.
+
+Vamos começar com o `position: relative;`, esse position mantém o elemento na posição inicial dele, porém podemos usar as propriedades `top`, `right`, `bottom`, `left` e `z-index` para alterar a posição incial do elemento.
+
+<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="css,result" data-user="fabriciofmsilva" data-slug-hash="oNvBNLO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Position: Relative">
+  <span>See the Pen <a href="https://codepen.io/fabriciofmsilva/pen/oNvBNLO/">
+  Position: Relative</a> by Fabrício Silva (<a href="https://codepen.io/fabriciofmsilva">@fabriciofmsilva</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+Já o `position: absolute;` retira o elemento do fluxo e usando as propriedades `top`, `right`, `bottom`, `left` e `z-index` podemos mover os elementos para outras posições. Porém o position absolute fica posicionado a partir de um ancestral com position relative, caso nenhum ancestral tenha ele fica positionado relativo ao body (document).
+
+O `position: fixed;` é parecido com o absolute com a diferença que ele fica posicionado em relação a janela do navegador (`window`), com isso se você fizer uma rolagem (scroll) o elemento posicionado com static vai fazer o scroll junto.
+
+Por fim o mais novo membro da família o `position: sticky;` ele serve para travar um elemento geralmente no topo da página quando um scroll é feito.
 
 ## Fontes
 
