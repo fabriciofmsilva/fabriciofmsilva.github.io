@@ -32,9 +32,16 @@ Sem CSS as páginas ficam com o design padrão dos navegadores, aplicando CSS na
 
 ## Sintaxe CSS
 
+A sintaxe do CSS segue a seguinte estrutura, primeiro temos o _seletor_ no nosso exemplo abaixo é o `.title`, depois temos as _declarações_ tudo o que está entre `{}`. Na declaração temos várias _regras_ (`propriedade: valor;`), que são compostas por uma _propriedade_ (`font-size`) e um _valor_ (`2rem`). Para separar a propriedade do valor usamos o `:` e toda regra deve terminar com um `;`.
+
 {% highlight css %}
-.class {
-  font-size: 1rem;
+.title {
+  font-size: 2rem;
+  color: rebeccapurple;
+}
+
+.text {
+  font-size: 2rem;
   color: #333;
 }
 {% endhighlight %}
@@ -85,7 +92,20 @@ Podemos criar alguns seletores mais complexos combinando os anteriores.
 .header .title {
   color: rebeccapurple;
 }
+
+.main > .title {
+  color: #333;
+}
+
+.article > p {
+  font-size: 1.2rem;
+}
+
+.article ~ .footer {
+  margin-top: 1rem;
+}
 {% endhighlight %}
+
 
 ## Valores e unidades
 
@@ -94,6 +114,7 @@ Classificamos as unidades em dois tipos as fixas e as relativas.
 Dentre as fixas podemos destacar o `px`.
 
 Já nas relativas temos o `em`, `rem`, `%`.
+
 
 ## Cascata e herança
 
@@ -105,9 +126,11 @@ p {
 }
 {% endhighlight %}
 
+
 ## O modelo de caixa (box model)
 
 O modelo básico de caixa CSS é o <em lang="en">box model</em>, ele leva em conta o tamanho do `container`, `padding`, `margin` e `border`.
+
 
 ## Display
 
@@ -125,12 +148,6 @@ Você pode conferir outros tipos de `display` no [mdn](https://developer.mozilla
 
 E pra fechar ainda podemos usar a propriedade `inherit`, que faz com que o elemento herde o valor do pai.
 
-<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="fabriciofmsilva" data-slug-hash="oNvYeXL" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Display">
-  <span>See the Pen <a href="https://codepen.io/fabriciofmsilva/pen/oNvYeXL/">
-  Display</a> by Fabrício Silva (<a href="https://codepen.io/fabriciofmsilva">@fabriciofmsilva</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## Positioning
 
@@ -138,30 +155,18 @@ Os elementos seguem um padrão na exibição quando renderizados no DOM. Porém 
 
 Vamos começar com o `position: relative;`, esse position mantém o elemento na posição inicial dele, porém podemos usar as propriedades `top`, `right`, `bottom`, `left` e `z-index` para alterar a posição incial do elemento.
 
-<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="css,result" data-user="fabriciofmsilva" data-slug-hash="oNvBNLO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Position: Relative">
-  <span>See the Pen <a href="https://codepen.io/fabriciofmsilva/pen/oNvBNLO/">
-  Position: Relative</a> by Fabrício Silva (<a href="https://codepen.io/fabriciofmsilva">@fabriciofmsilva</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
 Já o `position: absolute;` retira o elemento do fluxo e usando as propriedades `top`, `right`, `bottom`, `left` e `z-index` podemos mover os elementos para outras posições. Porém o position absolute fica posicionado a partir de um ancestral com position relative, caso nenhum ancestral tenha ele fica positionado relativo ao body (document).
 
 O `position: fixed;` é parecido com o absolute com a diferença que ele fica posicionado em relação a janela do navegador (`window`), com isso se você fizer uma rolagem (scroll) o elemento posicionado com static vai fazer o scroll junto.
 
 Por fim o mais novo membro da família o `position: sticky;` ele serve para travar um elemento geralmente no topo da página quando um scroll é feito.
 
-## Fontes
-
-### Generic Family
-
-### Font Family
-
-## Cores
 
 ## Como utilizar o CSS no HTML
 
 ### Estilos em linha (inline styles)
+
+Podemos inserir os estilos diretamente na tag com o atributo `style` que queremos capturar, porém aqui teremos os mesmos problemas que tinhamos com os atributos de estilo das versões mais antigas do HTML.
 
 {% highlight html %}
 <!-- index.html -->
@@ -169,6 +174,8 @@ Por fim o mais novo membro da família o `position: sticky;` ele serve para trav
 {% endhighlight %}
 
 ### Usando a tag `style`
+
+Uma segunda opção já um pouco melhor é colocar o CSS dentro da tag `style`, pois assim podemos aplicar todos os estilos para uma página. E quando dois ou mais elementos usar a mesma regra ela já será replicada. O ideal é que essa tag seja inserida dentro do `<head>`.
 
 {% highlight html %}
 <!-- index.html -->
@@ -181,6 +188,8 @@ Por fim o mais novo membro da família o `position: sticky;` ele serve para trav
 
 ### Usando a tag `link`
 
+A técnica anterior tem a limitação de apenas servir o CSS para uma única página, caso você precise do mesmo estilo em mais uma página o ideal é colocar os estilos em um arquivo separado e usar a tag `link` para dizer qual arquivo CSS você quer carregar na página. Assim como a tag `style` devemos inserir a tag `<link>` no `<head>`.
+
 {% highlight html %}
 <!-- index.html -->
 <link rel="stylesheet" type="text/css" href="app.css">
@@ -192,6 +201,7 @@ Por fim o mais novo membro da família o `position: sticky;` ele serve para trav
   color: rebeccapurple;
 }
 {% endhighlight %}
+
 
 ## Exemplo
 
