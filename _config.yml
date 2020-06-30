@@ -36,7 +36,7 @@ markdown: kramdown
 
 # gems
 gems:
-  - jekyll-sitemap
+  # - jekyll-sitemap
   - jekyll-toc
 
 # sass
