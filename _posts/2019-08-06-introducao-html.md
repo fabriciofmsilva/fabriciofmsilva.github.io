@@ -3,7 +3,7 @@ layout: post
 title: Introdução ao HTML
 description: Uma breve introdução ao HTML, passando pela sua história e conceitos básicos
 date: 2019-08-06 08:13:01
-last-update: 2019-08-21 08:45:01
+last-update: 2021-01-14 11:24:00
 categories: frontend
 tags: html
 image: /img/post/generic.jpg
@@ -269,3 +269,4 @@ Feito com HTML e ❤.
 
 - [Introdução ao HTML](https://developer.mozilla.org/pt-BR/docs/HTML/Introduction)
 - [Guia Front-End](https://www.casadocodigo.com.br/pages/sumario-guia-frontend)
+- [Basic HTML Codes for Beginners](https://www.websiteplanet.com/blog/html-guide-beginners/)
