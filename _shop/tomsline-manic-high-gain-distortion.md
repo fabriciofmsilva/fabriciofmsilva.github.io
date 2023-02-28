@@ -20,7 +20,7 @@ link: /shop/tomsline-manic-high-gain-distortion/
 
 O Pedal Tomsline Manic High Gain Distorção é uma escolha incrível para guitarristas que buscam um som de distorção pesado e moderno. Inspirado no famoso Suhr Riot, este pedal oferece a mesma qualidade de som excepcional e alta capacidade de ganho para garantir que suas notas sejam ouvidas com clareza e potência. Com controles simples de ganho, tom e volume, você pode ajustar facilmente o nível de saturação para criar uma ampla gama de tons de distorção de alta qualidade. Além disso, o Manic High Gain Distorção é construído com componentes de alta qualidade, para garantir uma resposta precisa e um som nítido, independentemente do seu estilo de tocar. Com um design compacto e resistente, é fácil transportar e usar em qualquer lugar, seja no palco ou em estúdio. Se você quer um som de distorção pesado e moderno, o Tomsline Manic High Gain Distorção é a escolha perfeita para você.
 
-Características
+### Características
 
 - Pedal de distorção de alto ganho, com três opções de modos: Soft, Tense e Normal
 - Possui controles de volume, tom e de ganho

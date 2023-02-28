@@ -24,7 +24,7 @@ Os 4 botões permitem grande versatilidade em seu som. Você pode cortar ou aume
 
 O Pure Sky CP-12 da Caline é um clone do Timmy Overdrive, um OVERDRIVE claramente articulado que permite um bom controle sobre seus graves e agudos. Bom para reter as frequências que você gosta na guitarra e no amplificador, mas dando um empurrãozinho e força.
 
-Especificações
+### Especificações
 
 - Controles de volume, ganho, agudos e graves
 - Caixa de metal super sólida
@@ -32,6 +32,6 @@ Especificações
 - Peso do produto: 274g
 - Tamanho do produto: 11,5 * 6,5 * 5,5 cm
 
-Conteúdo
+### Conteúdo
 
 - Pedal de efeito
