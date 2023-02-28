@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<header class="header">
+  <div class="header-title-small">
+    <a href="{{ site.url }}">{{ site.name }}</a>
+  </div>
+</header>
+
+<article class="article" itemscope itemtype="https://schema.org/Article">
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">{{ page.title }}</h1>
+    <p class="article-date">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="dateModified" content="{{ page.date | date_to_xmlschema }}">
+        {% assign m = page.date | date: "%-m" %}
+        {{ page.date | date: "%-d" }}
+        {% case m %}
+          {% when '1' %}Janeiro
+          {% when '2' %}Fevereiro
+          {% when '3' %}Março
+          {% when '4' %}Abril
+          {% when '5' %}Maio
+          {% when '6' %}Junho
+          {% when '7' %}Julho
+          {% when '8' %}Agosto
+          {% when '9' %}Setembro
+          {% when '10' %}Outubro
+          {% when '11' %}Novembro
+          {% when '12' %}Dezembro
+        {% endcase %}
+        {{ page.date | date: "%Y" }}
+      </time>
+      <a class="article-author sr-only" href="{{ site.plus }}" itemprop="author">{{ site.name }}</a>
+      {% if site.reading_time %}
+      <span> | {% include read-time.html %}</span>
+      {% endif %}
+    </p>
+  </header>
+
+  <div class="article-content" itemprop="articleBody">
+    {% if page.image %}
+    <figure class="article-image">
+      <img src="{{ page.image }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
+    </figure>
+    {% endif %}
+
+    {{ content | toc }}
+  </div>
+
+  <footer class="article-footer">
+  {% if page.last-update %}
+    <p class="article-date">[Última atualização
+      <time datetime="{{ page.last-update | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.last-update | date_to_xmlschema }}">
+      {% assign m = page.last-update | date: "%-m" %}
+      {{ page.last-update | date: "%-d" }}
+      {% case m %}
+        {% when '1' %}Janeiro
+        {% when '2' %}Fevereiro
+        {% when '3' %}Março
+        {% when '4' %}Abril
+        {% when '5' %}Maio
+        {% when '6' %}Junho
+        {% when '7' %}Julho
+        {% when '8' %}Agosto
+        {% when '9' %}Setembro
+        {% when '10' %}Outubro
+        {% when '11' %}Novembro
+        {% when '12' %}Dezembro
+      {% endcase %}
+      {{ page.last-update | date: "%Y" }}
+      </time>]
+    </p>
+  {% endif %}
+    <small>Tem alguma dúvida ou comentário? Envie um e-mail para <a href="mailto:&#102;&#097;&#098;&#114;&#105;&#099;&#105;&#111;&#102;&#109;&#115;&#105;&#108;&#118;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#102;&#097;&#098;&#114;&#105;&#099;&#105;&#111;&#102;&#109;&#115;&#105;&#108;&#118;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>, pelo Twitter <a href="https://twitter.com/fabriciofmsilva">@fabriciofmsilva</a> ou deixei o seu <button class="link" onClick="loadDisqusComments()">comentário</button>.</small>
+
+    {% include disqus.html %}
+  </footer>
+</article>
