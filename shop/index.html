@@ -1,0 +1,44 @@
+---
+layout: default
+title: Shop
+description: Loja e afiliados
+canonical: https://www.fabriciofmsilva.com.br/shop/
+---
+
+{% include header.html %}
+
+<main class="main">
+  <section class="archive">
+  {% for shop in site.shop reversed %}
+    {% capture currentyear %}{{shop.date | date: "%Y"}}{% endcapture %}
+    {% if currentyear != year %}
+       <h2 class="archive-title" id="{{ currentyear }}">{{ currentyear }}</h2>
+      {% capture year %}{{currentyear}}{% endcapture %}
+    {% endif %}
+    <article class="article">
+      <p>
+        <a href="{{ shop.link | prepend: site.url }}">{{ shop.title }}</a>
+        &mdash;
+        <time class="article-date" datetime="{{ shop.date | date_to_xmlschema }}">
+        {% assign m = shop.date | date: "%-m" %}
+        {% case m %}
+          {% when '1' %}Janeiro
+          {% when '2' %}Fevereiro
+          {% when '3' %}Março
+          {% when '4' %}Abril
+          {% when '5' %}Maio
+          {% when '6' %}Junho
+          {% when '7' %}Julho
+          {% when '8' %}Agosto
+          {% when '9' %}Setembro
+          {% when '10' %}Outubro
+          {% when '11' %}Novembro
+          {% when '12' %}Dezembro
+        {% endcase %}
+        {{ shop.date | date: "%-d" }}
+        </time>
+      </p>
+    </article>
+  {% endfor %}
+  </section>
+</main>
