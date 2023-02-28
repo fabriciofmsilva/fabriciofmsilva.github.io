@@ -30,8 +30,12 @@ feedburner: https://feeds.feedburner.com/fabriciofmsilva
 analytics: UA-22890269-1
 
 collections:
-  - projects
-  - shops
+  projects:
+    output: true
+    permalink: /projects/:name
+  shops:
+    output: true
+    permalink: /shop/:name
 
 # Build settings
 markdown: kramdown
