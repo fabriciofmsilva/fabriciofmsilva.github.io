@@ -32,7 +32,7 @@ analytics: UA-22890269-1
 collections:
   projects:
     output: true
-  shops:
+  shop:
     output: true
 
 # Build settings

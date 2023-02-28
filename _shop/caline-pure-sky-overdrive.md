@@ -3,7 +3,7 @@ layout: default
 title: "Caline Pure Sky"
 description: "Caline Pure Sky Overdrive basedo no Paul Cochrane Timmy"
 date: 2023-02-28 13:00:00
-link: /shop/2023-02-28-caline-pure-sky-overdrive/
+link: /shop/caline-pure-sky-overdrive/
 ---
 
 Unboxing e review.
