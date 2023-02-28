@@ -31,7 +31,7 @@ analytics: UA-22890269-1
 
 collections:
   - projects
-  - shop
+  - shops
 
 # Build settings
 markdown: kramdown
