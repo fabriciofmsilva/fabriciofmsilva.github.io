@@ -9,7 +9,7 @@ canonical: https://www.fabriciofmsilva.com.br/shop/
 
 <main class="main">
   <section class="archive">
-  {% for shop in site.shop reversed %}
+  {% for shop in site.shops reversed %}
     {% capture currentyear %}{{shop.date | date: "%Y"}}{% endcapture %}
     {% if currentyear != year %}
        <h2 class="archive-title" id="{{ currentyear }}">{{ currentyear }}</h2>
