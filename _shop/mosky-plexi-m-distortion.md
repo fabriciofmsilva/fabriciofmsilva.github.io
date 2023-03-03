@@ -19,7 +19,7 @@ link: /shop/mosky-plexi-m-distortion/
 
 ## Sobre
 
-Pedal efeito de distorção da guitarra elétrica para guitarristas que simula o com do amplificador Marshall Plexi.
+Pedal efeito de distorção da guitarra elétrica para guitarristas que simula o som do amplificador Marshall Plexi.
 
 Com 3 botões funcionais (tone/level/gain) para ajustar o desempenho do efeito de
 distorção. True bypass para alternar entre efeito de distorção e status de bypass.
