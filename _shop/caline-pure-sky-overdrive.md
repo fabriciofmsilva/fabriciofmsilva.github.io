@@ -15,7 +15,7 @@ link: /shop/caline-pure-sky-overdrive/
 ## Comprar
 
 - [Mercado Livre](https://produto.mercadolivre.com.br/MLB-2981839108-pedal-caline-pure-sky-overdrive-guitarra-_JM)
-- [Shoppe](https://shope.ee/3KtcjV2pWr)
+- [Shopee](https://shope.ee/3KtcjV2pWr)
 
 ## Sobre
 

@@ -15,7 +15,7 @@ link: /shop/tomsline-manic-high-gain-distortion/
 ## Comprar
 
 - [Mercado Livre](https://produto.mercadolivre.com.br/MLB-2625158316-pedal-tomsline-manic-high-gain-distorco-suhr-riot-_JM)
-- [Shoppe](https://shope.ee/8zXzTzo6dP)
+- [Shopee](https://shope.ee/8zXzTzo6dP)
 
 ## Sobre
 

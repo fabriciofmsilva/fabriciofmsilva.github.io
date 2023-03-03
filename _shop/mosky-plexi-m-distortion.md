@@ -15,7 +15,7 @@ link: /shop/mosky-plexi-m-distortion/
 ## Comprar
 
 - [Mercado Livre](https://produto.mercadolivre.com.br/MLB-2981558554-pedal-de-efeito-guitarra-plexi-m-distortion-_JM)
-- [Shoppe](https://shope.ee/30GmLDdfpB)
+- [Shopee](https://shope.ee/30GmLDdfpB)
 
 ## Sobre
 
