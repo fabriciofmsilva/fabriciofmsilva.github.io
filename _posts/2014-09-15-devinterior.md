@@ -6,7 +6,7 @@ date: 2014-09-15 22:22:12
 last-update: 2014-09-17 10:00:00
 categories: evento
 tags: evento
-image: http://www.fabriciofmsilva.com.br/img/2014/09-16-devinterior.jpg
+image: /img/2014/09-16-devinterior.jpg
 image-alt: DevInterior
 ---
 
