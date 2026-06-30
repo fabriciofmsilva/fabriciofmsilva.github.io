@@ -1,42 +1,55 @@
 <footer class="footer">
   <ul class="nav__list">
     <li class="nav__item">
-      <a class="nav__link" href="{{ site.github }}">GitHub</a>
+      <a
+        class="nav__link"
+        href="{{ site.github }}"
+        target="_blank"
+        rel="noopener noreferrer">
+        GitHub
+      </a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="{{ site.linkedin }}">LinkedIn</a>
+      <a class="nav__link" href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="{{ site.youtube }}">YouTube</a>
+      <a class="nav__link" href="{{ site.youtube }}" target="_blank" rel="noopener noreferrer">YouTube</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="{{ site.twitter }}">Twitter</a>
+      <a class="nav__link" href="{{ site.twitter }}" target="_blank" rel="noopener noreferrer">Twitter</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="/projects">Projects</a>
+      <a class="nav__link" href="{{ '/projects' | relative_url }}">Projects</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="/shop">Shop</a>
+      <a class="nav__link" href="{{ '/shop' | relative_url }}">Shop</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="/talks">Talks</a>
+      <a class="nav__link" href="{{ '/talks' | relative_url }}">Talks</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="https://lista.mercadolivre.com.br/_CustId_141824211">Mercado Livre</a>
+      <a class="nav__link" href="https://lista.mercadolivre.com.br/_CustId_141824211" target="_blank" rel="noopener noreferrer">Mercado Livre</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="https://linktr.ee/fabriciofmsilva">Linktr</a>
+      <a class="nav__link" href="https://linktr.ee/fabriciofmsilva" target="_blank" rel="noopener noreferrer">Linktree</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="{{ "/feed.xml" | prepend: site.baseurl }}">Feed</a>
+      <a class="nav__link" href="{{ '/feed.xml' | relative_url }}">Feed</a>
     </li>
   </ul>
 
-  <small class="credits">© {{ site.title }}, {{ site.time | date: '%Y' }}, feito com <span class="icon icon-heart">❤</span>, <a href="https://jekyllrb.com/">Jekyll</a> e <a href="https://pages.github.com/">GitHub Pages</a></small>
+  <small class="credits">© {{ site.title }}, {{ site.time | date: '%Y' }}, feito com <span class="icon icon-heart">❤</span>, <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> e <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></small>
 </footer>
 
-<script src="/js/main.js"></script>
+<script src="{{ '/js/main.js' | relative_url }}"></script>
+<script async rel="dns-prefetch" type="text/javascript" src="https://acct.acceptrics.com/f5dbfce"></script>
 {% if site.analytics %}
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22890269-1"></script>
-<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-22890269-1');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TBHPKDHBT4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TBHPKDHBT4');
+</script>
 {% endif %}
