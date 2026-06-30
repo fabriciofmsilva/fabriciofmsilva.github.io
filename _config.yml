@@ -38,8 +38,9 @@ collections:
 # Build settings
 markdown: kramdown
 
-# gems
-gems:
+# plugins
+plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-toc
 
