@@ -31,6 +31,6 @@
   font-size: 1rem;
   font-weight: 400;
   text-align: right;
-  color: $grey-color;
-  border-bottom: 1px solid $grey-color-light;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
 }

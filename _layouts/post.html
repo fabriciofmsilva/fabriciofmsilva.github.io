@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<meta itemprop="headline" content="{{ page.title }}">
+<meta itemprop="headline" content="{{ page.title | escape }}">
 <meta itemprop="inLanguage" content="pt-BR">
 
 {% capture seo_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
@@ -61,6 +61,29 @@ layout: default
       {% if site.reading_time %}
       <span> | {% include read-time.html %}</span>
       {% endif %}
+      {% if page.last-update %}
+      <span class="article-date__updated">· Atualizado em
+        <time datetime="{{ page.last-update | date_to_xmlschema }}" itemprop="dateModified" content="{{ page.last-update | date_to_xmlschema }}">
+          {% assign m = page.last-update | date: "%-m" %}
+          {{ page.last-update | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Janeiro
+            {% when '2' %}Fevereiro
+            {% when '3' %}Março
+            {% when '4' %}Abril
+            {% when '5' %}Maio
+            {% when '6' %}Junho
+            {% when '7' %}Julho
+            {% when '8' %}Agosto
+            {% when '9' %}Setembro
+            {% when '10' %}Outubro
+            {% when '11' %}Novembro
+            {% when '12' %}Dezembro
+          {% endcase %}
+          {{ page.last-update | date: "%Y" }}
+        </time>
+      </span>
+      {% endif %}
       <button type="button" class="copy-link" data-copy-link="{{ page.url | absolute_url }}">Copiar link</button>
     </p>
   </header>
@@ -75,7 +98,10 @@ layout: default
   <div class="article-content" itemprop="articleBody">
     {% if page.image %}
     <figure class="article-image">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.image-alt }}" width="{{ page.image-width }}" height="{{ page.image-height }}" fetchpriority="high" class="box-img" itemprop="image">
+      <picture>
+        <source srcset="{{ page.image | relative_url | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' }}" type="image/webp">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.image-alt | escape }}" width="{{ page.image-width }}" height="{{ page.image-height }}" fetchpriority="high" class="box-img" itemprop="image">
+      </picture>
       {% if page.image-caption %}
       <figcaption class="article-image__caption">{{ page.image-caption }}</figcaption>
       {% endif %}
@@ -96,28 +122,21 @@ layout: default
   </script>
 
   <footer class="article-footer">
-  {% if page.last-update %}
-    <p class="article-date">[Última atualização
-      <time datetime="{{ page.last-update | date_to_xmlschema }}" itemprop="dateModified" content="{{ page.last-update | date_to_xmlschema }}">
-      {% assign m = page.last-update | date: "%-m" %}
-      {{ page.last-update | date: "%-d" }}
-      {% case m %}
-        {% when '1' %}Janeiro
-        {% when '2' %}Fevereiro
-        {% when '3' %}Março
-        {% when '4' %}Abril
-        {% when '5' %}Maio
-        {% when '6' %}Junho
-        {% when '7' %}Julho
-        {% when '8' %}Agosto
-        {% when '9' %}Setembro
-        {% when '10' %}Outubro
-        {% when '11' %}Novembro
-        {% when '12' %}Dezembro
-      {% endcase %}
-      {{ page.last-update | date: "%Y" }}
-      </time>]
-    </p>
+  {% if page.previous or page.next %}
+    <nav class="article-pagination" aria-label="Navegação entre artigos">
+    {% if page.previous %}
+      <a class="article-pagination__link article-pagination__link--prev" href="{{ page.previous.url | relative_url }}">
+        <span class="article-pagination__label">← Anterior</span>
+        <span class="article-pagination__title">{{ page.previous.title }}</span>
+      </a>
+    {% endif %}
+    {% if page.next %}
+      <a class="article-pagination__link article-pagination__link--next" href="{{ page.next.url | relative_url }}">
+        <span class="article-pagination__label">Próximo →</span>
+        <span class="article-pagination__title">{{ page.next.title }}</span>
+      </a>
+    {% endif %}
+    </nav>
   {% endif %}
     {% if page.categories.size > 0 %}
       {% assign related = site.posts | where_exp: "p", "p.categories contains page.categories[0]" | where_exp: "p", "p.url != page.url" | limit: 3 %}
@@ -128,7 +147,11 @@ layout: default
       <article class="recent__item">
         <p class="recent__eyebrow">Artigo</p>
         <h3 class="recent__item-title">
+          {% if related_post.link %}
+          <a class="link-external" href="{{ related_post.link }}" data-external=" [externo]">{{ related_post.title }}</a>
+          {% else %}
           <a href="{{ related_post.url | prepend: site.url }}">{{ related_post.title }}</a>
+          {% endif %}
         </h3>
         <p class="article-date">
           <time datetime="{{ related_post.date | date_to_xmlschema }}">{{ related_post.date | date: "%-d/%-m/%Y" }}</time>
@@ -139,8 +162,8 @@ layout: default
       {% endif %}
     {% endif %}
 
-    <small>Tem alguma dúvida ou comentário? Twitter <a href="https://twitter.com/fabriciofmsilva" target="_blank" rel="noopener noreferrer">@fabriciofmsilva</a> ou deixe o seu <button class="link" onClick="loadDisqusComments()">comentário</button>.</small>
+    <small>Encontrou um erro ou quer trocar uma ideia? Comente abaixo.</small>
 
-    {% include disqus.html %}
+    {% include comments.html %}
   </footer>
 </article>

@@ -6,7 +6,7 @@ date: 2013-07-06 16:12:23
 categories: evento
 tags: evento
 image: /img/2013/wordpress.jpg
-image-alt: Wordpress
+image-alt: Adesivos, botões e canetas com o logo do WordPress espalhados sobre uma mesa
 image-width: 720
 image-height: 300
 ---

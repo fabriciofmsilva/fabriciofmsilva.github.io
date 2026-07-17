@@ -7,7 +7,7 @@ last-update: 2019-08-21 08:45:01
 categories: frontend
 tags: css
 image: /img/post/generic.jpg
-image-alt: CSS
+image-alt: Fundo abstrato geométrico colorido, em tons de rosa, roxo e azul
 image-width: 1200
 image-height: 750
 ---

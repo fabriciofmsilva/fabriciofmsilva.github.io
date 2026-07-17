@@ -7,7 +7,7 @@ last-update: 2014-09-17 10:00:00
 categories: evento
 tags: evento
 image: /img/2014/09-16-devinterior.jpg
-image-alt: DevInterior
+image-alt: Logo do DevInterior à esquerda e o ícone do Git em fundo laranja à direita
 image-width: 720
 image-height: 300
 ---

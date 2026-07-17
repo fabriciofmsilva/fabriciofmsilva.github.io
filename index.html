@@ -17,7 +17,11 @@ isHome: true
     <article class="recent__item">
       <p class="recent__eyebrow">Artigo</p>
       <h3 class="recent__item-title">
+        {% if post.link %}
+        <a class="link-external" href="{{ post.link }}" data-external=" [externo]">{{ post.title }}</a>
+        {% else %}
         <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+        {% endif %}
       </h3>
       {% if post.description %}<p class="recent__excerpt">{{ post.description }}</p>{% endif %}
       <p class="article-date">
