@@ -47,6 +47,7 @@
       localStorage.setItem('theme', state);
     }
     render(state);
+    syncGiscusTheme(state);
   }
 
   toggle.addEventListener('click', function () {
@@ -56,6 +57,23 @@
 
   render(current());
 })();
+
+// Keeps the giscus comment widget's theme in sync with the site's theme
+// toggle. The script tag's data-theme is updated for the next lazy load,
+// and postMessage nudges an already-loaded iframe without a full reload.
+function syncGiscusTheme(state) {
+  var giscusTheme = state === 'dark' ? 'dark' : state === 'light' ? 'light' : 'preferred_color_scheme';
+  var script = document.querySelector('script[src="https://giscus.app/client.js"]');
+  if (script) script.setAttribute('data-theme', giscusTheme);
+
+  var iframe = document.querySelector('iframe.giscus-frame');
+  if (iframe) {
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: giscusTheme } } },
+      'https://giscus.app'
+    );
+  }
+}
 
 // Shared clipboard helper: copies text, flashes the button label to confirm.
 function copyToClipboard(button, text, doneLabel) {

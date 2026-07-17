@@ -14,12 +14,32 @@
   --text-secondary: #5D606B;
   --border: #DFE2EA;
   --border-light: #ECEEF3;
+  --border-strong: #8B8FA5;
   --link: #3157D5;
   --link-visited: #2647B8;
   --accent: #7557C7;
   --heart: #C0392B;
   --code-background: #20212A;
   --code-text: #EDEEF3;
+
+  // Syntax highlight: code blocks keep a dark background in both site
+  // themes (see --code-background above), so these are defined once,
+  // not duplicated per theme.
+  --syntax-comment: #6B7280;
+  --syntax-muted: #7C8496;
+  --syntax-type: #A5B4FC;
+  --syntax-number: #56B6C2;
+  --syntax-string: #98C379;
+  --syntax-string-alt: #C793E0;
+  --syntax-name: #7FB4FF;
+  --syntax-builtin: #61AFEF;
+  --syntax-entity: #D291E4;
+  --syntax-function: #E88090;
+  --syntax-error: #F87171;
+  --syntax-error-bg: #3B1F1F;
+  --syntax-inserted-bg: #1F3320;
+  --syntax-deleted: #F0A8AA;
+  --syntax-deleted-bg: #3B1F22;
 }
 
 [data-theme="dark"] {
@@ -30,6 +50,7 @@
   --text-secondary: #B0B3BF;
   --border: #292C36;
   --border-light: #1D1F28;
+  --border-strong: #5C6076;
   --link: #829CFF;
   --link-visited: #A4B5FF;
   --accent: #B29AFF;
@@ -47,6 +68,7 @@
     --text-secondary: #B0B3BF;
     --border: #292C36;
     --border-light: #1D1F28;
+    --border-strong: #5C6076;
     --link: #829CFF;
     --link-visited: #A4B5FF;
     --accent: #B29AFF;
@@ -57,7 +79,7 @@
 }
 
 // Our variables
-$base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$base-font-family: "Source Sans 3", "Source Sans Pro", Helvetica, Arial, sans-serif;
 $mono-font-family: "JetBrains Mono", "Source Code Pro", monospace;
 
 $spacing-unit: 20px;
@@ -68,10 +90,6 @@ $link-color: var(--link);
 $background-color: var(--background);
 $heart-color: var(--heart);
 $code-color: var(--code-background);
-
-$grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
 
 // Width of the content area
 $content-width: 56rem;
@@ -97,6 +115,7 @@ $on-tablet: 56rem;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+  "fonts",
   "base",
   "nav",
   "header",

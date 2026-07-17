@@ -6,7 +6,7 @@ date: 2014-10-02 20:41:12
 categories: evento
 tags: evento
 image: /img/2014/conferencia-webbr-2014.jpg
-image-alt: Conferência Web.br 2014
+image-alt: Arte da Conferência Web.br 2014 com fundo geométrico colorido e o logo do W3C
 image-width: 720
 image-height: 300
 ---

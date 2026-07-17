@@ -7,7 +7,7 @@ last-update: 2021-01-14 11:24:00
 categories: frontend
 tags: html
 image: /img/post/generic.jpg
-image-alt: HTML
+image-alt: Fundo abstrato geométrico colorido, em tons de rosa, roxo e azul
 image-width: 1200
 image-height: 750
 ---

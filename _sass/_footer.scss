@@ -3,7 +3,7 @@
  */
 .footer {
   padding-top: 2em;
-  color: $grey-color;
+  color: var(--text-secondary);
   text-align: center;
   border-top: 1px solid var(--border);
 }
@@ -22,4 +22,10 @@
 
 .icon-heart {
   color: $heart-color;
+}
+
+.footer__rss {
+  @extend %btn-chip;
+  color: var(--link);
+  border-color: var(--link);
 }
