@@ -47,6 +47,11 @@
   color: $grey-color;
 }
 
+.copy-link {
+  @extend %btn-chip;
+  margin-left: .75rem;
+}
+
 .article-image {
   margin-bottom: 1em;
   text-align: center;

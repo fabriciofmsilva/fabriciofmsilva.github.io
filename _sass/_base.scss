@@ -154,6 +154,24 @@ button {
   font-size: 1rem;
 }
 
+%btn-chip {
+  padding: .35rem .75rem;
+  font-family: $mono-font-family;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--link);
+    border-color: var(--link);
+  }
+}
+
 
 /**
  * Container

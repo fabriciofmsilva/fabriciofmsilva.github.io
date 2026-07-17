@@ -34,6 +34,7 @@ layout: default
       {% if site.reading_time %}
       <span> | {% include read-time.html %}</span>
       {% endif %}
+      <button type="button" class="copy-link" data-copy-link="{{ page.url | absolute_url }}">Copiar link</button>
     </p>
   </header>
 
