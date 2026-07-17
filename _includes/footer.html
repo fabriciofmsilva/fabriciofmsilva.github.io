@@ -48,12 +48,23 @@
 <script src="{{ '/js/main.js' | relative_url }}"></script>
 <script async rel="dns-prefetch" type="text/javascript" src="https://acct.acceptrics.com/f5dbfce"></script>
 {% if site.analytics %}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TBHPKDHBT4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-TBHPKDHBT4');
+
+  function loadGtag() {
+    if (loadGtag.done) return;
+    loadGtag.done = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-TBHPKDHBT4';
+    document.head.appendChild(s);
+  }
+  ['scroll', 'keydown', 'mousemove', 'touchstart'].forEach(function (evt) {
+    window.addEventListener(evt, loadGtag, { once: true, passive: true });
+  });
+  (window.requestIdleCallback || setTimeout)(loadGtag, 5000);
 </script>
 {% endif %}
