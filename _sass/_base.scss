@@ -30,6 +30,7 @@ body {
   font-family: $base-font-family;
   color: $text-color;
   background-color: $background-color;
+  line-height: 1.7;
 }
 
 
@@ -49,15 +50,15 @@ h6 {
 }
 
 h1 {
-  font-size: 2.1rem;
+  font-size: clamp(1.75rem, 1.5rem + 1.5vw, 2.4rem);
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 1.25rem + 1vw, 1.8rem);
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 1.1rem + .5vw, 1.4rem);
 }
 
 h4 {
@@ -78,9 +79,10 @@ small {
 
 code {
   padding: 0 .5rem;
-  font-family: "Source Code Pro", monospace;
+  font-family: $mono-font-family;
   background: $code-color;
-  
+  color: var(--code-text);
+
   &:not([class]) {
     color: #d14;
   }
@@ -89,7 +91,7 @@ code {
 blockquote {
   margin-left: 0.5rem;
   padding-left: 1.5rem;
-  border-left: 6px solid;
+  border-left: 4px solid var(--accent);
 
   p {
     font-style: italic;
@@ -128,13 +130,13 @@ a,
   cursor: pointer;
 
   &:visited {
-    color: darken($link-color, 5%);
-    border-bottom-color: darken($link-color, 5%);
+    color: var(--link-visited);
+    border-bottom-color: var(--link-visited);
   }
 
   &:hover {
-    color: darken($link-color, 15%);
-    border-bottom-color: darken($link-color, 15%);
+    color: var(--accent);
+    border-bottom-color: var(--accent);
   }
 }
 
@@ -150,6 +152,24 @@ a,
  */
 button {
   font-size: 1rem;
+}
+
+%btn-chip {
+  padding: .35rem .75rem;
+  font-family: $mono-font-family;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--link);
+    border-color: var(--link);
+  }
 }
 
 
@@ -193,6 +213,30 @@ button {
 }
 
 
+
+/**
+ * Accessibility
+ */
+:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  z-index: 1000;
+  padding: .5rem 1rem;
+  color: var(--text-primary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+
+  &:focus {
+    top: 1rem;
+  }
+}
 
 /**
  * ScreenReader Only

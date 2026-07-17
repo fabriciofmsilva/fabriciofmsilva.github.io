@@ -6,15 +6,15 @@
     display: inline-block;
     margin-right: .5em;
     color: $grey-color;
-    border-bottom-color: darken($link-color, 5%);
+    border-bottom-color: var(--link-visited);
 
     &:visited {
-      border-bottom-color: darken($link-color, 5%);
+      border-bottom-color: var(--link-visited);
     }
 
     &:hover {
       color: $link-color;
-      border-bottom-color: darken($link-color, 5%);
+      border-bottom-color: var(--link-visited);
     }
   }
 }

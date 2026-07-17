@@ -5,7 +5,19 @@
   padding-top: 2em;
   color: $grey-color;
   text-align: center;
-  border-top: 1px dashed $grey-color-light;
+  border-top: 1px solid var(--border);
+}
+
+.footer__tagline {
+  margin-bottom: 1rem;
+}
+
+.footer__group {
+  margin-bottom: 1rem;
+
+  &:last-of-type {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .icon-heart {

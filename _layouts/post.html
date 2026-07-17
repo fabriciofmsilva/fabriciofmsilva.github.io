@@ -3,14 +3,39 @@ layout: default
 ---
 <meta itemprop="headline" content="{{ page.title }}">
 <meta itemprop="inLanguage" content="pt-BR">
-<header class="header">
-  <div class="header-title-small">
-    <a href="{{ site.url | absolute_url }}">{{ site.name }}</a>
-  </div>
-</header>
+
+{% capture seo_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ seo_description | strip | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last-update | default: page.date | date_to_xmlschema }}",
+  {% if page.image %}"image": "{{ page.image | absolute_url }}",{% endif %}
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author | jsonify }},
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": {{ site.author | jsonify }}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "url": "{{ page.url | absolute_url }}"
+}
+</script>
 
 <article class="article" itemscope itemtype="https://schema.org/Article" itemprop="mainEntity">
   <header class="article-header">
+    {% if page.categories.size > 0 %}
+    <p class="article-category">{{ page.categories | first | capitalize }}</p>
+    {% endif %}
     <h1 class="article-title" itemprop="name">{{ page.title }}</h1>
     <p class="article-date">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
@@ -36,17 +61,25 @@ layout: default
       {% if site.reading_time %}
       <span> | {% include read-time.html %}</span>
       {% endif %}
+      <button type="button" class="copy-link" data-copy-link="{{ page.url | absolute_url }}">Copiar link</button>
     </p>
   </header>
+
+  {% if page.toc %}
+  <details class="article-toc">
+    <summary>Índice</summary>
+    {{ content | toc_only }}
+  </details>
+  {% endif %}
 
   <div class="article-content" itemprop="articleBody">
     {% if page.image %}
     <figure class="article-image">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image-alt }}" width="{{ page.image-width }}" height="{{ page.image-height }}" fetchpriority="high" class="box-img" itemprop="image">
     </figure>
     {% endif %}
 
-    {{ content | toc }}
+    {{ content | inject_anchors }}
   </div>
 
   <ins class="adsbygoogle"
@@ -83,6 +116,26 @@ layout: default
       </time>]
     </p>
   {% endif %}
+    {% if page.categories.size > 0 %}
+      {% assign related = site.posts | where_exp: "p", "p.categories contains page.categories[0]" | where_exp: "p", "p.url != page.url" | limit: 3 %}
+      {% if related.size > 0 %}
+    <div class="related">
+      <h2 class="recent__title">Artigos relacionados</h2>
+      {% for related_post in related %}
+      <article class="recent__item">
+        <p class="recent__eyebrow">Artigo</p>
+        <h3 class="recent__item-title">
+          <a href="{{ related_post.url | prepend: site.url }}">{{ related_post.title }}</a>
+        </h3>
+        <p class="article-date">
+          <time datetime="{{ related_post.date | date_to_xmlschema }}">{{ related_post.date | date: "%-d/%-m/%Y" }}</time>
+        </p>
+      </article>
+      {% endfor %}
+    </div>
+      {% endif %}
+    {% endif %}
+
     <small>Tem alguma dúvida ou comentário? Twitter <a href="https://twitter.com/fabriciofmsilva" target="_blank" rel="noopener noreferrer">@fabriciofmsilva</a> ou deixe o seu <button class="link" onClick="loadDisqusComments()">comentário</button>.</small>
 
     {% include disqus.html %}

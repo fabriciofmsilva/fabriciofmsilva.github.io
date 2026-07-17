@@ -7,6 +7,8 @@ categories: evento
 tags: evento
 image: /img/2014/conferencia-webbr-2014.jpg
 image-alt: Conferência Web.br 2014
+image-width: 720
+image-height: 300
 ---
 
 Semana passada aconteceu a Conferência Web.br do W3C. Certamente um dos melhores eventos que eu já fui. A Web está fazendo 25 anos e por isso o evento foi todo especial, com direito a "bolo", coquetel e muito mais...

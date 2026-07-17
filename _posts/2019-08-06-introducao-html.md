@@ -8,6 +8,8 @@ categories: frontend
 tags: html
 image: /img/post/generic.jpg
 image-alt: HTML
+image-width: 1200
+image-height: 750
 ---
 
 > Tudo começa e termina no HTML

@@ -5,9 +5,6 @@ description: Loja e afiliados
 canonical: https://www.fabriciofmsilva.com.br/shop/
 ---
 
-{% include header.html %}
-
-<main class="main">
   <section class="archive">
   {% for shop in site.shop reversed %}
     {% capture currentyear %}{{shop.date | date: "%Y"}}{% endcapture %}
@@ -41,4 +38,3 @@ canonical: https://www.fabriciofmsilva.com.br/shop/
     </article>
   {% endfor %}
   </section>
-</main>

@@ -15,7 +15,16 @@
 }
 
 .article-header {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.article-category {
+  margin-bottom: .5rem;
+  font-family: $mono-font-family;
+  font-size: .75rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .article-title {
@@ -38,6 +47,11 @@
   color: $grey-color;
 }
 
+.copy-link {
+  @extend %btn-chip;
+  margin-left: .75rem;
+}
+
 .article-image {
   margin-bottom: 1em;
   text-align: center;
@@ -57,18 +71,14 @@
   }
 
   p {
-    margin-bottom: 2rem;
-    font-family: Garamond, "Adobe Garamond Pro", Georgia, serif;
+    max-width: 44rem;
+    margin-bottom: 1.25rem;
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.7;
   }
 
   ul {
     margin-bottom: 2rem;
-  }
-
-  li {
-    font-family: Garamond, "Adobe Garamond Pro", Georgia, serif;
   }
 
   blockquote {
@@ -87,6 +97,38 @@
   }
 }
 
+.talk-links a {
+  margin-right: 1rem;
+}
+
+.article-toc {
+  margin-bottom: 2rem;
+  padding: .75rem 1rem;
+  font-size: .9rem;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+
+  summary {
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .section-nav {
+    margin-top: .75rem;
+    padding-left: 1.25rem;
+  }
+
+  .toc-entry {
+    margin-bottom: .35rem;
+  }
+}
+
+.related {
+  margin: 2rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
 .article-footer {
   .article-date {
     margin-bottom: 1rem;
@@ -99,4 +141,71 @@
     font-size: 1rem;
     font-style: italic;
   }
+}
+
+/**
+ * Home: intro + recent posts
+ */
+.intro {
+  margin-bottom: 3rem;
+}
+
+.intro__name {
+  margin-bottom: .5rem;
+}
+
+.intro__bio {
+  max-width: 44rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.intro__links a {
+  margin-right: 1rem;
+}
+
+.recent {
+  margin-bottom: 3rem;
+}
+
+.recent__title {
+  margin-bottom: 1.25rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.recent__item {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.recent__eyebrow {
+  margin-bottom: .25rem;
+  font-family: $mono-font-family;
+  font-size: .75rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.recent__item-title {
+  margin-bottom: .5rem;
+
+  a {
+    color: var(--text-primary);
+    border-bottom: none;
+
+    &:hover {
+      color: var(--link);
+    }
+  }
+}
+
+.recent__excerpt {
+  max-width: 44rem;
+  margin-bottom: .5rem;
+  color: var(--text-secondary);
 }

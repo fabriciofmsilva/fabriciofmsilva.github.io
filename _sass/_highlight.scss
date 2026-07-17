@@ -31,6 +31,13 @@
     }
   }
 
+  .copy-code {
+    @extend %btn-chip;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+  }
+
   /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
   .lineno {
     display:inline-block;

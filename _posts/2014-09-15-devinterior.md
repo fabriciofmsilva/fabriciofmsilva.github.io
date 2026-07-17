@@ -8,6 +8,8 @@ categories: evento
 tags: evento
 image: /img/2014/09-16-devinterior.jpg
 image-alt: DevInterior
+image-width: 720
+image-height: 300
 ---
 
 Amanhã vai acontecer o primeiro [DevInterior Meetup](http://www.meetup.com/devinterior/) aqui em Ribeirão Preto.
