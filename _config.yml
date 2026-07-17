@@ -9,7 +9,8 @@
 title: Fabrício Silva
 name: Fabrício Silva
 description: > # this means to ignore newlines until "baseurl:"
-  Web developer focused in front-end
+  Notas sobre desenvolvimento web, arquitetura de software, inteligência
+  artificial e aprendizado contínuo.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fabriciofmsilva.com.br" # the base hostname & protocol for your site
 domain: fabriciofmsilva.com.br

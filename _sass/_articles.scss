@@ -58,7 +58,7 @@
 }
 
 .article-image {
-  margin-bottom: 1em;
+  margin: 2rem 0;
   text-align: center;
 }
 
@@ -254,6 +254,7 @@
 
 .intro__name {
   margin-bottom: .5rem;
+  font-size: clamp(2.8rem, 5vw, 4rem);
 }
 
 .intro__bio {
@@ -278,9 +279,17 @@
 
 .recent__item {
   margin-bottom: 2rem;
+  padding-left: .75rem;
+  border-left: 2px solid transparent;
+  transition: border-color .15s ease, transform .15s ease;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    border-left-color: var(--accent);
+    transform: translateX(.25rem);
   }
 }
 

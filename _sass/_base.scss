@@ -141,13 +141,12 @@ a,
 .link {
   color: $link-color;
   text-decoration: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid transparent;
   font-style: inherit;
   cursor: pointer;
 
   &:visited {
     color: var(--link-visited);
-    border-bottom-color: var(--link-visited);
   }
 
   &:hover {
@@ -228,6 +227,42 @@ button {
   }
 }
 
+
+
+/**
+ * Selection
+ */
+::selection {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+
+/**
+ * Scrollbar
+ */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) var(--background);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: $radius-sm;
+
+  &:hover {
+    background: var(--text-secondary);
+  }
+}
 
 
 /**

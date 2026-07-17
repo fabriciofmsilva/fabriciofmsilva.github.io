@@ -11,6 +11,8 @@
   font-size: .8rem;
   line-height: 1.6;
   background-color: $code-color;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
 
   pre {
     padding: 2rem 1.5rem;
