@@ -8,6 +8,8 @@ categories: frontend
 tags: css
 image: /img/post/generic.jpg
 image-alt: CSS
+image-width: 1200
+image-height: 750
 ---
 
 > Um minuto para aprender... uma vida para dominar.

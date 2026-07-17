@@ -7,6 +7,8 @@ categories: evento
 tags: evento
 image: /img/2013/wordpress.jpg
 image-alt: Wordpress
+image-width: 720
+image-height: 300
 ---
 
 Aconteceu no dia 29 de Junho de 2013 o [InterCon Dev +WordPress](http://intercon.imasters.com.br/dev/wordpress/) em São Paulo, evento do iMasters. Graças ao [Bernard de Luna](http://bernarddeluna.com/) pude ir ao evento.

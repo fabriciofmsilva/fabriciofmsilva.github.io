@@ -4,6 +4,33 @@ layout: default
 <meta itemprop="headline" content="{{ page.title }}">
 <meta itemprop="inLanguage" content="pt-BR">
 
+{% capture seo_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ seo_description | strip | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last-update | default: page.date | date_to_xmlschema }}",
+  {% if page.image %}"image": "{{ page.image | absolute_url }}",{% endif %}
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author | jsonify }},
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": {{ site.author | jsonify }}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "url": "{{ page.url | absolute_url }}"
+}
+</script>
+
 <article class="article" itemscope itemtype="https://schema.org/Article" itemprop="mainEntity">
   <header class="article-header">
     {% if page.categories.size > 0 %}
@@ -48,7 +75,7 @@ layout: default
   <div class="article-content" itemprop="articleBody">
     {% if page.image %}
     <figure class="article-image">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.image-alt }}" class="box-img" itemprop="image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image-alt }}" width="{{ page.image-width }}" height="{{ page.image-height }}" fetchpriority="high" class="box-img" itemprop="image">
     </figure>
     {% endif %}
 
