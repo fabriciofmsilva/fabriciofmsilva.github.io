@@ -1,0 +1,37 @@
+name: Feature branch PR
+
+on:
+  push:
+    branches: ["feature/**"]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  build-and-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+
+      - name: Open PR to master
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh pr list --head "${GITHUB_REF_NAME}" --base master --state open --json number -q '.[0]' | grep -q .; then
+            echo "PR already exists, skip."
+            exit 0
+          fi
+          gh pr create --head "${GITHUB_REF_NAME}" --base master \
+            --title "${GITHUB_REF_NAME}" \
+            --body "Auto-opened from push to ${GITHUB_REF_NAME}."
