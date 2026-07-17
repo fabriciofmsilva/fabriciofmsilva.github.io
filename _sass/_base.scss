@@ -50,27 +50,27 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(1.75rem, 1.5rem + 1.5vw, 2.4rem);
+  font-size: clamp(1.75rem, calc(1.5rem + 1.5vw), 2.4rem);
 }
 
 h2 {
-  font-size: clamp(1.4rem, 1.25rem + 1vw, 1.8rem);
+  font-size: clamp(1.4rem, calc(1.25rem + 1vw), 1.8rem);
 }
 
 h3 {
-  font-size: clamp(1.2rem, 1.1rem + .5vw, 1.4rem);
+  font-size: clamp(1.2rem, calc(1.1rem + .5vw), 1.4rem);
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: clamp(1.05rem, calc(1rem + .25vw), 1.2rem);
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: clamp(1rem, calc(.95rem + .15vw), 1.1rem);
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: clamp(.95rem, calc(.9rem + .1vw), 1rem);
 }
 
 small {
