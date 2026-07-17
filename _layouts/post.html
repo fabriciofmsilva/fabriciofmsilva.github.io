@@ -76,6 +76,9 @@ layout: default
     {% if page.image %}
     <figure class="article-image">
       <img src="{{ page.image | relative_url }}" alt="{{ page.image-alt }}" width="{{ page.image-width }}" height="{{ page.image-height }}" fetchpriority="high" class="box-img" itemprop="image">
+      {% if page.image-caption %}
+      <figcaption class="article-image__caption">{{ page.image-caption }}</figcaption>
+      {% endif %}
     </figure>
     {% endif %}
 

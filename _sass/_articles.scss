@@ -57,6 +57,12 @@
   text-align: center;
 }
 
+.article-image__caption {
+  margin-top: .5rem;
+  font-size: .85rem;
+  color: var(--text-secondary);
+}
+
 .article-content {
   margin-bottom: 2rem;
 
@@ -71,7 +77,7 @@
   }
 
   p {
-    max-width: 44rem;
+    max-width: 70ch;
     margin-bottom: 1.25rem;
     font-size: 1.1rem;
     line-height: 1.7;
@@ -155,7 +161,7 @@
 }
 
 .intro__bio {
-  max-width: 44rem;
+  max-width: 70ch;
   margin-bottom: 1rem;
   color: var(--text-secondary);
 }
@@ -205,7 +211,7 @@
 }
 
 .recent__excerpt {
-  max-width: 44rem;
+  max-width: 70ch;
   margin-bottom: .5rem;
   color: var(--text-secondary);
 }
