@@ -37,6 +37,13 @@ layout: default
     </p>
   </header>
 
+  {% if page.toc %}
+  <details class="article-toc">
+    <summary>Índice</summary>
+    {{ content | toc_only }}
+  </details>
+  {% endif %}
+
   <div class="article-content" itemprop="articleBody">
     {% if page.image %}
     <figure class="article-image">
@@ -44,7 +51,7 @@ layout: default
     </figure>
     {% endif %}
 
-    {{ content | toc }}
+    {{ content | inject_anchors }}
   </div>
 
   <ins class="adsbygoogle"
@@ -81,6 +88,26 @@ layout: default
       </time>]
     </p>
   {% endif %}
+    {% if page.categories.size > 0 %}
+      {% assign related = site.posts | where_exp: "p", "p.categories contains page.categories[0]" | where_exp: "p", "p.url != page.url" | limit: 3 %}
+      {% if related.size > 0 %}
+    <div class="related">
+      <h2 class="recent__title">Artigos relacionados</h2>
+      {% for related_post in related %}
+      <article class="recent__item">
+        <p class="recent__eyebrow">Artigo</p>
+        <h3 class="recent__item-title">
+          <a href="{{ related_post.url | prepend: site.url }}">{{ related_post.title }}</a>
+        </h3>
+        <p class="article-date">
+          <time datetime="{{ related_post.date | date_to_xmlschema }}">{{ related_post.date | date: "%-d/%-m/%Y" }}</time>
+        </p>
+      </article>
+      {% endfor %}
+    </div>
+      {% endif %}
+    {% endif %}
+
     <small>Tem alguma dúvida ou comentário? Twitter <a href="https://twitter.com/fabriciofmsilva" target="_blank" rel="noopener noreferrer">@fabriciofmsilva</a> ou deixe o seu <button class="link" onClick="loadDisqusComments()">comentário</button>.</small>
 
     {% include disqus.html %}

@@ -1,13 +1,24 @@
 ---
 layout: default
-title: Palestras
+title: Talks
 description: Últimas palestras apresentadas.
 canonical: https://www.fabriciofmsilva.com.br/palestras/
 ---
 
-<section class="main">
-<article class="content">
-	<h1>Palestras</h1>
-	<p>Minhas palestras</p>
-</article>
+<section class="recent">
+  <h1 class="recent__title">Talks</h1>
+
+  {% assign talks = site.talks | sort: "date" | reverse %}
+  {% for talk in talks %}
+  <article class="recent__item">
+    <p class="recent__eyebrow">Talk{% if talk.event %} · {{ talk.event }}{% endif %}</p>
+    <h3 class="recent__item-title">
+      <a href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
+    </h3>
+    <p class="article-date">
+      <time datetime="{{ talk.date | date_to_xmlschema }}">{{ talk.date | date: "%-d/%-m/%Y" }}</time>
+      {% if talk.location %}· {{ talk.location }}{% endif %}
+    </p>
+  </article>
+  {% endfor %}
 </section>

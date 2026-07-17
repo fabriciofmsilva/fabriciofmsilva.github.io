@@ -34,6 +34,8 @@ collections:
     output: true
   shop:
     output: true
+  talks:
+    output: true
 
 # Build settings
 markdown: kramdown
@@ -50,3 +52,10 @@ sass:
 
 # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed/
 excerpt_separator: ""
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      toc: true
