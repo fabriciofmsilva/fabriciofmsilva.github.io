@@ -7,22 +7,22 @@ permalink: /arquivo/
 ---
 
 <section class="archive">
-  <h1 class="archive__title">Arquivo</h1>
-{% for post in site.posts %}
-  {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
-  {% if currentyear != year %}
-      <h2 class="archive-title" id="{{ currentyear }}">{{ currentyear }}</h2>
-    {% capture year %}{{currentyear}}{% endcapture %}
-  {% endif %}
-  <article class="article">
-    <p>
+  <h1 class="recent__title">Arquivo</h1>
+{% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for group in postsByYear %}
+  <h2 class="archive-title" id="{{ group.name }}">{{ group.name }} ({{ group.items | size }})</h2>
+  {% for post in group.items %}
+  <article class="archive-item">
+    <h3 class="archive-item__title">
       {% if post.link %}
       <a class="link-external" href="{{ post.link }}" data-external=" [externo]">{{ post.title }}</a>
       {% else %}
       <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
       {% endif %}
-      &mdash;
-      <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}">
+    </h3>
+    {% if post.description %}<p class="archive-item__excerpt">{{ post.description }}</p>{% endif %}
+    <p class="article-date">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
       {% assign m = post.date | date: "%-m" %}
       {% case m %}
         {% when '1' %}Janeiro
@@ -40,7 +40,10 @@ permalink: /arquivo/
       {% endcase %}
       {{ post.date | date: "%-d" }}
       </time>
+      {% if post.categories.size > 0 %}· {{ post.categories | first | capitalize }}{% endif %}
+      {% if site.reading_time %}· {% include read-time.html content=post.content %}{% endif %}
     </p>
   </article>
+  {% endfor %}
 {% endfor %}
 </section>
