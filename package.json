@@ -4,7 +4,6 @@
   "description": "Fabrício Silva ===",
   "main": "index.js",
   "scripts": {
-    "lh": "lighthousebot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/fabriciofmsilva/fabriciofmsilva.github.io/issues"
   },
-  "homepage": "https://github.com/fabriciofmsilva/fabriciofmsilva.github.io#readme",
-  "devDependencies": {
-    "lighthousebot": "git+https://github.com/ebidel/lighthousebot.git"
-  }
+  "homepage": "https://github.com/fabriciofmsilva/fabriciofmsilva.github.io#readme"
 }
