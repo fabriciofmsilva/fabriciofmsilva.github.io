@@ -1,9 +1,29 @@
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
 <header class="header">
-  <h1 class="header-title">
-  {% if page.isHome != true %}
-    <a href="{{ site.url }}">{{ site.name }}</a>
-  {% else %}
-    {{ site.name }}
-  {% endif %}
-  </h1>
+  <div class="header-inner">
+    <p class="header-title">
+      <a href="{{ site.url }}"{% if page.isHome %} aria-current="page"{% endif %}>{{ site.name }}</a>
+    </p>
+
+    <div class="header-controls">
+      <nav class="nav nav--desktop" aria-label="Principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="{{ site.url }}"{% if page.isHome %} aria-current="page"{% endif %}>Artigos</a></li>
+          <li class="nav__item"><a class="nav__link" href="{{ '/projects' | relative_url }}"{% if page.url contains '/projects' %} aria-current="page"{% endif %}>Projetos</a></li>
+          <li class="nav__item"><a class="nav__link" href="{{ '/about' | relative_url }}"{% if page.url contains '/about' %} aria-current="page"{% endif %}>Sobre</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="theme-toggle" data-theme-toggle></button>
+
+      <details class="nav-mobile">
+        <summary class="nav-mobile__toggle" aria-label="Abrir menu">Menu</summary>
+        <ul class="nav-mobile__list">
+          <li><a href="{{ site.url }}"{% if page.isHome %} aria-current="page"{% endif %}>Artigos</a></li>
+          <li><a href="{{ '/projects' | relative_url }}"{% if page.url contains '/projects' %} aria-current="page"{% endif %}>Projetos</a></li>
+          <li><a href="{{ '/about' | relative_url }}"{% if page.url contains '/about' %} aria-current="page"{% endif %}>Sobre</a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
 </header>

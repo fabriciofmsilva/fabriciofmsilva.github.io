@@ -2,26 +2,135 @@
  * Header
  */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   margin-bottom: 2em;
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
 }
 
-.header-title,
-.header-title-small {
-  font-weight: 200;
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: $content-width;
+  min-height: 56px;
+  margin: 0 auto;
+  padding: .75rem 2rem .75rem 2.5rem;
+}
 
-  & a,
-  & a:visited {
-    color: $text-color;
+.header-title {
+  font-weight: 200;
+  font-size: 1.1rem;
+
+  a,
+  a:visited {
+    color: var(--text-primary);
     text-decoration: none;
     border-bottom: none;
+  }
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav--desktop {
+  display: none;
+
+  @include media-query($on-tablet) {
+    display: block;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+  }
+
+  .nav__link {
+    font-size: .95rem;
+    color: var(--text-secondary);
+    border-bottom: none;
+
+    &[aria-current="page"] {
+      color: var(--link);
+      font-weight: 700;
+    }
 
     &:hover {
+      color: var(--link);
     }
   }
 }
 
-.header-title-small {
-  font-size: 1rem;
-  font-weight: bold;
+.theme-toggle {
+  padding: .35rem .75rem;
+  font-family: $mono-font-family;
+  font-size: .8rem;
   text-transform: uppercase;
+  letter-spacing: .03em;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+
+  &:hover {
+    color: var(--link);
+    border-color: var(--link);
+  }
+}
+
+.nav-mobile {
+  position: relative;
+
+  @include media-query($on-tablet) {
+    display: none;
+  }
+
+  summary {
+    padding: .35rem .75rem;
+    font-size: .8rem;
+    list-style: none;
+    border: 1px solid var(--border);
+    border-radius: $radius-sm;
+    cursor: pointer;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &[open] summary {
+    border-color: var(--link);
+  }
+}
+
+.nav-mobile__list {
+  position: absolute;
+  right: 0;
+  z-index: 30;
+  margin-top: .5rem;
+  padding: .75rem 1rem;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+
+  li {
+    margin-bottom: .5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: var(--text-primary);
+    border-bottom: none;
+  }
 }

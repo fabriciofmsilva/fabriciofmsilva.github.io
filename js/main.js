@@ -20,3 +20,39 @@
     }
   }
 }());
+
+// Theme toggle: cycles Sistema -> Claro -> Escuro -> Sistema, persisted in localStorage.
+(function () {
+  var STATES = ['system', 'light', 'dark'];
+  var LABELS = { system: 'Sistema', light: 'Claro', dark: 'Escuro' };
+  var toggle = document.querySelector('[data-theme-toggle]');
+  if (!toggle) return;
+
+  function current() {
+    var stored = localStorage.getItem('theme');
+    return stored === 'light' || stored === 'dark' ? stored : 'system';
+  }
+
+  function render(state) {
+    toggle.textContent = LABELS[state];
+    toggle.setAttribute('aria-label', 'Tema: ' + LABELS[state] + '. Clique para trocar.');
+  }
+
+  function apply(state) {
+    if (state === 'system') {
+      delete document.documentElement.dataset.theme;
+      localStorage.removeItem('theme');
+    } else {
+      document.documentElement.dataset.theme = state;
+      localStorage.setItem('theme', state);
+    }
+    render(state);
+  }
+
+  toggle.addEventListener('click', function () {
+    var next = STATES[(STATES.indexOf(current()) + 1) % STATES.length];
+    apply(next);
+  });
+
+  render(current());
+})();

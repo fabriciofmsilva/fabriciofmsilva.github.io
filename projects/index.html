@@ -5,9 +5,6 @@ description: Last projects
 canonical: https://www.fabriciofmsilva.com.br/projects/
 ---
 
-{% include header.html %}
-
-<main class="main">
   <section class="archive">
   {% for project in site.projects reversed %}
     {% capture currentyear %}{{project.date | date: "%Y"}}{% endcapture %}
@@ -41,4 +38,3 @@ canonical: https://www.fabriciofmsilva.com.br/projects/
     </article>
   {% endfor %}
   </section>
-</main>

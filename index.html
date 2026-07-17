@@ -2,14 +2,56 @@
 layout: default
 isHome: true
 ---
-{% include header.html %}
+  <section class="intro">
+    <h1 class="intro__name">{{ site.name }}</h1>
+    <p class="intro__bio">{{ site.description }}</p>
+    <p class="intro__links">
+      <a href="{{ '/about' | relative_url }}">Sobre mim</a>
+      <a href="{{ site.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </section>
 
-<main class="main">
+  <section class="recent">
+    <h2 class="recent__title">Artigos recentes</h2>
+  {% for post in site.posts limit: 3 %}
+    <article class="recent__item">
+      <p class="recent__eyebrow">Artigo</p>
+      <h3 class="recent__item-title">
+        <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+      </h3>
+      {% if post.description %}<p class="recent__excerpt">{{ post.description }}</p>{% endif %}
+      <p class="article-date">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+        {% assign m = post.date | date: "%-m" %}
+        {% case m %}
+          {% when '1' %}Janeiro
+          {% when '2' %}Fevereiro
+          {% when '3' %}Março
+          {% when '4' %}Abril
+          {% when '5' %}Maio
+          {% when '6' %}Junho
+          {% when '7' %}Julho
+          {% when '8' %}Agosto
+          {% when '9' %}Setembro
+          {% when '10' %}Outubro
+          {% when '11' %}Novembro
+          {% when '12' %}Dezembro
+        {% endcase %}
+        {{ post.date | date: "%-d, %Y" }}
+        </time>
+        {% if post.categories.size > 0 %}· {{ post.categories | first | capitalize }}{% endif %}
+        {% if site.reading_time %}· {% include read-time.html %}{% endif %}
+      </p>
+    </article>
+  {% endfor %}
+  </section>
+
   <section class="archive">
+    <h2 class="archive__title">Arquivo</h2>
   {% for post in site.posts %}
     {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
     {% if currentyear != year %}
-        <h2 class="archive-title" id="{{ currentyear }}">{{ currentyear }}</h2>
+        <h3 class="archive-title" id="{{ currentyear }}">{{ currentyear }}</h3>
       {% capture year %}{{currentyear}}{% endcapture %}
     {% endif %}
     <article class="article">
@@ -42,4 +84,3 @@ isHome: true
     </article>
   {% endfor %}
   </section>
-</main>

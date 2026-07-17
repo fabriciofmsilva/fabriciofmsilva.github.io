@@ -3,14 +3,12 @@ layout: default
 ---
 <meta itemprop="headline" content="{{ page.title }}">
 <meta itemprop="inLanguage" content="pt-BR">
-<header class="header">
-  <div class="header-title-small">
-    <a href="{{ site.url | absolute_url }}">{{ site.name }}</a>
-  </div>
-</header>
 
 <article class="article" itemscope itemtype="https://schema.org/Article" itemprop="mainEntity">
   <header class="article-header">
+    {% if page.categories.size > 0 %}
+    <p class="article-category">{{ page.categories | first | capitalize }}</p>
+    {% endif %}
     <h1 class="article-title" itemprop="name">{{ page.title }}</h1>
     <p class="article-date">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
