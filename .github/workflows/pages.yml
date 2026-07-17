@@ -9,6 +9,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  statuses: write
 
 concurrency:
   group: "pages"
@@ -70,6 +71,8 @@ jobs:
             ${{ needs.deploy.outputs.page_url }}about/
           uploadArtifacts: true
           temporaryPublicStorage: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
