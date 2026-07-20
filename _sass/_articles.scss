@@ -71,6 +71,12 @@
 .article-content {
   margin-bottom: 2rem;
 
+  // Body-text links need more than color to read as links (WCAG 1.4.1) —
+  // .anchor is jekyll-toc's decorative heading-icon link, excluded on purpose.
+  a:not(.anchor) {
+    border-bottom-color: currentColor;
+  }
+
   h2 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;

@@ -46,7 +46,32 @@
 </footer>
 
 <script src="{{ '/js/main.js' | relative_url }}"></script>
-<script async rel="dns-prefetch" type="text/javascript" src="https://acct.acceptrics.com/f5dbfce"></script>
+<script>
+  // Loads fn on first user interaction, or after 5s idle if the user never
+  // interacts. Keeps non-critical third-party scripts off the initial load.
+  function loadOnIdleOrInteraction(fn) {
+    function run() {
+      if (run.done) return;
+      run.done = true;
+      fn();
+    }
+    ['scroll', 'keydown', 'mousemove', 'touchstart'].forEach(function (evt) {
+      window.addEventListener(evt, run, { once: true, passive: true });
+    });
+    if (window.requestIdleCallback) {
+      window.requestIdleCallback(run, { timeout: 5000 });
+    } else {
+      setTimeout(run, 5000);
+    }
+  }
+
+  loadOnIdleOrInteraction(function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://acct.acceptrics.com/f5dbfce';
+    document.head.appendChild(s);
+  });
+</script>
 {% if site.analytics %}
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -54,17 +79,11 @@
   gtag('js', new Date());
   gtag('config', 'G-TBHPKDHBT4');
 
-  function loadGtag() {
-    if (loadGtag.done) return;
-    loadGtag.done = true;
+  loadOnIdleOrInteraction(function () {
     var s = document.createElement('script');
     s.async = true;
     s.src = 'https://www.googletagmanager.com/gtag/js?id=G-TBHPKDHBT4';
     document.head.appendChild(s);
-  }
-  ['scroll', 'keydown', 'mousemove', 'touchstart'].forEach(function (evt) {
-    window.addEventListener(evt, loadGtag, { once: true, passive: true });
   });
-  (window.requestIdleCallback || setTimeout)(loadGtag, 5000);
 </script>
 {% endif %}

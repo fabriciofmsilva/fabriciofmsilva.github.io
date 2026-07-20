@@ -204,3 +204,9 @@ function copyToClipboard(button, text, doneLabel) {
     }
   });
 })();
+
+// jekyll-toc renders heading anchors as aria-hidden but still focusable,
+// leaving a keyboard-only "ghost" stop. Removes them from the tab order.
+document.querySelectorAll('.anchor[aria-hidden="true"]').forEach(function (anchor) {
+  anchor.setAttribute('tabindex', '-1');
+});
