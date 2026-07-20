@@ -135,7 +135,8 @@
   .callout {
     margin: 1.5rem 0;
     padding: 1rem 1.25rem;
-    border-left: 4px solid var(--border-strong);
+    border: 1px solid var(--border-strong);
+    border-radius: $radius-sm;
     background: var(--surface);
 
     p {
@@ -149,15 +150,18 @@
   }
 
   .callout--note {
-    border-left-color: var(--link);
+    background: color-mix(in srgb, var(--link) 6%, var(--surface));
+    border-color: var(--link);
   }
 
   .callout--warning {
-    border-left-color: var(--heart);
+    background: color-mix(in srgb, var(--heart) 6%, var(--surface));
+    border-color: var(--heart);
   }
 
   .callout--tip {
-    border-left-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 6%, var(--surface));
+    border-color: var(--accent);
   }
 }
 
@@ -261,6 +265,7 @@
   max-width: 70ch;
   margin-bottom: 1rem;
   color: var(--text-secondary);
+  text-wrap: pretty;
 }
 
 .intro__links a {
@@ -279,15 +284,15 @@
 
 .recent__item {
   margin-bottom: 2rem;
+  padding-left: .75rem;
   border-left: 2px solid transparent;
-  transition: border-color .15s ease, transform .15s ease, padding-left .15s ease;
+  transition: border-color .15s ease, transform .15s ease;
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &:hover {
-    padding-left: .75rem;
     border-left-color: var(--accent);
     transform: translateX(.25rem);
   }
@@ -319,4 +324,5 @@
   max-width: 70ch;
   margin-bottom: .5rem;
   color: var(--text-secondary);
+  text-wrap: pretty;
 }

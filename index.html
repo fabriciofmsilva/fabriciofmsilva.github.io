@@ -11,11 +11,10 @@ isHome: true
     </p>
   </section>
 
-  <section class="recent">
-    <h2 class="recent__title">Artigos recentes</h2>
+  <section class="recent" aria-labelledby="recent-title">
+    <h2 class="recent__title" id="recent-title">Artigos recentes</h2>
   {% for post in site.posts limit: 3 %}
     <article class="recent__item">
-      <p class="recent__eyebrow">Artigo</p>
       <h3 class="recent__item-title">
         {% if post.link %}
         <a class="link-external" href="{{ post.link }}" data-external=" [externo]">{{ post.title }}</a>
@@ -50,8 +49,8 @@ isHome: true
   {% endfor %}
   </section>
 
-  <section class="archive">
-    <h2 class="archive__title">Arquivo</h2>
+  <section class="archive" aria-labelledby="archive-title">
+    <h2 class="archive__title" id="archive-title">Arquivo</h2>
     <p class="archive__years">
     {% assign year = "" %}
     {% for post in site.posts %}
