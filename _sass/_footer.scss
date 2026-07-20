@@ -13,6 +13,11 @@
   margin-bottom: 1rem;
 }
 
+// Body-text link needs more than color to read as a link (WCAG 1.4.1).
+.credits a {
+  border-bottom-color: currentColor;
+}
+
 .footer__group {
   margin-bottom: 1rem;
 
