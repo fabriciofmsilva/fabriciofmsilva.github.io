@@ -145,11 +145,10 @@ layout: default
     {% if page.categories.size > 0 %}
       {% assign related = site.posts | where_exp: "p", "p.categories contains page.categories[0]" | where_exp: "p", "p.url != page.url" | limit: 3 %}
       {% if related.size > 0 %}
-    <div class="related">
-      <h2 class="recent__title">Artigos relacionados</h2>
+    <section class="related" aria-labelledby="related-title">
+      <h2 class="recent__title" id="related-title">Artigos relacionados</h2>
       {% for related_post in related %}
       <article class="recent__item">
-        <p class="recent__eyebrow">Artigo</p>
         <h3 class="recent__item-title">
           {% if related_post.link %}
           <a class="link-external" href="{{ related_post.link }}" data-external=" [externo]">{{ related_post.title }}</a>
@@ -162,7 +161,7 @@ layout: default
         </p>
       </article>
       {% endfor %}
-    </div>
+    </section>
       {% endif %}
     {% endif %}
 

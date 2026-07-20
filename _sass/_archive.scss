@@ -38,15 +38,15 @@
 
 .archive-item {
   margin-bottom: 1.75rem;
+  padding-left: .75rem;
   border-left: 2px solid transparent;
-  transition: border-color .15s ease, transform .15s ease, padding-left .15s ease;
+  transition: border-color .15s ease, transform .15s ease;
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &:hover {
-    padding-left: .75rem;
     border-left-color: var(--accent);
     transform: translateX(.25rem);
   }
